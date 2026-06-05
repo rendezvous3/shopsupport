@@ -1,0 +1,333 @@
+---
+alwaysApply: true
+---
+
+# XT Scale website with Svelte 5 Component Library
+
+## Project Overview
+This project is XT SCALE LLC website. XT Scale is Agentic AI consulting firm showcasing expertise in multi agent RAG systems.
+XT SCALE LLC website is built on top of a component library built with Svelte 5, TypeScript, and Storybook. It is important to observe this project from 2 standpoints, reusability - Component Library and XT Scale website itself and its features.
+
+## Current Project State & Recent Progress
+
+### Project Status
+**XT Scale Website** - High-end marketing site for XT Scale LLC built on a production-grade Svelte 5 component library. The site is fully functional with responsive navigation, industry showcases, and interactive components.
+
+### Recent Major Fixes & Enhancements
+
+#### 1. Navigation Component (`src/lib/tailwind/Navigation/Navigation.svelte`)
+**Status:** ✅ Fully functional on desktop and mobile
+
+**Key Features:**
+- **Services Dropdown**: MegaMenu with 3 columns (AI Solutions, Support, Development) - all with icons
+- **Industries Dropdown**: Separate dropdown with 6 industries (E-Commerce, Legal, Customer Service, Finance, AI Automation, Custom Use Case) - all with icons
+- **Mobile Navigation**: Fully functional click-based dropdowns (not hover-based)
+- **Icons Support**: Both `megaMenu` and `children` dropdowns support icons via `icon?: string` property
+- **Cursor Pointer**: All interactive elements show pointer cursor on hover (desktop and mobile)
+
+**Important Implementation Details:**
+- Mobile dropdowns use `onclick` with `e.stopPropagation()` to prevent click-outside handler conflicts
+- Mobile dropdowns check for both `link.megaMenu` and `link.children` to show dropdown arrows
+- All dropdown links display icons when provided in the `NavLink` interface
+- `dropdown-container` class used to exclude mobile dropdowns from click-outside handler
+
+**Homepage Usage** (`src/routes/+page.svelte`):
+- Services uses `megaMenu` structure with icons in all columns
+- Industries uses `children` array with icons for all items
+- Both dropdowns work identically in Storybook and on homepage
+
+#### 2. Industry Cards (`src/lib/tailwind/IndustryCard/IndustryCardVariation2.svelte`)
+**Status:** ✅ Styled and responsive
+
+**Styling:**
+- Background: `bg-white/5 backdrop-blur-sm border border-white/10` (subtle, blends with dark section background)
+- Hover: `hover:bg-white/8 hover:border-white/15 hover:shadow-xl`
+- Text colors: `text-white` (titles), `text-gray-300` (descriptions), `text-gray-200` (links)
+- Icons: `text-purple-400`
+- Height: `min-h-[280px]` (flexible, prevents text cutoff)
+- Description: `text-sm` class for better text fitting
+
+**Section Background** (`src/routes/+page.svelte`):
+- Dark gradient matching Hero and CTA sections: `bg-gradient-to-r from-slate-900 via-gray-900 to-slate-900`
+- Animated background elements (purple/blue blurs, grid pattern, vertical lines)
+
+#### 3. CardLayout Timeline (`src/lib/tailwind/CardLayouts/CardLayoutTimeline.svelte`)
+**Status:** ✅ Fixed spacing issues
+
+**Fix Applied:**
+- Added explicit `margin-bottom: 3rem` to `.timeline-card` elements via CSS
+- Removed margin from last child: `.timeline-card:last-child { margin-bottom: 0; }`
+- Ensures proper spacing between timeline cards on homepage
+
+#### 4. LegalAISection (`src/lib/tailwind/CTASection/LegalAISection.svelte`)
+**Status:** ✅ Fully responsive
+
+**Responsive Features:**
+- Changed from fixed `h-[600px]` to `min-h-[400px] lg:h-[600px]`
+- Sidebar: Hidden on mobile (`hidden lg:flex`), toggleable via button
+- Mobile sidebar toggle button added with `sidebarOpen` state
+- Chat header, messages, and input area all have responsive padding/text sizes
+- Message bubbles: `max-w-[85%] sm:max-w-[80%]` with responsive padding
+- Added to Storybook: `LegalAISection_Interactive` story in `CTASection.stories.ts`
+
+#### 5. FeatureCard Component (`src/lib/tailwind/FeatureCard/FeatureCard.svelte`)
+**Status:** ✅ Cursor pointer added
+
+**Enhancement:**
+- Added `cursor-pointer` to card classes
+- All FeatureCards now show pointer cursor on hover
+
+#### 6. README.md Documentation
+**Status:** ✅ Comprehensive documentation complete
+
+**Sections Added:**
+- Project overview and description
+- Prerequisites (Node.js LTS, @types/node)
+- All available commands (dev, storybook, build, check)
+- Complete configuration file reference with code examples
+- Project structure
+- Key workflows (Svelte 5 runes, path aliases)
+- Troubleshooting guide
+
+### Current Component Inventory
+
+**Navigation Components:**
+- `Navigation.svelte` - Main navigation with megaMenu and children dropdowns ✅
+- `NavigationVariation2.svelte` - Alternative navigation variant
+
+**Industry Components:**
+- `IndustryCard.svelte` - Base industry card
+- `IndustryCardVariation2.svelte` - Hero-style cards with dark background ✅ (used on homepage)
+
+**CTA Sections:**
+- `CTASection.svelte` - Base CTA
+- `CTASectionVariation2.svelte` - Full decorative CTA ✅ (used on homepage)
+- `LegalAISection.svelte` - Interactive chatbot demo ✅ (used on homepage, responsive)
+
+**Card Layouts:**
+- `CardLayoutTimeline.svelte` - Vertical timeline layout ✅ (used on homepage, spacing fixed)
+- `CardLayoutGrid.svelte` - Grid layout
+- `CardLayoutMasonry.svelte` - Masonry layout
+
+**Other Components:**
+- `FeatureCard.svelte` - Feature showcase cards ✅ (cursor pointer added)
+- `HeroSectionVariation2.svelte` - Hero with dual chatbots ✅ (used on homepage)
+- `SectionContainer.svelte` - Section wrapper component
+
+### Homepage Structure (`src/routes/+page.svelte`)
+
+1. **Navigation** - Fixed top navigation with Services/Industries dropdowns
+2. **Hero Section** - `HeroSectionVariation2` with dual chatbots
+3. **Services Section** - FeatureCards grid (3 columns)
+4. **Industries Section** - Dark background with `IndustryCardVariation2` grid (6 cards)
+5. **RAG Process Section** - `CardLayoutTimeline` with 8 process steps
+6. **Legal AI Section** - `LegalAISection` interactive demo
+7. **Why Choose Us** - FeatureCards grid (4 columns)
+8. **CTA Section** - `CTASectionVariation2` with gradient background
+9. **Footer** - Standard footer component
+
+### Known Patterns & Conventions
+
+**Svelte 5 Runes Usage:**
+- All components use `$props()`, `$state()`, `$derived()`, `$effect()`
+- No Svelte 4 syntax (`export let`, `$:`)
+
+**Styling Patterns:**
+- Dark sections: `bg-gradient-to-r from-slate-900 via-gray-900 to-slate-900`
+- Subtle cards: `bg-white/5 backdrop-blur-sm border border-white/10`
+- Hover states: Always include `cursor-pointer` for interactive elements
+- Responsive: Mobile-first with `lg:` breakpoints
+
+**Import Patterns:**
+- Always use `$lib` alias: `import { Component } from '$lib/tailwind/Component/Component.svelte'`
+- Type imports: `import type { ComponentProps } from '$lib/types'`
+
+**Mobile Navigation:**
+- Always use `onclick` handlers (not hover)
+- Use `e.stopPropagation()` to prevent conflicts
+- Add `dropdown-container` class to exclude from click-outside handler
+- Always include `cursor-pointer` class
+
+Component Library Goals:
+
+1. **Custom CSS Components** (`src/lib/custom/`) - Hand-crafted components with custom CSS, no framework dependencies
+2. **Tailwind Components** (`src/lib/tailwind/`) - Components built with Tailwind CSS utility classes
+
+**Purpose:** Learn modern development workflows while building production-ready components for future projects.
+
+**Tech Stack:**
+- Svelte 5 (latest with runes)
+- TypeScript (strict mode)
+- Vite (build tool)
+- Storybook (component documentation)
+- Tailwind CSS (utility-first styling)
+
+## How to Understand Project State
+- Check `src/lib/custom/` for custom CSS components
+- Check `src/lib/tailwind/` for Tailwind components
+
+## Critical: Svelte 5 Syntax Only
+
+### ✅ Use Svelte 5 Runes
+- Props: `let { prop1, prop2 = 'default' } = $props();`
+- State: `let count = $state(0);`
+- Derived: `let doubled = $derived(count * 2);`
+- Effects: `$effect(() => { ... });`
+
+### ❌ Never Use Svelte 4 Syntax
+- NO `export let prop`
+- NO `$: reactive statements`
+- NO `let:` slot syntax
+
+**If you see Svelte 4 syntax, STOP immediately and use Svelte 5 runes instead.**
+
+---
+
+## Architecture Decisions
+
+### File Structure
+```
+src/
+├── lib/
+│   ├── custom/           # Custom CSS components
+│   │   └── Button/
+│   │       ├── Button.svelte
+│   │       ├── Button.stories.ts
+│   │       └── Button.test.ts (optional)
+│   ├── tailwind/         # Tailwind components
+│   ├── utils/            # Helper functions
+│   ├── types/            # TypeScript definitions
+│   └── icons/            # Icon components
+└── routes/               # XT Scale Pages
+```
+
+
+### Component Naming
+- Components: `PascalCase.svelte` (e.g., `Button.svelte`, `IconClose.svelte`)
+- Folders: Match component name (e.g., `Button/`)
+- Utils: `camelCase.ts` (e.g., `formatDate.ts`)
+- Types: `PascalCase` interfaces (e.g., `ButtonProps`)
+
+### Import Conventions
+- Use `$lib` alias: `import { Button } from '$lib/custom/Button/Button.svelte'`
+- Never relative imports across features
+- Type imports: `import type { ButtonProps } from '$lib/types'`
+
+---
+
+## Component Library Code Standards
+
+### Component Structure, Component Library
+Each component follows this pattern:
+```svelte
+<script lang="ts">
+  // 1. Props with Svelte 5 runes
+  let { 
+    prop1,
+    prop2 = 'default',
+    onclick
+  } = $props();
+  
+  // 2. Local state (if needed)
+  let localState = $state(false);
+  
+  // 3. Derived values (if needed)
+  let computed = $derived(prop1 + prop2);
+</script>
+
+<!-- 4. Template -->
+<button {onclick}>
+  {prop1}
+</button>
+
+<!-- 5. Styles (for custom components) -->
+<style>
+  button {
+    /* scoped styles */
+  }
+</style>
+```
+
+### TypeScript Rules
+- Strict mode enabled
+- No `any` types (use `unknown` if needed)
+- No `@ts-ignore` (use `@ts-expect-error` with comment)
+- Define prop types explicitly
+
+### Storybook Stories (CSF3 format)
+```typescript
+import type { Meta, StoryObj } from '@storybook/svelte';
+import Button from './Button.svelte';
+
+const meta = {
+  title: 'Custom/Button',  // or 'Tailwind/Button'
+  component: Button as any,
+  tags: ['autodocs'],
+  argTypes: {
+    label: { control: 'text' },
+    variant: { 
+      control: 'select',
+      options: ['primary', 'secondary', 'danger']
+    }
+  },
+} satisfies Meta<any>;
+
+export default meta;
+type Story = StoryObj<any>;
+
+export const Primary: Story = {
+  args: {
+    label: 'Primary Button',
+    variant: 'primary',
+  },
+};
+```
+
+---
+
+## What We DON'T Use
+- ❌ Svelte 4 syntax
+- ❌ Class components
+- ❌ Inline styles (use Tailwind or `<style>` blocks)
+- ❌ `any` type without explanation
+- ❌ Relative imports across features
+
+---
+
+## Component Library Workflow
+**You will receive explicit instructions about which component(s) to build next. Do not proceed without this instruction.**
+
+### New Component Implementation
+1. **Plan** the component (props, variants, states, files)
+2. **Get approval** - Wait for "yes, proceed"
+3. **Implement** the component `.svelte` file
+4. **Create story** - Add `.stories.ts` file
+5. **Verify** - Confirm component renders in Storybook
+6. **Commit** - One component = one commit
+7. **STOP** - Wait for next instruction
+
+### Enhancing Existing Component
+If asked to add features to an existing component (variants, animations, props, etc.):
+1. **Plan** what will change (new props, CSS, stories)
+2. **Get approval** - Wait for "yes, proceed"
+3. **Modify** the component file only
+4. **Update story** - Add new story variants if needed
+5. **Verify** - Test all variants work in Storybook
+6. **Commit** - One enhancement = one commit
+7. **STOP** - Wait for next instruction
+
+### Multi-Component Features
+If user requests a feature requiring multiple components:
+1. **Break down** - List all components needed
+2. **Get approval** for the breakdown
+3. **Implement one component** following steps 1-6 above
+4. **STOP** - Wait for "build next component" instruction
+5. **Repeat** for each component in the feature
+
+### Critical Rules
+- **DO NOT INVENT OR CREATE** a component you were not asked to make
+- **Never suggest** what to build next
+- **Never offer** to build related components
+- **Always wait** for explicit instruction
+- If unclear whether to continue, **ask** "Should I proceed with [next component]?"
+```

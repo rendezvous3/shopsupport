@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Define Inter font variable (Railway-style) */
+:root {
+  --font-inter: 'Inter', sans-serif;
+}
+
+/* Apply globally to body */
+body {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Oxygen-Sans', Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+/* Ensure all elements inherit */
+* {
+  font-family: inherit;
+}
