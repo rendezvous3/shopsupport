@@ -10,8 +10,8 @@
 </script>
 
 <svelte:head>
-  <title>Contact | XT SCALE</title>
-  <meta name="description" content="Get in touch with XT SCALE. Let's talk about building your AI system." />
+  <title>Contact | ShopSupport.ai</title>
+  <meta name="description" content="Get in touch with ShopSupport.ai. Tell us about your POS stack and store type — dispensary or winery." />
 </svelte:head>
 
 <Navigation />
@@ -22,9 +22,9 @@
   <section class="contact-hero">
     <div class="contact-hero-inner">
       <div class="contact-label">GET IN TOUCH</div>
-      <h1 class="contact-heading">Let's build something together</h1>
+      <h1 class="contact-heading">Let's connect your store</h1>
       <p class="contact-subheading">
-        Tell us about your project. We'll get back to you within one business day.
+        Tell us about your POS stack and store type (dispensary or winery). We'll get back to you within one business day.
       </p>
     </div>
   </section>
@@ -99,12 +99,12 @@
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="message">What are you building?</label>
+              <label class="form-label" for="message">Tell us about your store</label>
               <textarea
                 id="message"
                 name="message"
                 class="form-textarea"
-                placeholder="Tell us about your use case, data, and what you want the AI to do…"
+                placeholder="POS system (Dutchie, Treez, Shopify, etc.), store type, and what you want the AI assistant to do…"
                 rows="5"
                 bind:value={fields.message}
                 required
@@ -167,7 +167,7 @@
           </div>
           <div class="info-content">
             <div class="info-label">Email</div>
-            <a href="mailto:info@xtscale.com" class="info-link">info@xtscale.com</a>
+            <a href="mailto:info@shopsupport.ai" class="info-link">info@shopsupport.ai</a>
           </div>
         </div>
 
@@ -186,7 +186,7 @@
           <div class="expect-steps">
             <div class="expect-step">
               <div class="step-num">1</div>
-              <div class="step-text">We review your use case and data situation</div>
+              <div class="step-text">We review your POS stack and catalog</div>
             </div>
             <div class="expect-step">
               <div class="step-num">2</div>

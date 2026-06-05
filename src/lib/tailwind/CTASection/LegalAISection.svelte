@@ -8,16 +8,48 @@
     variant?: 'primary' | 'secondary';
   }
 
+  interface Stat {
+    value: string;
+    label: string;
+  }
+
+  interface PanelResult {
+    name: string;
+    meta: string;
+  }
+
   interface LegalAISectionProps {
+    label?: string;
     headline: string;
     description?: string;
+    stats?: Stat[];
+    panelTitle?: string;
+    panelQuery?: string;
+    panelResults?: PanelResult[];
+    panelPlaceholder?: string;
+    panelStatus?: string;
     primaryCta?: CTA;
     secondaryCta?: CTA;
   }
 
   let {
+    label = 'POS INTEGRATION · LIVE SYNC',
     headline,
     description,
+    stats = [
+      { value: '50+', label: 'POS APIs' },
+      { value: '99.2%', label: 'Match accuracy' },
+      { value: '<200ms', label: 'Sync' }
+    ],
+    panelTitle = 'Catalog Sync',
+    panelQuery = 'Sync live inventory from Dutchie POS',
+    panelResults = [
+      { name: 'Blue Dream 3.5g', meta: 'In stock · 24 units · $32.00' },
+      { name: 'Gelato 3.5g', meta: 'In stock · 18 units · $38.00' },
+      { name: 'Calm Gummies 10pk', meta: 'In stock · 42 units · $24.00' }
+    ],
+    panelPlaceholder = 'Check SKU or category sync status…',
+    panelStatus = 'Last sync 12s ago · 1,247 SKUs indexed',
     primaryCta,
     secondaryCta
   }: LegalAISectionProps = $props();
@@ -29,7 +61,7 @@
 
       <!-- Left column: text + stats + CTAs -->
       <div class="legal-left">
-        <div class="legal-label">LEGAL AI · ENTERPRISE</div>
+        <div class="legal-label">{label}</div>
 
         <h2 class="legal-headline">{headline}</h2>
 
@@ -39,20 +71,13 @@
 
         <!-- Stats row -->
         <div class="legal-stats">
-          <div class="legal-stat">
-            <span class="legal-stat-num">10,000+</span>
-            <span class="legal-stat-label">Cases</span>
-          </div>
-          <div class="legal-stat-divider"></div>
-          <div class="legal-stat">
-            <span class="legal-stat-num">99.2%</span>
-            <span class="legal-stat-label">Accuracy</span>
-          </div>
-          <div class="legal-stat-divider"></div>
-          <div class="legal-stat">
-            <span class="legal-stat-num">5×</span>
-            <span class="legal-stat-label">Faster</span>
-          </div>
+          {#each stats as stat, i}
+            {#if i > 0}<div class="legal-stat-divider"></div>{/if}
+            <div class="legal-stat">
+              <span class="legal-stat-num">{stat.value}</span>
+              <span class="legal-stat-label">{stat.label}</span>
+            </div>
+          {/each}
         </div>
 
         <!-- CTAs -->
@@ -71,7 +96,7 @@
         <div class="ai-panel">
           <!-- Tab bar -->
           <div class="ai-panel-header">
-            <span class="ai-panel-title">Case Lookup</span>
+            <span class="ai-panel-title">{panelTitle}</span>
             <div class="ai-panel-icons">
               <button class="ai-icon-btn" aria-label="Search">
                 <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -93,37 +118,25 @@
 
           <!-- Chat query bubble -->
           <div class="ai-chat-query">
-            <div class="ai-chat-user-msg">Find contract breach cases from 2022–2023</div>
+            <div class="ai-chat-user-msg">{panelQuery}</div>
           </div>
 
           <!-- Results list -->
           <div class="ai-results">
-            <div class="ai-result-item">
-              <div class="ai-result-border"></div>
-              <div class="ai-result-content">
-                <div class="ai-result-name">Smith v. Jones (2023)</div>
-                <div class="ai-result-meta">Contract breach · 94% relevance</div>
+            {#each panelResults as result}
+              <div class="ai-result-item">
+                <div class="ai-result-border"></div>
+                <div class="ai-result-content">
+                  <div class="ai-result-name">{result.name}</div>
+                  <div class="ai-result-meta">{result.meta}</div>
+                </div>
               </div>
-            </div>
-            <div class="ai-result-item">
-              <div class="ai-result-border"></div>
-              <div class="ai-result-content">
-                <div class="ai-result-name">ABC Corp v. XYZ Ltd (2022)</div>
-                <div class="ai-result-meta">Non-disclosure agreement · 89% relevance</div>
-              </div>
-            </div>
-            <div class="ai-result-item">
-              <div class="ai-result-border"></div>
-              <div class="ai-result-content">
-                <div class="ai-result-name">Johnson v. Miller (2023)</div>
-                <div class="ai-result-meta">Employment contract · 82% relevance</div>
-              </div>
-            </div>
+            {/each}
           </div>
 
           <!-- Chat input bar -->
           <div class="ai-chat-input-row">
-            <span class="ai-chat-input-placeholder">Ask about a case or document…</span>
+            <span class="ai-chat-input-placeholder">{panelPlaceholder}</span>
             <button class="ai-chat-send" aria-label="Send">
               <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
@@ -134,7 +147,7 @@
           <!-- Status bar -->
           <div class="ai-status">
             <span class="ai-status-dot"></span>
-            <span class="ai-status-text">Analyzing 10,247 documents…</span>
+            <span class="ai-status-text">{panelStatus}</span>
           </div>
         </div>
       </div>

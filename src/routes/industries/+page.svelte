@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-  <title>Industries | XT Scale</title>
-  <meta name="description" content="AI agents built for the complexity of your industry: e-commerce, legal, finance, and customer service. Domain-trained systems that understand your terminology, regulations, and workflows." />
+  <title>Industries | ShopSupport.ai</title>
+  <meta name="description" content="POS-connected AI for dispensaries and wineries. Domain-trained shopping assistants that understand compliance, catalog complexity, and regulated retail workflows." />
 </svelte:head>
 
 <Navigation dropdownTrigger="hover" />
@@ -21,19 +21,18 @@
       <div class="ind-hero-text">
         <div class="ind-label">INDUSTRIES</div>
         <h1 class="ind-hero-heading">
-          AI Built for the Complexity<br />
-          of Your Industry
+          AI Built for Regulated<br />
+          Retail Commerce
         </h1>
         <p class="ind-hero-sub">
-          Generic AI fails in specialized domains. We build agents trained on your industry's
-          terminology, regulations, and workflows. They understand the difference
-          between a prospectus and a press release, a clause and a covenant.
+          Generic chatbots fail in dispensaries and wineries. ShopSupport builds agents trained on your
+          POS catalog, compliance rules, and customer data — so every recommendation is accurate,
+          in-stock, and regulation-aware.
         </p>
         <div class="ind-hero-pills">
-          <a href="#e-commerce" class="ind-hero-pill">E-Commerce</a>
-          <a href="#legal" class="ind-hero-pill">Legal</a>
-          <a href="#finance" class="ind-hero-pill">Finance</a>
-          <a href="#customer-service" class="ind-hero-pill">Customer Service</a>
+          <a href="#dispensaries" class="ind-hero-pill">Dispensaries</a>
+          <a href="#wineries" class="ind-hero-pill">Wineries</a>
+          <a href="#customer-service" class="ind-hero-pill">Customer Service (Soon)</a>
         </div>
       </div>
       <div class="ind-hero-visual" aria-hidden="true">
@@ -56,77 +55,74 @@
             <!-- AI CORE center -->
             <rect x="155" y="142" width="90" height="56" rx="8" fill="#111117" stroke="#00d4aa" stroke-width="1.5" />
             <text x="200" y="163" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="9" font-weight="700">AI CORE</text>
-            <text x="200" y="176" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">domain router</text>
-            <text x="200" y="188" text-anchor="middle" fill="#334155" font-family="ui-monospace,monospace" font-size="6.5">4 models loaded</text>
-            <!-- E-COMMERCE (top-left) -->
+            <text x="200" y="176" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">POS router</text>
+            <text x="200" y="188" text-anchor="middle" fill="#334155" font-family="ui-monospace,monospace" font-size="6.5">live sync active</text>
+            <!-- DISPENSARIES (top-left) -->
             <rect x="20" y="22" width="100" height="36" rx="6" fill="#0d0d14" stroke="rgba(0,212,170,0.22)" stroke-width="1" />
-            <text x="70" y="36" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">E-COMMERCE</text>
-            <text x="70" y="48" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">catalog + sessions</text>
+            <text x="70" y="36" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">DISPENSARY</text>
+            <text x="70" y="48" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">strains + limits</text>
             <line x1="120" y1="50" x2="165" y2="152" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" marker-end="url(#ind-arrow)" />
             <rect x="130" y="85" width="44" height="16" rx="8" fill="rgba(0,212,170,0.08)" stroke="rgba(0,212,170,0.2)" stroke-width="0.75" />
-            <text x="152" y="96" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">+23% Conv</text>
-            <!-- LEGAL (top-right) -->
+            <text x="152" y="96" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">+23% AOV</text>
+            <!-- WINERIES (top-right) -->
             <rect x="270" y="55" width="100" height="36" rx="6" fill="#0d0d14" stroke="rgba(0,212,170,0.22)" stroke-width="1" />
-            <text x="320" y="69" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">LEGAL</text>
-            <text x="320" y="81" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">contracts + clauses</text>
+            <text x="320" y="69" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">WINERY</text>
+            <text x="320" y="81" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">pairings + DTC</text>
             <line x1="270" y1="73" x2="245" y2="155" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" marker-end="url(#ind-arrow)" />
             <rect x="246" y="108" width="50" height="16" rx="8" fill="rgba(0,212,170,0.08)" stroke="rgba(0,212,170,0.2)" stroke-width="0.75" />
-            <text x="271" y="119" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">80% faster</text>
-            <!-- FINANCE (bottom-right) -->
+            <text x="271" y="119" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">94% match</text>
+            <!-- POS APIs (bottom-right) -->
             <rect x="265" y="240" width="100" height="36" rx="6" fill="#0d0d14" stroke="rgba(0,212,170,0.22)" stroke-width="1" />
-            <text x="315" y="254" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">FINANCE</text>
-            <text x="315" y="266" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">prospectus + data</text>
+            <text x="315" y="254" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">POS APIs</text>
+            <text x="315" y="266" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">Dutchie + Treez</text>
             <line x1="265" y1="253" x2="245" y2="198" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" marker-end="url(#ind-arrow)" />
             <rect x="238" y="218" width="52" height="16" rx="8" fill="rgba(0,212,170,0.08)" stroke="rgba(0,212,170,0.2)" stroke-width="0.75" />
-            <text x="264" y="229" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">70% less time</text>
-            <!-- CUSTOMER SERVICE (bottom-left) -->
+            <text x="264" y="229" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">&lt;200ms</text>
+            <!-- E-COMMERCE (bottom-left) -->
             <rect x="15" y="240" width="110" height="36" rx="6" fill="#0d0d14" stroke="rgba(0,212,170,0.22)" stroke-width="1" />
-            <text x="70" y="254" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">CUST. SERVICE</text>
-            <text x="70" y="266" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">tickets + resolution</text>
+            <text x="70" y="254" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">E-COMMERCE</text>
+            <text x="70" y="266" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">Shopify + Woo</text>
             <line x1="125" y1="252" x2="163" y2="198" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" marker-end="url(#ind-arrow)" />
             <rect x="120" y="220" width="38" height="16" rx="8" fill="rgba(0,212,170,0.08)" stroke="rgba(0,212,170,0.2)" stroke-width="0.75" />
-            <text x="139" y="231" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">87% FCR</text>
+            <text x="139" y="231" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">Live</text>
           </svg>
           <div class="ind-hero-diagram-footer">
             <span class="ind-hero-footer-dot"></span>
-            <span class="ind-hero-footer-text">4 domains · Domain-trained agents</span>
+            <span class="ind-hero-footer-text">2 verticals · POS-connected agents</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── E-Commerce Section ───────────────────────────────── -->
-  <section id="e-commerce" class="ind-section ind-section--default">
+  <!-- ─── Dispensaries Section ─────────────────────────────── -->
+  <section id="dispensaries" class="ind-section ind-section--default">
     <div class="px-6">
       <div class="max-w-7xl mx-auto">
         <div class="ind-split ind-split--visual-right">
 
           <!-- Text -->
           <div class="ind-split-text">
-            <div class="ind-label">E-COMMERCE</div>
-            <h2 class="ind-section-heading">Turn Every Shopper Into a Known Customer</h2>
+            <div class="ind-label">DISPENSARIES</div>
+            <h2 class="ind-section-heading">Turn Every Shopper Into a Guided Buyer</h2>
             <p class="ind-body">
-              Most recommendation engines surface products based on category similarity and purchase history. That's table stakes. Our multi-agent systems analyze browsing velocity, session context, cart abandonment signals, and cross-category intent simultaneously, in real time, to understand not just what a customer has bought, but what they're actually trying to accomplish.
+              Dispensary shoppers don't browse like typical e-commerce customers. They ask about effects, potency, consumption method, and what's actually in stock right now. ShopSupport agents connect to Dutchie or Treez and answer with live inventory — never recommending an out-of-stock strain.
             </p>
             <p class="ind-body">
-              A shopper looking at trail running shoes at 10 PM isn't browsing. They're preparing for something. Our agents build a behavioral model on the fly and surface the gear, nutrition, and accessories that match the intent, not just the category.
+              Compliance is built in. Agents enforce daily purchase limits, age verification prompts, and state-specific regulations before every recommendation. A shopper asking for "something strong" gets matched to products within their remaining daily allowance, not just the highest THC on the menu.
             </p>
             <p class="ind-body">
-              Customer service agents handle returns end-to-end: querying order management systems, initiating refunds, sending confirmation emails, and offering exchange alternatives before the customer has to ask. Tier-1 and tier-2 are fully automated. Tier-3 escalations arrive with complete context so your human agents spend their time solving problems, not reading transcripts.
-            </p>
-            <p class="ind-body">
-              Recommendation latency below 200 milliseconds means the suggestion appears before the customer has finished scrolling. The compounding effect across sessions drives measurable conversion lift, averaging 23% across deployments.
+              Strain discovery goes beyond category filters. Our agents understand indica vs. sativa effects, terpene profiles, and cross-category intent — surfacing edibles, vapes, and flower that match what the customer is actually trying to accomplish.
             </p>
 
             <div class="ind-metrics-row">
-              <div class="ind-metric-pill ind-metric-pill--teal">+23% Conversion</div>
-              <div class="ind-metric-pill">&lt;200ms Latency</div>
-              <div class="ind-metric-pill">94.7% Accuracy</div>
+              <div class="ind-metric-pill ind-metric-pill--teal">+23% AOV</div>
+              <div class="ind-metric-pill">&lt;200ms POS Sync</div>
+              <div class="ind-metric-pill">99.2% Accuracy</div>
             </div>
 
             <div class="ind-cta-row">
-              <ButtonMinimal label="See E-Commerce Solutions" variant="outline" href="/services" arrow={true} />
+              <ButtonMinimal label="See Dispensary Solutions" variant="outline" href="/services#shopping-assistant" arrow={true} />
             </div>
           </div>
 
@@ -147,7 +143,7 @@
               <!-- Query -->
               <div class="mock-query-row">
                 <div class="mock-query-label">Session intent detected</div>
-                <div class="mock-query-bubble">Trail running · Race prep · High mileage</div>
+                <div class="mock-query-bubble">Relaxing · Evening · Under $40 · In stock</div>
               </div>
 
               <!-- Product grid -->
@@ -155,24 +151,24 @@
                 <div class="mock-product mock-product--featured">
                   <div class="mock-product-img"></div>
                   <div class="mock-product-info">
-                    <div class="mock-product-name">Hoka Speedgoat 5</div>
-                    <div class="mock-product-price">$144.95</div>
+                    <div class="mock-product-name">Blue Dream 3.5g</div>
+                    <div class="mock-product-price">$32.00</div>
                   </div>
                   <div class="mock-product-badge">97%</div>
                 </div>
                 <div class="mock-product">
                   <div class="mock-product-img mock-product-img--sm"></div>
                   <div class="mock-product-info">
-                    <div class="mock-product-name">Salomon XT-6</div>
-                    <div class="mock-product-price">$139.99</div>
+                    <div class="mock-product-name">Granddaddy Purp</div>
+                    <div class="mock-product-price">$28.00</div>
                   </div>
                   <div class="mock-product-score">89%</div>
                 </div>
                 <div class="mock-product">
                   <div class="mock-product-img mock-product-img--sm"></div>
                   <div class="mock-product-info">
-                    <div class="mock-product-name">Brooks Cascadia 17</div>
-                    <div class="mock-product-price">$129.95</div>
+                    <div class="mock-product-name">Calm Gummies 10pk</div>
+                    <div class="mock-product-price">$24.00</div>
                   </div>
                   <div class="mock-product-score mock-product-score--dim">81%</div>
                 </div>
@@ -180,17 +176,17 @@
 
               <!-- Also recommended -->
               <div class="mock-cross-sell">
-                <div class="mock-cross-sell-label">Also surfacing: Nutrition &amp; Recovery</div>
+                <div class="mock-cross-sell-label">Compliance check passed</div>
                 <div class="mock-cross-sell-chips">
-                  <span class="mock-chip">Gels &amp; Hydration</span>
-                  <span class="mock-chip">Compression Socks</span>
-                  <span class="mock-chip">Recovery Foam</span>
+                  <span class="mock-chip">Within daily limit</span>
+                  <span class="mock-chip">Age verified</span>
+                  <span class="mock-chip">Dutchie synced</span>
                 </div>
               </div>
 
               <div class="mock-footer">
                 <span class="mock-footer-dot"></span>
-                <span class="mock-footer-text">Analyzed 8,431 products · 143ms</span>
+                <span class="mock-footer-text">Synced 1,247 SKUs · 143ms</span>
               </div>
             </div>
           </div>
@@ -200,8 +196,8 @@
     </div>
   </section>
 
-  <!-- ─── Legal Section ─────────────────────────────────────── -->
-  <section id="legal" class="ind-section ind-section--alt">
+  <!-- ─── Wineries Section ──────────────────────────────────── -->
+  <section id="wineries" class="ind-section ind-section--alt">
     <div class="px-6">
       <div class="max-w-7xl mx-auto">
         <div class="ind-split ind-split--visual-left">
@@ -211,10 +207,10 @@
             <div class="mock-panel">
               <div class="mock-panel-header">
                 <div class="mock-panel-title-row">
-                  <span class="mock-panel-title">Contract Analysis</span>
-                  <span class="mock-status-badge mock-status-badge--warn">3 Risks Flagged</span>
+                  <span class="mock-panel-title">Wine Pairing</span>
+                  <span class="mock-status-badge mock-status-badge--warn">94% Match</span>
                 </div>
-                <div class="mock-panel-sub">NDA: Software Services Agreement v4.2</div>
+                <div class="mock-panel-sub">Query: Red wine for grilled lamb, under $50</div>
               </div>
 
               <!-- Document list -->
@@ -222,40 +218,40 @@
                 <div class="mock-doc-item mock-doc-item--risk-high">
                   <div class="mock-doc-risk-bar mock-doc-risk-bar--high"></div>
                   <div class="mock-doc-content">
-                    <div class="mock-doc-clause">§ 8.3: Indemnification scope</div>
-                    <div class="mock-doc-flag">Non-standard: unlimited liability exposure</div>
+                    <div class="mock-doc-clause">2019 Estate Cabernet</div>
+                    <div class="mock-doc-flag">Bold tannins · Grilled lamb · $42 · 36 btl in stock</div>
                   </div>
-                  <span class="mock-risk-chip mock-risk-chip--high">HIGH</span>
+                  <span class="mock-risk-chip mock-risk-chip--high">TOP</span>
                 </div>
                 <div class="mock-doc-item mock-doc-item--risk-med">
                   <div class="mock-doc-risk-bar mock-doc-risk-bar--med"></div>
                   <div class="mock-doc-content">
-                    <div class="mock-doc-clause">§ 12.1: Governing law</div>
-                    <div class="mock-doc-flag">Missing: jurisdiction-specific carve-outs</div>
+                    <div class="mock-doc-clause">2020 Merlot Reserve</div>
+                    <div class="mock-doc-flag">Soft tannins · Herb-crusted · $38 · Ships to UT</div>
                   </div>
-                  <span class="mock-risk-chip mock-risk-chip--med">MED</span>
+                  <span class="mock-risk-chip mock-risk-chip--med">89%</span>
                 </div>
                 <div class="mock-doc-item mock-doc-item--risk-med">
                   <div class="mock-doc-risk-bar mock-doc-risk-bar--med"></div>
                   <div class="mock-doc-content">
-                    <div class="mock-doc-clause">§ 15.4: IP assignment</div>
-                    <div class="mock-doc-flag">Overly broad: includes pre-existing IP</div>
+                    <div class="mock-doc-clause">2018 Syrah</div>
+                    <div class="mock-doc-flag">Peppery finish · BBQ lamb · $45 · Club discount</div>
                   </div>
-                  <span class="mock-risk-chip mock-risk-chip--med">MED</span>
+                  <span class="mock-risk-chip mock-risk-chip--med">82%</span>
                 </div>
                 <div class="mock-doc-item">
                   <div class="mock-doc-risk-bar mock-doc-risk-bar--ok"></div>
                   <div class="mock-doc-content">
-                    <div class="mock-doc-clause">§ 4.1: Confidentiality obligations</div>
-                    <div class="mock-doc-flag mock-doc-flag--ok">Standard, no issues found</div>
+                    <div class="mock-doc-clause">Shipping zone check</div>
+                    <div class="mock-doc-flag mock-doc-flag--ok">Zip 84111 eligible for DTC delivery</div>
                   </div>
                   <span class="mock-risk-chip mock-risk-chip--ok">OK</span>
                 </div>
                 <div class="mock-doc-item">
                   <div class="mock-doc-risk-bar mock-doc-risk-bar--ok"></div>
                   <div class="mock-doc-content">
-                    <div class="mock-doc-clause">§ 6.2: Term and termination</div>
-                    <div class="mock-doc-flag mock-doc-flag--ok">Standard, no issues found</div>
+                    <div class="mock-doc-clause">Wine club tier</div>
+                    <div class="mock-doc-flag mock-doc-flag--ok">Gold member · 15% discount applied</div>
                   </div>
                   <span class="mock-risk-chip mock-risk-chip--ok">OK</span>
                 </div>
@@ -263,182 +259,42 @@
 
               <div class="mock-footer">
                 <span class="mock-footer-dot"></span>
-                <span class="mock-footer-text">127 clauses extracted · 94 cross-referenced · 2.1s</span>
+                <span class="mock-footer-text">Matched 3 vintages · Shipping verified · 1.8s</span>
               </div>
             </div>
           </div>
 
           <!-- Text -->
           <div class="ind-split-text">
-            <div class="ind-label">LEGAL</div>
-            <h2 class="ind-section-heading">AI That Reads Every Line You Can't</h2>
+            <div class="ind-label">WINERIES</div>
+            <h2 class="ind-section-heading">Expert Guidance from Vineyard to Checkout</h2>
             <p class="ind-body">
-              Contract review agents process thousands of pages to surface what matters: non-standard indemnification clauses, obligations buried in schedules, jurisdiction-specific risks your template doesn't account for, and missing provisions that create exposure. The agent doesn't summarize. It extracts, classifies, and flags with clause-level precision.
+              Winery customers ask about tasting notes, food pairings, vintage availability, and whether you ship to their zip code. ShopSupport agents know your full catalog — including club membership tiers, limited releases, and DTC shipping zones — and guide shoppers to the right bottle without human intervention.
             </p>
             <p class="ind-body">
-              Litigation support agents work differently. They don't browse a database. They reason over it. Given a set of facts and a legal theory, they surface relevant precedent, distinguish unfavorable cases with counterarguments, and produce structured research memos in a fraction of the time a paralegal would spend. 10,000+ documents per engagement, cross-referenced automatically.
+              Pairing recommendations go beyond "red with meat." Our agents understand tannin structure, acidity, and regional characteristics to match wines with specific dishes, occasions, and price points. A customer planning a dinner party gets a curated selection, not a generic category browse.
             </p>
             <p class="ind-body">
-              Due diligence systems cross-reference entities, corporate filings, public records, litigation history, and beneficial ownership structures across hundreds of documents in minutes. What previously required a team working for days is compressed into a structured report with a full evidence trail.
+              Wine club management is integrated. Agents know which tier a customer belongs to, what discounts apply, and when the next shipment is scheduled — answering membership questions and upselling upgrades in the same conversation.
             </p>
 
             <div class="ind-stats-stack">
               <div class="ind-stat-row">
-                <div class="ind-stat-num">80%</div>
-                <div class="ind-stat-desc">reduction in contract review time</div>
+                <div class="ind-stat-num">94%</div>
+                <div class="ind-stat-desc">pairing match accuracy</div>
               </div>
               <div class="ind-stat-row">
-                <div class="ind-stat-num">10,000+</div>
-                <div class="ind-stat-desc">documents processed per engagement</div>
+                <div class="ind-stat-num">+18%</div>
+                <div class="ind-stat-desc">average order value lift</div>
               </div>
               <div class="ind-stat-row">
-                <div class="ind-stat-num">99.2%</div>
-                <div class="ind-stat-desc">clause extraction accuracy</div>
+                <div class="ind-stat-num">Live</div>
+                <div class="ind-stat-desc">inventory from your POS</div>
               </div>
             </div>
 
             <div class="ind-cta-row">
-              <ButtonMinimal label="See Legal AI Solutions" variant="outline" href="/services" arrow={true} />
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── Finance Section ───────────────────────────────────── -->
-  <section id="finance" class="ind-section ind-section--default">
-    <div class="px-6">
-      <div class="max-w-7xl mx-auto">
-        <div class="ind-split ind-split--visual-right">
-
-          <!-- Text -->
-          <div class="ind-split-text">
-            <div class="ind-label">FINANCE</div>
-            <h2 class="ind-section-heading">Intelligence at the Speed of Markets</h2>
-
-            <div class="ind-subsection">
-              <h3 class="ind-subsection-heading">Portfolio & Wealth Management</h3>
-              <p class="ind-body">
-                Personalized portfolio agents monitor every position against client risk profiles in real time. Automated rebalancing recommendations, tax-loss harvesting signals, and client-facing narrative generation, with plain-language explanations of complex moves that advisors can send directly, without spending an hour writing them.
-              </p>
-            </div>
-
-            <div class="ind-subsection">
-              <h3 class="ind-subsection-heading">Market Sentiment & Trading Intelligence</h3>
-              <p class="ind-body">
-                Agents that parse SEC filings, earnings call transcripts, news feeds, and social signals simultaneously, producing structured sentiment scores and event-driven alerts before the market prices them in. Analyst time on data aggregation drops by 70%. What's left is the interpretation that actually requires human judgment.
-              </p>
-            </div>
-
-            <div class="ind-subsection">
-              <h3 class="ind-subsection-heading">Risk & Compliance</h3>
-              <p class="ind-body">
-                Automated monitoring agents flag unusual transaction patterns, check trades against regulatory requirements in real time, and generate compliance reports with full audit trails. Built for the documentation and traceability standards financial regulators require.
-              </p>
-            </div>
-
-            <div class="ind-metrics-row">
-              <div class="ind-metric-pill ind-metric-pill--teal">70% less analyst time</div>
-              <div class="ind-metric-pill">50+ data sources</div>
-              <div class="ind-metric-pill">Full audit trail</div>
-            </div>
-
-            <div class="ind-cta-row">
-              <ButtonMinimal label="See Finance AI Solutions" variant="outline" href="/services" arrow={true} />
-            </div>
-          </div>
-
-          <!-- Visual -->
-          <div class="ind-split-visual">
-            <div class="mock-panel">
-              <div class="mock-panel-header">
-                <div class="mock-panel-title-row">
-                  <span class="mock-panel-title">Market Intelligence</span>
-                  <span class="mock-live-badge">
-                    <span class="mock-live-dot"></span>
-                    Real-time
-                  </span>
-                </div>
-                <div class="mock-panel-sub">Sentiment & portfolio monitoring</div>
-              </div>
-
-              <!-- Sentiment scores -->
-              <div class="fin-sentiment-block">
-                <div class="fin-block-label">Sentiment: AAPL earnings call</div>
-                <div class="fin-sentiment-rows">
-                  <div class="fin-sent-row">
-                    <span class="fin-sent-label">Revenue guidance</span>
-                    <div class="fin-sent-bar-wrap">
-                      <div class="fin-sent-bar fin-sent-bar--positive" style="width: 78%"></div>
-                    </div>
-                    <span class="fin-sent-score fin-sent-score--pos">+0.78</span>
-                  </div>
-                  <div class="fin-sent-row">
-                    <span class="fin-sent-label">Supply chain</span>
-                    <div class="fin-sent-bar-wrap">
-                      <div class="fin-sent-bar fin-sent-bar--negative" style="width: 42%"></div>
-                    </div>
-                    <span class="fin-sent-score fin-sent-score--neg">−0.42</span>
-                  </div>
-                  <div class="fin-sent-row">
-                    <span class="fin-sent-label">AI product outlook</span>
-                    <div class="fin-sent-bar-wrap">
-                      <div class="fin-sent-bar fin-sent-bar--positive" style="width: 91%"></div>
-                    </div>
-                    <span class="fin-sent-score fin-sent-score--pos">+0.91</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Tickers -->
-              <div class="fin-tickers">
-                <div class="fin-ticker">
-                  <span class="fin-ticker-sym">AAPL</span>
-                  <span class="fin-ticker-price">$194.32</span>
-                  <span class="fin-ticker-chg fin-ticker-chg--up">+2.1%</span>
-                </div>
-                <div class="fin-ticker">
-                  <span class="fin-ticker-sym">MSFT</span>
-                  <span class="fin-ticker-price">$418.76</span>
-                  <span class="fin-ticker-chg fin-ticker-chg--up">+0.8%</span>
-                </div>
-                <div class="fin-ticker">
-                  <span class="fin-ticker-sym">NVDA</span>
-                  <span class="fin-ticker-price">$873.11</span>
-                  <span class="fin-ticker-chg fin-ticker-chg--down">−1.3%</span>
-                </div>
-              </div>
-
-              <!-- Alert -->
-              <div class="fin-alert">
-                <svg width="12" height="12" fill="none" stroke="#00d4aa" stroke-width="1.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                <span class="fin-alert-text">Event-driven alert: AAPL AI guidance may impact MSFT, GOOGL. Cross-referencing now</span>
-              </div>
-
-              <!-- Portfolio stats -->
-              <div class="fin-port-grid">
-                <div class="fin-port-stat">
-                  <div class="fin-port-val">$4.2M</div>
-                  <div class="fin-port-key">AUM monitored</div>
-                </div>
-                <div class="fin-port-stat">
-                  <div class="fin-port-val fin-port-val--teal">Low</div>
-                  <div class="fin-port-key">Risk profile</div>
-                </div>
-                <div class="fin-port-stat">
-                  <div class="fin-port-val">+12.4%</div>
-                  <div class="fin-port-key">YTD return</div>
-                </div>
-              </div>
-
-              <div class="mock-footer">
-                <span class="mock-footer-dot"></span>
-                <span class="mock-footer-text">Monitoring 50+ sources · Updated 34s ago</span>
-              </div>
+              <ButtonMinimal label="See Winery Solutions" variant="outline" href="/services#shopping-assistant" arrow={true} />
             </div>
           </div>
 
@@ -453,12 +309,11 @@
       <div class="max-w-7xl mx-auto">
 
         <div class="text-center mb-14">
-          <div class="ind-label" style="margin-bottom: 1rem;">CUSTOMER SERVICE</div>
+          <div class="ind-label" style="margin-bottom: 1rem;">CUSTOMER SERVICE · COMING SOON</div>
           <h2 class="ind-section-heading ind-section-heading--centered">Support That Scales Without Headcount</h2>
           <p class="ind-body ind-body--centered">
-            Autonomous agents deployed across chat, email, and voice, trained on your product documentation,
-            policies, and historical ticket resolutions. They handle tier-1 through tier-3, escalate with
-            full context, and improve with every interaction.
+            Full-resolution support agents that query order history, loyalty points, and store policies via your POS APIs.
+            Join the waitlist for early access — launching soon for dispensaries and wineries.
           </p>
 
           <!-- Feature pills row -->
@@ -514,6 +369,10 @@
           </div>
         </div>
 
+        <div class="text-center mt-10">
+          <ButtonMinimal label="Join the waitlist" variant="primary" href="/contact" arrow={true} />
+        </div>
+
       </div>
     </div>
   </section>
@@ -543,7 +402,7 @@
               <svg width="16" height="16" fill="none" stroke="#00d4aa" stroke-width="1.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
-              XT Scale Agents
+              ShopSupport Agents
             </div>
           </div>
 
@@ -619,14 +478,13 @@
       <div class="max-w-7xl mx-auto">
         <div class="ind-cta-card">
           <div class="ind-label" style="margin-bottom: 1rem;">GET STARTED</div>
-          <h2 class="ind-cta-heading">Your Industry Has Unique Problems.<br />We Build Unique Solutions.</h2>
+          <h2 class="ind-cta-heading">Your Store Deserves AI That Knows Your Catalog.</h2>
           <p class="ind-cta-body">
-            Every engagement starts with understanding your workflows, your data, and your edge cases.
-            We don't drop a generic AI into your stack. We build agents that know your domain
-            from the ground up, and we measure them against outcomes that actually matter to your business.
+            Tell us about your POS stack and whether you run a dispensary or winery.
+            We'll connect to your APIs, train on your catalog, and deploy a shopping assistant in weeks.
           </p>
           <div class="ind-cta-buttons">
-            <ButtonMinimal label="Start a Conversation" variant="primary" href="/contact" arrow={true} />
+            <ButtonMinimal label="Start free trial" variant="primary" href="/contact" arrow={true} />
             <ButtonMinimal label="View Services" variant="outline" href="/services" />
           </div>
         </div>

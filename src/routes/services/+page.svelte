@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-  <title>Services | XT SCALE</title>
-  <meta name="description" content="AI systems built for production. Business AI agents, technical infrastructure, and custom AI engineering for companies that need systems that work." />
+  <title>Services | ShopSupport.ai</title>
+  <meta name="description" content="POS integration, shopping assistants, and compliance AI for dispensaries and wineries. Commerce AI built on your existing stack." />
 </svelte:head>
 
 <Navigation dropdownTrigger="hover" />
@@ -21,15 +21,15 @@
     <div class="hero-text">
       <div class="hero-badge">OUR SERVICES</div>
       <h1 class="hero-h1">
-        AI Systems Built<br />
-        for Production
+        Commerce AI Built<br />
+        on Your POS
       </h1>
       <p class="hero-sub">
-        We architect, build, and operate AI agents trained on your data, calibrated to your domain, and integrated into your existing workflows.
+        ShopSupport connects to your POS and e-commerce APIs, trains agentic systems on your catalog and policies, and deploys shopping assistants for dispensaries and wineries.
       </p>
       <div class="hero-ctas">
-        <ButtonMinimal label="Start a Project" variant="primary" size="lg" href="/contact" arrow={true} />
-        <ButtonMinimal label="See Our Work" variant="outline" size="lg" href="/about" />
+        <ButtonMinimal label="Start free trial" variant="primary" size="lg" href="/contact" arrow={true} />
+        <ButtonMinimal label="View integrations" variant="outline" size="lg" href="#integrations" />
       </div>
     </div>
     <div class="hero-visual" aria-hidden="true">
@@ -67,20 +67,20 @@
           <line x1="260" y1="175" x2="308" y2="266" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" marker-end="url(#svc-arrow)" />
           <!-- RAG Agent -->
           <rect x="310" y="55" width="90" height="32" rx="6" fill="#0d0d14" stroke="rgba(0,212,170,0.22)" stroke-width="1" />
-          <text x="355" y="68" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="9" font-weight="600">RAG Agent</text>
+          <text x="355" y="68" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="9" font-weight="600">Catalog Agent</text>
           <text x="355" y="79" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">retrieval + embed</text>
-          <!-- Tool Agent -->
+          <!-- POS Agent -->
           <rect x="310" y="120" width="90" height="32" rx="6" fill="#0d0d14" stroke="rgba(0,212,170,0.22)" stroke-width="1" />
-          <text x="355" y="133" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="9" font-weight="600">Tool Agent</text>
-          <text x="355" y="144" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">function calling</text>
-          <!-- Memory Agent -->
+          <text x="355" y="133" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="9" font-weight="600">POS Agent</text>
+          <text x="355" y="144" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">live inventory</text>
+          <!-- Policy Agent -->
           <rect x="310" y="185" width="90" height="32" rx="6" fill="#0d0d14" stroke="rgba(0,212,170,0.22)" stroke-width="1" />
-          <text x="355" y="198" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="9" font-weight="600">Memory Agent</text>
-          <text x="355" y="209" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">context window</text>
-          <!-- Router Agent -->
+          <text x="355" y="198" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="9" font-weight="600">Policy Agent</text>
+          <text x="355" y="209" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">compliance</text>
+          <!-- Memory Agent -->
           <rect x="310" y="250" width="90" height="32" rx="6" fill="#0d0d14" stroke="rgba(0,212,170,0.22)" stroke-width="1" />
-          <text x="355" y="263" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="9" font-weight="600">Router Agent</text>
-          <text x="355" y="274" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">intent classify</text>
+          <text x="355" y="263" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="9" font-weight="600">Memory Agent</text>
+          <text x="355" y="274" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">session context</text>
           <!-- agents → resources -->
           <line x1="400" y1="71" x2="423" y2="58" stroke="#00d4aa" stroke-width="1" stroke-dasharray="3 3" opacity="0.4" marker-end="url(#svc-arrow)" />
           <line x1="400" y1="136" x2="423" y2="123" stroke="#00d4aa" stroke-width="1" stroke-dasharray="3 3" opacity="0.4" marker-end="url(#svc-arrow)" />
@@ -92,8 +92,8 @@
           <text x="445" y="65" text-anchor="middle" fill="#334155" font-family="ui-monospace,monospace" font-size="6">vector</text>
           <!-- API -->
           <rect x="425" y="110" width="40" height="26" rx="5" fill="#0d0d14" stroke="rgba(0,212,170,0.18)" stroke-width="1" />
-          <text x="445" y="121" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7.5" font-weight="600">API</text>
-          <text x="445" y="130" text-anchor="middle" fill="#334155" font-family="ui-monospace,monospace" font-size="6">external</text>
+          <text x="445" y="121" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7.5" font-weight="600">POS</text>
+          <text x="445" y="130" text-anchor="middle" fill="#334155" font-family="ui-monospace,monospace" font-size="6">Dutchie</text>
           <!-- LLM -->
           <rect x="425" y="175" width="40" height="26" rx="5" fill="#0d0d14" stroke="rgba(0,212,170,0.18)" stroke-width="1" />
           <text x="445" y="186" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7.5" font-weight="600">LLM</text>
@@ -127,62 +127,62 @@
 
     <div class="bai-intro">
       <div class="section-label">BUSINESS AI</div>
-      <h2 class="section-h2">AI Trained on Your Business</h2>
+      <h2 class="section-h2">AI Trained on Your Catalog</h2>
       <p class="section-sub">
-        Purpose-built agents for the workflows that define how your business operates. Each system is trained on your proprietary data and calibrated to your domain.
+        Purpose-built agents for dispensary and winery commerce. Each system connects to your POS, trains on your products and policies, and deploys where your customers shop.
       </p>
     </div>
 
-    <!-- ── 1: E-commerce Intelligence ── -->
-    <div id="ecommerce-ai" class="bai-service">
+    <!-- ── 1: POS Integration ── -->
+    <div id="pos-integration" class="bai-service">
       <div class="bai-text">
-        <div class="bai-tag">E-COMMERCE</div>
-        <h3 class="bai-title">E-commerce Intelligence</h3>
+        <div class="bai-tag">INTEGRATION</div>
+        <h3 class="bai-title">POS &amp; Catalog Integration</h3>
         <p class="bai-desc">
-          Recommendation agents built on your product catalog, session data, and purchase history. The system models what a shopper is trying to accomplish rather than what they have recently clicked. Products surface at the right moment, across any channel, with latency under 200 milliseconds.
+          Connectors for Dutchie, Treez, Shopify, WooCommerce, and custom e-commerce APIs. ShopSupport ingests your live catalog, pricing, and inventory — then keeps everything in sync as your POS updates in real time.
         </p>
         <ul class="bai-bullets">
-          <li>Real-time intent modeling from session context</li>
-          <li>Catalog-native training on your full SKU library</li>
-          <li>Cross-sell and upsell routing per interaction</li>
-          <li>Under 200ms end-to-end recommendation latency</li>
+          <li>Real-time inventory sync from your POS</li>
+          <li>Catalog normalization across product types</li>
+          <li>Webhook-driven updates on stock changes</li>
+          <li>Under 200ms API response latency</li>
         </ul>
         <div class="bai-stats">
-          <div class="bai-stat"><span class="bai-stat-num">+23%</span><span class="bai-stat-label">Avg. conversion lift</span></div>
-          <div class="bai-stat"><span class="bai-stat-num">&lt;200ms</span><span class="bai-stat-label">Recommendation latency</span></div>
-          <div class="bai-stat"><span class="bai-stat-num">94.7%</span><span class="bai-stat-label">Accuracy</span></div>
+          <div class="bai-stat"><span class="bai-stat-num">50+</span><span class="bai-stat-label">POS APIs supported</span></div>
+          <div class="bai-stat"><span class="bai-stat-num">&lt;200ms</span><span class="bai-stat-label">Sync latency</span></div>
+          <div class="bai-stat"><span class="bai-stat-num">99.2%</span><span class="bai-stat-label">Match accuracy</span></div>
         </div>
       </div>
       <div class="bai-visual">
         <div class="bai-panel">
           <div class="bai-panel-header">
-            <span class="bai-panel-title">Recommendation Engine</span>
+            <span class="bai-panel-title">Catalog Sync</span>
             <span class="bai-panel-badge live-badge"><span class="live-dot"></span>Live</span>
           </div>
           <div class="bai-panel-body">
-            <div class="bai-panel-label">Session intent detected</div>
-            <div class="intent-chip">Trail Running · Gear · High-intensity</div>
-            <div class="bai-panel-label" style="margin-top: 1rem;">Top recommendations</div>
+            <div class="bai-panel-label">Connected sources</div>
+            <div class="intent-chip">Dutchie POS · Shopify · Live sync</div>
+            <div class="bai-panel-label" style="margin-top: 1rem;">Recently synced SKUs</div>
             <div class="rec-item">
               <div class="rec-item-info">
-                <div class="rec-item-name">Trail Running Shoe Pro X7</div>
-                <div class="rec-item-meta">Footwear · In stock</div>
+                <div class="rec-item-name">Blue Dream 3.5g</div>
+                <div class="rec-item-meta">24 units · $32.00</div>
               </div>
-              <div class="rec-score">97%</div>
+              <div class="rec-score">Live</div>
             </div>
             <div class="rec-item">
               <div class="rec-item-info">
-                <div class="rec-item-name">Hydration Vest 10L</div>
-                <div class="rec-item-meta">Accessories · In stock</div>
+                <div class="rec-item-name">2019 Estate Cabernet</div>
+                <div class="rec-item-meta">36 btl · $42.00</div>
               </div>
-              <div class="rec-score">91%</div>
+              <div class="rec-score">Live</div>
             </div>
             <div class="rec-item">
               <div class="rec-item-info">
-                <div class="rec-item-name">Performance Insole Set</div>
-                <div class="rec-item-meta">Accessories · In stock</div>
+                <div class="rec-item-name">Calm Gummies 10pk</div>
+                <div class="rec-item-meta">42 units · $24.00</div>
               </div>
-              <div class="rec-score">84%</div>
+              <div class="rec-score">Live</div>
             </div>
           </div>
         </div>
@@ -192,10 +192,10 @@
     <!-- ── 2: Customer Service Automation ── -->
     <div id="customer-service-ai" class="bai-service bai-service--reversed">
       <div class="bai-text">
-        <div class="bai-tag">CUSTOMER SERVICE</div>
+        <div class="bai-tag">CUSTOMER SERVICE · SOON</div>
         <h3 class="bai-title">Customer Service Automation</h3>
         <p class="bai-desc">
-          Agents that handle the complete resolution cycle from intake through close. Trained on your knowledge base and escalation policies, they resolve standard cases autonomously. Complex issues arrive at your team with full context already assembled.
+          Full-resolution support agents that query order history, loyalty points, and store policies via your POS APIs. Launching soon — join the waitlist for early access.
         </p>
         <ul class="bai-bullets">
           <li>Multi-channel support across email, chat, and tickets</li>
@@ -248,110 +248,114 @@
       </div>
     </div>
 
-    <!-- ── 3: Intent Routing Agents ── -->
-    <div id="intent-routing" class="bai-service">
+    <!-- ── 3: Shopping Assistant ── -->
+    <div id="shopping-assistant" class="bai-service">
       <div class="bai-text">
-        <div class="bai-tag">OPERATIONS</div>
-        <h3 class="bai-title">Intent Routing Agents</h3>
+        <div class="bai-tag">COMMERCE</div>
+        <h3 class="bai-title">Shopping Assistant</h3>
         <p class="bai-desc">
-          Natural language classification that replaces manual triage. Incoming requests are analyzed, prioritized, and sent to the correct team or automated workflow without any human in the loop. Operates across email, tickets, chat, and internal tooling.
+          Conversational commerce agents that understand purchase intent, browsing context, and live inventory. Shoppers get expert product guidance — strains, wines, pairings — without waiting for staff.
         </p>
         <ul class="bai-bullets">
-          <li>Multi-class intent classification at scale</li>
-          <li>Priority scoring based on urgency and context</li>
-          <li>Cross-channel routing to teams or automations</li>
-          <li>Fallback and escalation logic built in</li>
+          <li>Natural language product discovery</li>
+          <li>Live inventory-aware recommendations</li>
+          <li>Cross-sell and upsell per interaction</li>
+          <li>Deploy on web, kiosk, SMS, or embeddable widget</li>
         </ul>
+        <div class="bai-stats">
+          <div class="bai-stat"><span class="bai-stat-num">+23%</span><span class="bai-stat-label">Avg. AOV lift</span></div>
+          <div class="bai-stat"><span class="bai-stat-num">94.7%</span><span class="bai-stat-label">Match accuracy</span></div>
+        </div>
       </div>
       <div class="bai-visual">
         <div class="bai-panel">
           <div class="bai-panel-header">
-            <span class="bai-panel-title">Intent Router</span>
+            <span class="bai-panel-title">Shopping Assistant</span>
             <span class="bai-panel-badge">Real-time</span>
           </div>
           <div class="bai-panel-body">
             <div class="route-item">
-              <div class="route-label">BILLING</div>
-              <div class="route-bar-wrap"><div class="route-bar" style="width: 78%"></div></div>
-              <div class="route-pct">78%</div>
+              <div class="route-label">RELAXING</div>
+              <div class="route-bar-wrap"><div class="route-bar" style="width: 93%"></div></div>
+              <div class="route-pct">93%</div>
             </div>
             <div class="route-item">
-              <div class="route-label">SUPPORT</div>
-              <div class="route-bar-wrap"><div class="route-bar" style="width: 62%"></div></div>
-              <div class="route-pct">62%</div>
+              <div class="route-label">IN STOCK</div>
+              <div class="route-bar-wrap"><div class="route-bar" style="width: 97%"></div></div>
+              <div class="route-pct">97%</div>
             </div>
             <div class="route-item">
-              <div class="route-label">SALES</div>
-              <div class="route-bar-wrap"><div class="route-bar" style="width: 45%"></div></div>
-              <div class="route-pct">45%</div>
+              <div class="route-label">UNDER $40</div>
+              <div class="route-bar-wrap"><div class="route-bar" style="width: 88%"></div></div>
+              <div class="route-pct">88%</div>
             </div>
             <div class="route-item">
-              <div class="route-label">LEGAL</div>
-              <div class="route-bar-wrap"><div class="route-bar" style="width: 28%"></div></div>
-              <div class="route-pct">28%</div>
+              <div class="route-label">PAIRING</div>
+              <div class="route-bar-wrap"><div class="route-bar" style="width: 94%"></div></div>
+              <div class="route-pct">94%</div>
             </div>
             <div class="route-divider"></div>
             <div class="route-summary">
-              <span class="route-summary-num">1,847</span>
-              <span class="route-summary-label">requests routed today · 99.2% accuracy</span>
+              <span class="route-summary-num">Blue Dream</span>
+              <span class="route-summary-label">top match · 97% confidence · in stock</span>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ── 4: Legal AI ── -->
-    <div id="legal-ai" class="bai-service bai-service--reversed">
+    <!-- ── 4: Compliance AI ── -->
+    <div id="compliance-ai" class="bai-service bai-service--reversed">
       <div class="bai-text">
-        <div class="bai-tag">LEGAL</div>
-        <h3 class="bai-title">Legal AI and Contract Intelligence</h3>
+        <div class="bai-tag">COMPLIANCE</div>
+        <h3 class="bai-title">Compliance-Aware Recommendations</h3>
         <p class="bai-desc">
-          Agents that process legal documents at the scale human review cannot match. Contracts are analyzed clause by clause: risk flags identified, obligations extracted, missing provisions noted, and precedent surfaced. Every finding references the exact source language.
+          Regulated retail requires more than good recommendations. ShopSupport enforces age verification, daily purchase limits, shipping zone restrictions, and state-specific rules before every product suggestion.
         </p>
         <ul class="bai-bullets">
-          <li>Contract review and risk clause flagging</li>
-          <li>Obligation and deadline extraction</li>
-          <li>Precedent matching across your document history</li>
-          <li>Due diligence at scale with full traceability</li>
+          <li>Age verification prompts before recommendations</li>
+          <li>Daily purchase limit tracking for dispensaries</li>
+          <li>DTC shipping zone validation for wineries</li>
+          <li>Policy agent validates every response</li>
         </ul>
         <div class="bai-stats">
-          <div class="bai-stat"><span class="bai-stat-num">80%</span><span class="bai-stat-label">Review time reduction</span></div>
+          <div class="bai-stat"><span class="bai-stat-num">100%</span><span class="bai-stat-label">Policy checks</span></div>
           <div class="bai-stat"><span class="bai-stat-num">99.2%</span><span class="bai-stat-label">Accuracy</span></div>
         </div>
       </div>
       <div class="bai-visual">
         <div class="bai-panel">
           <div class="bai-panel-header">
-            <span class="bai-panel-title">Contract Analysis</span>
-            <span class="bai-panel-badge">Complete</span>
+            <span class="bai-panel-title">Compliance Check</span>
+            <span class="bai-panel-badge">Passed</span>
           </div>
           <div class="bai-panel-body">
-            <div class="clause-item clause-high">
-              <div class="clause-risk">HIGH</div>
+            <div class="clause-item clause-ok">
+              <div class="clause-risk">OK</div>
               <div class="clause-body">
-                <div class="clause-title">§4.3 Liability Cap</div>
-                <div class="clause-desc">Non-standard: unlimited liability exposure</div>
-              </div>
-            </div>
-            <div class="clause-item clause-med">
-              <div class="clause-risk">MED</div>
-              <div class="clause-body">
-                <div class="clause-title">§7.1 Termination</div>
-                <div class="clause-desc">Missing jurisdiction-specific carve-outs</div>
+                <div class="clause-title">Age verification</div>
+                <div class="clause-desc">Customer age confirmed · 21+</div>
               </div>
             </div>
             <div class="clause-item clause-ok">
               <div class="clause-risk">OK</div>
               <div class="clause-body">
-                <div class="clause-title">§2.4 IP Assignment</div>
-                <div class="clause-desc">Standard work-for-hire language confirmed</div>
+                <div class="clause-title">Daily purchase limit</div>
+                <div class="clause-desc">Within remaining allowance · 2.5g left</div>
+              </div>
+            </div>
+            <div class="clause-item clause-ok">
+              <div class="clause-risk">OK</div>
+              <div class="clause-body">
+                <div class="clause-title">Shipping zone</div>
+                <div class="clause-desc">Zip 84111 eligible for DTC delivery</div>
               </div>
             </div>
             <div class="clause-item clause-med">
-              <div class="clause-risk">MED</div>
+              <div class="clause-risk">CHK</div>
               <div class="clause-body">
-                <div class="clause-title">§9.2 Dispute Resolution</div>
-                <div class="clause-desc">Arbitration clause not in standard form</div>
+                <div class="clause-title">Product potency</div>
+                <div class="clause-desc">18% THC · within state limits</div>
               </div>
             </div>
           </div>
@@ -359,106 +363,40 @@
       </div>
     </div>
 
-    <!-- ── 5: Wealth Management AI ── -->
-    <div id="wealth-management" class="bai-service">
+    <!-- ── 5: Integrations ── -->
+    <div id="integrations" class="bai-service">
       <div class="bai-text">
-        <div class="bai-tag">FINANCE</div>
-        <h3 class="bai-title">Wealth and Portfolio Management</h3>
+        <div class="bai-tag">INTEGRATIONS</div>
+        <h3 class="bai-title">Works With Your Stack</h3>
         <p class="bai-desc">
-          Intelligence agents that run continuously across client portfolios. Market conditions, rebalancing triggers, and client-specific risk parameters are monitored in real time. Advisors receive structured recommendations with reasoning attached rather than raw data requiring interpretation.
+          ShopSupport integrates with the POS and e-commerce platforms dispensaries and wineries already use. No rip-and-replace — we connect to your existing APIs and deploy alongside your current site.
         </p>
         <ul class="bai-bullets">
-          <li>Continuous portfolio monitoring across all positions</li>
-          <li>Rebalancing recommendations with full rationale</li>
-          <li>Client-specific risk profile calibration</li>
-          <li>Full audit trail on every recommendation generated</li>
+          <li>Dutchie and Treez for dispensary POS</li>
+          <li>Shopify and WooCommerce for DTC storefronts</li>
+          <li>Square and custom REST API connectors</li>
+          <li>Webhook-driven real-time inventory sync</li>
         </ul>
       </div>
       <div class="bai-visual">
         <div class="bai-panel">
           <div class="bai-panel-header">
-            <span class="bai-panel-title">Portfolio Intelligence</span>
-            <span class="bai-panel-badge live-badge"><span class="live-dot"></span>Monitoring</span>
+            <span class="bai-panel-title">Supported Platforms</span>
+            <span class="bai-panel-badge live-badge"><span class="live-dot"></span>50+ APIs</span>
           </div>
           <div class="bai-panel-body">
-            <div class="port-stat-row">
-              <div class="port-stat">
-                <div class="port-stat-label">Total AUM</div>
-                <div class="port-stat-val">$2.4B</div>
-              </div>
-              <div class="port-stat">
-                <div class="port-stat-label">Portfolios</div>
-                <div class="port-stat-val">1,847</div>
-              </div>
-              <div class="port-stat">
-                <div class="port-stat-label">Alerts</div>
-                <div class="port-stat-val port-stat-teal">12</div>
-              </div>
+            <div class="mock-cross-sell-chips" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <span class="intent-chip">Dutchie</span>
+              <span class="intent-chip">Treez</span>
+              <span class="intent-chip">Shopify</span>
+              <span class="intent-chip">WooCommerce</span>
+              <span class="intent-chip">Square</span>
+              <span class="intent-chip">Custom API</span>
             </div>
-            <div class="port-alert">
-              <div class="port-alert-dot"></div>
-              <div class="port-alert-body">
-                <div class="port-alert-title">Rebalancing needed: 23 portfolios</div>
-                <div class="port-alert-desc">Equity allocation drifted &gt;5% from target</div>
-              </div>
-            </div>
-            <div class="port-alert">
-              <div class="port-alert-dot"></div>
-              <div class="port-alert-body">
-                <div class="port-alert-title">Risk threshold triggered: 4 clients</div>
-                <div class="port-alert-desc">Volatility exceeds agreed risk tolerance</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── 6: Market Sentiment ── -->
-    <div id="market-intelligence" class="bai-service bai-service--reversed">
-      <div class="bai-text">
-        <div class="bai-tag">TRADING</div>
-        <h3 class="bai-title">Market Sentiment and Trading Intelligence</h3>
-        <p class="bai-desc">
-          Agents that synthesize news, regulatory filings, social commentary, and market data into structured intelligence signals. Output is clean, attributed, and confidence-scored. Trading desks and risk teams receive actionable information without the noise.
-        </p>
-        <ul class="bai-bullets">
-          <li>Real-time ingestion of news, filings, and social signals</li>
-          <li>Cross-source sentiment aggregation and scoring</li>
-          <li>Confidence-weighted signal generation</li>
-          <li>Integration with existing trading infrastructure</li>
-        </ul>
-        <div class="bai-stats">
-          <div class="bai-stat"><span class="bai-stat-num">50+</span><span class="bai-stat-label">Data sources</span></div>
-          <div class="bai-stat"><span class="bai-stat-num">70%</span><span class="bai-stat-label">Less analyst time</span></div>
-        </div>
-      </div>
-      <div class="bai-visual">
-        <div class="bai-panel">
-          <div class="bai-panel-header">
-            <span class="bai-panel-title">Market Intelligence</span>
-            <span class="bai-panel-badge live-badge"><span class="live-dot"></span>Live</span>
-          </div>
-          <div class="bai-panel-body">
-            <div class="sent-item">
-              <div class="sent-ticker">NVDA</div>
-              <div class="sent-bar-wrap"><div class="sent-bar sent-pos" style="width: 82%"></div></div>
-              <div class="sent-score sent-pos-text">+82</div>
-            </div>
-            <div class="sent-item">
-              <div class="sent-ticker">AAPL</div>
-              <div class="sent-bar-wrap"><div class="sent-bar sent-pos" style="width: 61%"></div></div>
-              <div class="sent-score sent-pos-text">+61</div>
-            </div>
-            <div class="sent-item">
-              <div class="sent-ticker">TSLA</div>
-              <div class="sent-bar-wrap"><div class="sent-bar sent-neg" style="width: 38%"></div></div>
-              <div class="sent-score sent-neg-text">-38</div>
-            </div>
-            <div class="sent-item">
-              <div class="sent-ticker">MSFT</div>
-              <div class="sent-bar-wrap"><div class="sent-bar sent-pos" style="width: 71%"></div></div>
-              <div class="sent-score sent-pos-text">+71</div>
+            <div class="route-divider" style="margin: 1rem 0;"></div>
+            <div class="route-summary">
+              <span class="route-summary-num">Live sync</span>
+              <span class="route-summary-label">Inventory · Pricing · Catalog · Policies</span>
             </div>
           </div>
         </div>
@@ -820,13 +758,13 @@
     <div class="cta-inner">
       <div class="cta-glow" aria-hidden="true"></div>
       <div class="section-label">GET STARTED</div>
-      <h2 class="cta-h2">Ready to build?</h2>
+      <h2 class="cta-h2">Ready to connect your POS?</h2>
       <p class="cta-sub">
-        Share what you're working on. We'll scope it, architect it, and ship it.
+        Tell us about your store — dispensary or winery — and we'll get your shopping assistant live in weeks.
       </p>
       <div class="cta-buttons">
-        <ButtonMinimal label="Start a Project" variant="primary" size="lg" href="/contact" arrow={true} />
-        <ButtonMinimal label="Schedule a Call" variant="outline" size="lg" href="/contact" />
+        <ButtonMinimal label="Start free trial" variant="primary" size="lg" href="/contact" arrow={true} />
+        <ButtonMinimal label="Schedule a call" variant="outline" size="lg" href="/contact" />
       </div>
     </div>
   </div>

@@ -30,18 +30,17 @@
       {
         title: 'Services',
         links: [
-          { label: 'Agentic AI', href: '/services#tech' },
-          { label: 'Multi-Agent RAG', href: '/services#tech' },
-          { label: 'Custom Solutions', href: '/services#ai-engineering' }
+          { label: 'POS Integration', href: '/services#pos-integration' },
+          { label: 'Shopping Assistant', href: '/services#shopping-assistant' },
+          { label: 'Compliance AI', href: '/services#compliance-ai' }
         ]
       },
       {
         title: 'Industries',
         links: [
-          { label: 'E-Commerce', href: '/industries#e-commerce' },
-          { label: 'Legal', href: '/industries#legal' },
-          { label: 'Finance', href: '/industries#finance' },
-          { label: 'Customer Service', href: '/industries#customer-service' }
+          { label: 'Dispensaries', href: '/industries#dispensaries' },
+          { label: 'Wineries', href: '/industries#wineries' },
+          { label: 'Customer Service (Soon)', href: '/industries#customer-service' }
         ]
       },
       {
@@ -53,14 +52,14 @@
       }
     ],
     contactInfo = {
-      email: 'info@xtscale.com',
+      email: 'info@shopsupport.ai',
       phone: '(630) 863-2240'
     },
     socialLinks = [
-      { name: 'LinkedIn', href: 'https://linkedin.com/company/xtscale' },
-      { name: 'Twitter', href: 'https://twitter.com/xtscale' }
+      { name: 'LinkedIn', href: 'https://linkedin.com/company/shopsupport' },
+      { name: 'Twitter', href: 'https://twitter.com/shopsupport' }
     ],
-    copyright = `© ${new Date().getFullYear()} XT SCALE LLC. All rights reserved.`
+    copyright = `© ${new Date().getFullYear()} ShopSupport.ai. All rights reserved.`
   }: FooterProps = $props();
 </script>
 
@@ -70,13 +69,13 @@
       <!-- Brand Column -->
       <div class="lg:col-span-1 flex flex-col -mt-6 lg:-mt-8">
         <div class="mb-2">
-          <img src="/logo/Transparent Logo.svg" alt="XT Scale" style="height: 84px; width: auto; margin-left: -1.5rem; object-fit: contain; object-position: top;" />
+          <img src="/logo/Transparent Logo.svg" alt="Shopsupport.ai" class="h-9 w-auto" />
         </div>
         <p class="text-gray-400 mb-2">
-          Agentic AI business support
+          Agentic AI for regulated retail commerce
         </p>
         <p class="text-sm text-gray-500 mb-4 max-w-xs">
-          Multi-agent systems trained with your data into subject matter experts.
+          POS-connected shopping assistants for dispensaries and wineries.
         </p>
         {#if contactInfo.email}
           <p class="text-sm text-gray-400 mb-1">

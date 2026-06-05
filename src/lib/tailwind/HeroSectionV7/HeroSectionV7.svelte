@@ -6,22 +6,37 @@
     href: string;
   }
 
+  interface TrustMetric {
+    value: string;
+    label: string;
+  }
+
   interface Props {
+    badge?: string;
     headline?: string;
     subheadline?: string;
     primaryCta?: Cta;
     secondaryCta?: Cta;
+    trustMetrics?: TrustMetric[];
+    compact?: boolean;
   }
 
   let {
-    headline = "Your Agentic AI business support",
-    subheadline = 'Multi-agent systems trained with your data into subject matter experts.',
-    primaryCta = { label: 'Get started', href: '/contact' },
-    secondaryCta = { label: 'See how it works', href: '/about' }
+    badge = 'Dispensaries · Wineries · POS-Connected AI',
+    headline = 'The AI agent for regulated retail commerce',
+    subheadline = 'ShopSupport connects to your POS and e-commerce APIs, then deploys a trained shopping assistant that knows your live inventory, policies, and customers.',
+    primaryCta = { label: 'Start free trial', href: '/contact' },
+    secondaryCta = { label: 'See the chat', href: '/#chat-preview' },
+    trustMetrics = [
+      { value: '99.2%', label: 'Live inventory accuracy' },
+      { value: '<200ms', label: 'POS sync' },
+      { value: '+23%', label: 'Cart conversion' }
+    ],
+    compact = false
   }: Props = $props();
 </script>
 
-<section class="hero">
+<section class="hero" class:hero--compact={compact}>
   <div class="orb orb--teal"></div>
   <div class="orb orb--blue"></div>
   <div class="dot-grid"></div>
@@ -41,7 +56,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
                 </svg>
               </div>
-              <span class="brand-name">AI Store</span>
+              <span class="brand-name">ShopSupport</span>
               <svg class="brand-chevron" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
               </svg>
@@ -111,7 +126,7 @@
                 <div class="sidebar-avatar">A</div>
                 <div class="sidebar-user-info">
                   <div class="sidebar-user-name">Admin</div>
-                  <div class="sidebar-user-role">Store #1</div>
+                  <div class="sidebar-user-role">Dispensary #1</div>
                 </div>
               </div>
             </div>
@@ -126,7 +141,7 @@
                   <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
                   <span class="breadcrumb-active">AI Advisor</span>
                 </div>
-                <div class="topbar-title">Product Recommendations</div>
+                <div class="topbar-title">Catalog Advisor</div>
               </div>
               <div class="topbar-right">
                 <div class="topbar-indexed">
@@ -145,7 +160,7 @@
             <div class="app-content">
               <div class="chat-row chat-row--user">
                 <div class="chat-bubble chat-bubble--user">
-                  Show me wireless headphones under $100
+                  Something relaxing for evening, under $40, in stock
                 </div>
               </div>
 
@@ -156,7 +171,7 @@
                   </svg>
                 </div>
                 <div class="chat-ai-body">
-                  <p class="chat-ai-text">Found 6 products matching your query. Sorted by relevance and in-stock status:</p>
+                  <p class="chat-ai-text">Found 4 strains matching your query. Filtered by potency, price, and live POS inventory:</p>
 
                   <div class="product-grid">
                     <div class="prod-card">
@@ -166,15 +181,15 @@
                         </svg>
                       </div>
                       <div class="prod-details">
-                        <div class="prod-brand">SONY</div>
-                        <div class="prod-name">WH-CH520 Wireless</div>
+                        <div class="prod-brand">INDICA</div>
+                        <div class="prod-name">Blue Dream 3.5g</div>
                         <div class="prod-tags">
-                          <span class="ptag">WIRELESS</span>
-                          <span class="ptag">30HR</span>
-                          <span class="ptag">FOLDABLE</span>
+                          <span class="ptag">18% THC</span>
+                          <span class="ptag">IN STOCK</span>
+                          <span class="ptag">RELAX</span>
                         </div>
                         <div class="prod-footer">
-                          <span class="prod-price">$79.99</span>
+                          <span class="prod-price">$32.00</span>
                           <span class="prod-match">97%</span>
                           <button class="prod-link-btn" aria-label="View product">
                             <svg width="9" height="9" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -190,15 +205,15 @@
                         </svg>
                       </div>
                       <div class="prod-details">
-                        <div class="prod-brand">JBL</div>
-                        <div class="prod-name">Tune 710BT</div>
+                        <div class="prod-brand">HYBRID</div>
+                        <div class="prod-name">Gelato 3.5g</div>
                         <div class="prod-tags">
-                          <span class="ptag">WIRELESS</span>
-                          <span class="ptag">BT 5.0</span>
-                          <span class="ptag">40HR</span>
+                          <span class="ptag">22% THC</span>
+                          <span class="ptag">IN STOCK</span>
+                          <span class="ptag">BALANCED</span>
                         </div>
                         <div class="prod-footer">
-                          <span class="prod-price">$99.95</span>
+                          <span class="prod-price">$38.00</span>
                           <span class="prod-match prod-match--dim">91%</span>
                           <button class="prod-link-btn" aria-label="View product">
                             <svg width="9" height="9" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -214,15 +229,15 @@
                         </svg>
                       </div>
                       <div class="prod-details">
-                        <div class="prod-brand">JABRA</div>
-                        <div class="prod-name">Elite 4 Active</div>
+                        <div class="prod-brand">INDICA</div>
+                        <div class="prod-name">Granddaddy Purp</div>
                         <div class="prod-tags">
-                          <span class="ptag">SPORT</span>
-                          <span class="ptag">IPX5</span>
-                          <span class="ptag">ANC</span>
+                          <span class="ptag">20% THC</span>
+                          <span class="ptag">IN STOCK</span>
+                          <span class="ptag">SLEEP</span>
                         </div>
                         <div class="prod-footer">
-                          <span class="prod-price">$89.99</span>
+                          <span class="prod-price">$28.00</span>
                           <span class="prod-match prod-match--dim">85%</span>
                           <button class="prod-link-btn" aria-label="View product">
                             <svg width="9" height="9" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -238,15 +253,15 @@
                         </svg>
                       </div>
                       <div class="prod-details">
-                        <div class="prod-brand">ANKER</div>
-                        <div class="prod-name">Soundcore Q20i</div>
+                        <div class="prod-brand">CBD</div>
+                        <div class="prod-name">Calm Gummies 10pk</div>
                         <div class="prod-tags">
-                          <span class="ptag">WIRELESS</span>
-                          <span class="ptag">BUDGET</span>
-                          <span class="ptag">60HR</span>
+                          <span class="ptag">5mg CBD</span>
+                          <span class="ptag">LOW THC</span>
+                          <span class="ptag">IN STOCK</span>
                         </div>
                         <div class="prod-footer">
-                          <span class="prod-price">$55.99</span>
+                          <span class="prod-price">$24.00</span>
                           <span class="prod-match prod-match--dimmer">78%</span>
                           <button class="prod-link-btn" aria-label="View product">
                             <svg width="9" height="9" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -263,15 +278,15 @@
                         </svg>
                       </div>
                       <div class="prod-details">
-                        <div class="prod-brand">BEATS</div>
-                        <div class="prod-name">Flex Wireless</div>
+                        <div class="prod-brand">SATIVA</div>
+                        <div class="prod-name">Sour Diesel 1g</div>
                         <div class="prod-tags">
-                          <span class="ptag">WIRELESS</span>
-                          <span class="ptag">12HR</span>
-                          <span class="ptag">USB-C</span>
+                          <span class="ptag">24% THC</span>
+                          <span class="ptag">IN STOCK</span>
+                          <span class="ptag">ENERGY</span>
                         </div>
                         <div class="prod-footer">
-                          <span class="prod-price">$49.95</span>
+                          <span class="prod-price">$12.00</span>
                           <span class="prod-match prod-match--dimmer">72%</span>
                           <button class="prod-link-btn" aria-label="View product">
                             <svg width="9" height="9" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -288,15 +303,15 @@
                         </svg>
                       </div>
                       <div class="prod-details">
-                        <div class="prod-brand">SKULLCANDY</div>
-                        <div class="prod-name">Crusher Evo</div>
+                        <div class="prod-brand">VAPE</div>
+                        <div class="prod-name">Lemon Haze Cart</div>
                         <div class="prod-tags">
-                          <span class="ptag">WIRELESS</span>
-                          <span class="ptag">BASS</span>
-                          <span class="ptag">40HR</span>
+                          <span class="ptag">85% THC</span>
+                          <span class="ptag">IN STOCK</span>
+                          <span class="ptag">CITRUS</span>
                         </div>
                         <div class="prod-footer">
-                          <span class="prod-price">$79.99</span>
+                          <span class="prod-price">$35.00</span>
                           <span class="prod-match prod-match--dimmer">65%</span>
                           <button class="prod-link-btn" aria-label="View product">
                             <svg width="9" height="9" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -308,7 +323,7 @@
 
                   <div class="chat-ai-footer">
                     <span class="footer-dot"></span>
-                    <span class="footer-text">Analyzed 1,247 products in 142ms</span>
+                    <span class="footer-text">Synced with Dutchie POS in 142ms</span>
                     <span class="footer-accuracy">94.7% accuracy</span>
                   </div>
                 </div>
@@ -320,7 +335,7 @@
               <div class="chat-input-box">
                 <!-- Row 1: text area -->
                 <div class="chat-input-text">
-                  <span class="chat-input-placeholder">Ask about any product in your catalog...</span>
+                  <span class="chat-input-placeholder">Ask about strains, effects, or what's in stock...</span>
                 </div>
                 <!-- Row 2: toolbar -->
                 <div class="chat-input-toolbar">
@@ -607,7 +622,7 @@
     <div class="hero__text">
       <div class="hero__badge">
         <span class="badge-dot"></span>
-        E-commerce, Law and Finance AI
+        {badge}
       </div>
 
       <h1 class="hero__h1">{headline}</h1>
@@ -619,20 +634,13 @@
       </div>
 
       <div class="hero__trust">
-        <div class="trust-item">
-          <span class="trust-num">99.2%</span>
-          <span class="trust-label">Recommendation accuracy</span>
-        </div>
-        <div class="trust-div"></div>
-        <div class="trust-item">
-          <span class="trust-num">&lt;200ms</span>
-          <span class="trust-label">Response time</span>
-        </div>
-        <div class="trust-div"></div>
-        <div class="trust-item">
-          <span class="trust-num">+23%</span>
-          <span class="trust-label">Conversion lift</span>
-        </div>
+        {#each trustMetrics as metric, i}
+          {#if i > 0}<div class="trust-div"></div>{/if}
+          <div class="trust-item">
+            <span class="trust-num">{metric.value}</span>
+            <span class="trust-label">{metric.label}</span>
+          </div>
+        {/each}
       </div>
     </div>
 
@@ -649,6 +657,12 @@
     overflow: hidden;
     padding: 5rem 0;
     min-height: 100vh;
+  }
+
+  .hero--compact {
+    min-height: auto;
+    padding: 2rem 0 4rem;
+    background-color: transparent;
   }
 
   /* ─── Atmosphere ─────────────────────────────────────────── */

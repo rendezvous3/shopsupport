@@ -17,8 +17,8 @@ export const actions: Actions = {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        from: 'noreply@xtscale.com',
-        to: 'info@xtscale.com',
+        from: 'noreply@shopsupport.ai',
+        to: 'info@shopsupport.ai',
         subject: `New inquiry from ${name}${company ? ` · ${company}` : ''}`,
         html: `
           <p><strong>Name:</strong> ${name}</p>

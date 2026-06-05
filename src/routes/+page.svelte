@@ -4,6 +4,7 @@
   // import HeroSectionV3 from '$lib/tailwind/HeroSectionV3/HeroSectionV3.svelte';
   // import HeroSectionV4 from '$lib/tailwind/HeroSectionV4/HeroSectionV4.svelte';
   // import HeroSectionV5 from '$lib/tailwind/HeroSectionV5/HeroSectionV5.svelte';
+  import HeroSectionChat from '$lib/tailwind/HeroSectionChat/HeroSectionChat.svelte';
   import HeroSectionV7 from '$lib/tailwind/HeroSectionV7/HeroSectionV7.svelte';
   import FeatureCardDark from '$lib/tailwind/FeatureCard/FeatureCardDark.svelte';
   import CTASectionVariation2 from '$lib/tailwind/CTASection/CTASectionVariation2.svelte';
@@ -12,48 +13,66 @@
   import CardLayoutTimeline from '$lib/tailwind/CardLayouts/CardLayoutTimeline.svelte';
   import FAQSection from '$lib/tailwind/FAQ/FAQSection.svelte';
   import ButtonMinimal from '$lib/custom/ButtonMinimal/ButtonMinimal.svelte';
+  import BudtenderChatPreview from '$lib/tailwind/BudtenderChatPreview/BudtenderChatPreview.svelte';
 </script>
 
 <svelte:head>
-  <title>XT SCALE | Agentic AI Business Support</title>
-  <meta name="description" content="Multi-agent systems trained with your data into subject matter experts. AI solutions for e-commerce, legal, finance, and customer service." />
+  <title>ShopSupport.ai | AI Agent for Dispensary & Winery Commerce</title>
+  <meta name="description" content="POS-connected AI shopping assistants for dispensaries and wineries. ShopSupport integrates with your e-commerce APIs and deploys trained agentic systems on your live catalog." />
 </svelte:head>
 
 <Navigation dropdownTrigger="hover" />
 
-<HeroSectionV7
-  headline="Agentic AI business support"
-  subheadline="Multi-agent systems trained with your data into subject matter experts."
-  primaryCta={{ label: 'Get started', href: '/contact' }}
-  secondaryCta={{ label: 'See how it works', href: '/about' }}
-/>
+<HeroSectionChat />
 
+<BudtenderChatPreview />
+
+<!-- Platform dashboard (admin view) -->
+<div class="bg-[#09090f] py-16 lg:py-20 border-t border-white/[0.04]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10">
+    <div class="inline-block text-[11px] font-medium tracking-[0.14em] uppercase text-[#00d4aa] mb-4">BEHIND THE WIDGET</div>
+    <h2 class="text-2xl sm:text-3xl text-white font-semibold tracking-tight mb-3">
+      POS-connected platform underneath
+    </h2>
+    <p class="text-slate-400 max-w-2xl mx-auto">
+      The same agent stack powers your storefront widget — live catalog sync, analytics, and multi-store management.
+    </p>
+  </div>
+  <HeroSectionV7
+    compact={true}
+    badge="Admin · Analytics · Multi-store"
+    headline="One platform for every channel"
+    subheadline="Deploy the budtender on your site, kiosk, or SMS — then monitor conversions, sync latency, and catalog accuracy from a single dashboard."
+    primaryCta={{ label: 'Start free trial', href: '/contact' }}
+    secondaryCta={{ label: 'See features above', href: '/#chat-preview' }}
+  />
+</div>
 
 <!-- Business AI Section -->
 <div class="bg-[#09090f] py-20 lg:py-28">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
-      <div class="inline-block text-[11px] font-medium tracking-[0.14em] uppercase text-[#00d4aa] mb-4">BUSINESS AI</div>
+      <div class="inline-block text-[11px] font-medium tracking-[0.14em] uppercase text-[#00d4aa] mb-4">CAPABILITIES</div>
       <h2 class="text-3xl sm:text-4xl text-white mb-4 font-semibold tracking-tight">
-        AI that works for your customers
+        AI that knows your catalog in real time
       </h2>
       <p class="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-        Practical AI applications built for e-commerce, customer service, and intelligent routing
+        POS-connected assistants for dispensaries and wineries — trained on your inventory, policies, and customers
       </p>
     </div>
 
     <div class="bento-grid">
 
-      <!-- Card 1: E-commerce Recommendations -->
+      <!-- Card 1: POS-Connected Recommendations -->
       <div class="bento-card bento-card--ecom">
         <div class="bento-card-text">
-          <div class="bento-label">E-COMMERCE</div>
+          <div class="bento-label">POS-CONNECTED</div>
           <h3 class="bento-heading">Intelligent product recommendations</h3>
           <p class="bento-desc">
-            AI that understands purchase intent, browsing patterns, and personal preference to surface the right products at the right moment. Trained on your catalog, tuned to your customers.
+            AI that reads live inventory from your POS, understands purchase intent and compliance rules, and surfaces the right products at the right moment.
           </p>
           <div class="bento-cta">
-            <ButtonMinimal label="Learn more" variant="outline" href="/services/ecommerce" arrow={true} />
+            <ButtonMinimal label="Learn more" variant="outline" href="/services#shopping-assistant" arrow={true} />
           </div>
         </div>
         <div class="bento-visual">
@@ -63,95 +82,95 @@
               <span class="rec-badge">Live</span>
             </div>
             <div class="rec-query-row">
-              <div class="rec-query-bubble">Find me wireless headphones under $100</div>
+              <div class="rec-query-bubble">Something relaxing for evening, under $40, in stock</div>
             </div>
             <div class="rec-items">
               <div class="rec-item">
                 <div class="rec-item-img"></div>
                 <div class="rec-item-info">
-                  <div class="rec-item-name">Sony WH-CH520</div>
-                  <div class="rec-item-meta">$79.99</div>
+                  <div class="rec-item-name">Blue Dream 3.5g</div>
+                  <div class="rec-item-meta">$32.00 · 18% THC</div>
                 </div>
                 <div class="rec-item-score">97%</div>
               </div>
               <div class="rec-item">
                 <div class="rec-item-img"></div>
                 <div class="rec-item-info">
-                  <div class="rec-item-name">JBL Tune 510BT</div>
-                  <div class="rec-item-meta">$49.99</div>
+                  <div class="rec-item-name">Granddaddy Purp</div>
+                  <div class="rec-item-meta">$28.00 · 20% THC</div>
                 </div>
                 <div class="rec-item-score rec-item-score--dim">91%</div>
               </div>
               <div class="rec-item">
                 <div class="rec-item-img"></div>
                 <div class="rec-item-info">
-                  <div class="rec-item-name">Anker Q20i</div>
-                  <div class="rec-item-meta">$55.99</div>
+                  <div class="rec-item-name">Calm Gummies 10pk</div>
+                  <div class="rec-item-meta">$24.00 · 5mg CBD</div>
                 </div>
                 <div class="rec-item-score rec-item-score--dim">84%</div>
               </div>
             </div>
             <div class="rec-status">
               <span class="rec-status-dot"></span>
-              <span class="rec-status-text">Analyzed 1,247 products</span>
+              <span class="rec-status-text">Synced with Dutchie POS</span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Card 2: Customer Service Automation -->
+      <!-- Card 2: Customer Service (Coming Soon) -->
       <div class="bento-card bento-card--cs">
         <div class="bento-card-text">
-          <div class="bento-label">CUSTOMER SERVICE</div>
+          <div class="bento-label">CUSTOMER SERVICE · SOON</div>
           <h3 class="bento-heading">Resolution without escalation</h3>
           <p class="bento-desc">
-            Agents that resolve multi-step support requests by querying account history, internal systems, and policies. The goal is resolution, not just response.
+            Full-resolution support agents that query order history, loyalty points, and store policies via your POS APIs. Launching soon.
           </p>
           <div class="bento-cta">
-            <ButtonMinimal label="Learn more" variant="outline" href="/services/customer-service" arrow={true} />
+            <ButtonMinimal label="Join waitlist" variant="outline" href="/contact" arrow={true} />
           </div>
         </div>
         <div class="bento-visual">
           <div class="cs-panel">
             <div class="cs-panel-header">
               <span class="cs-panel-title">Support Chat</span>
-              <span class="cs-badge cs-badge--resolved">Resolved</span>
+              <span class="cs-badge cs-badge--resolved">Coming Soon</span>
             </div>
             <div class="cs-thread">
-              <div class="cs-msg cs-msg--user">My order #4821 hasn't arrived yet</div>
-              <div class="cs-msg cs-msg--ai">Checking your order status now...</div>
+              <div class="cs-msg cs-msg--user">Can I use loyalty points on my pickup order?</div>
+              <div class="cs-msg cs-msg--ai">Checking your account and store policy...</div>
               <div class="cs-msg cs-msg--ai cs-msg--action">
                 <span class="cs-action-icon">
                   <svg width="12" height="12" fill="none" stroke="#00d4aa" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </span>
-                Shipment located. Arriving tomorrow by 8 PM. Sent tracking link to your email.
+                Yes — 450 points available. Applied $15 credit to order #4821.
               </div>
             </div>
             <div class="cs-resolution">
               <span class="cs-res-dot"></span>
-              <span class="cs-res-text">Resolved without human handoff</span>
+              <span class="cs-res-text">POS-integrated resolution — launching soon</span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Card 3: Intent Routing (full width) -->
+      <!-- Card 3: Intent & API Routing (full width) -->
       <div class="bento-card bento-card--intent bento-card--wide">
         <div class="bento-card-text bento-card-text--side">
-          <div class="bento-label">INTENT ROUTING</div>
-          <h3 class="bento-heading">Every message to the right place</h3>
+          <div class="bento-label">INTENT & API ROUTING</div>
+          <h3 class="bento-heading">Every message to the right agent</h3>
           <p class="bento-desc">
-            Intent classification that understands what customers want and routes them to the right handler instantly. No rigid keyword matching. No wrong queues.
+            Intent classification routes shoppers to the right handler — catalog lookup, compliance check, or POS query — in milliseconds. No rigid keyword matching.
           </p>
           <div class="bento-cta">
-            <ButtonMinimal label="Learn more" variant="outline" href="/services/intent-agents" arrow={true} />
+            <ButtonMinimal label="Learn more" variant="outline" href="/services#pos-integration" arrow={true} />
           </div>
         </div>
         <div class="bento-visual bento-visual--intent">
           <div class="intent-panel">
             <div class="intent-input-row">
               <div class="intent-input-label">Incoming message</div>
-              <div class="intent-input-bubble">I need to return my shoes and get a refund for the shipping fee too</div>
+              <div class="intent-input-bubble">Do you deliver to zip 84111 and can I use my loyalty points?</div>
             </div>
             <div class="intent-arrow">
               <svg width="16" height="16" fill="none" stroke="#334155" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
@@ -159,32 +178,32 @@
             </div>
             <div class="intent-scores">
               <div class="intent-score-row">
-                <span class="intent-score-label">Return request</span>
+                <span class="intent-score-label">Delivery zone lookup</span>
                 <div class="intent-score-bar-wrap">
                   <div class="intent-score-bar" style="width: 93%"></div>
                 </div>
                 <span class="intent-score-pct">93%</span>
               </div>
               <div class="intent-score-row">
-                <span class="intent-score-label">Refund inquiry</span>
+                <span class="intent-score-label">Loyalty points query</span>
                 <div class="intent-score-bar-wrap">
-                  <div class="intent-score-bar intent-score-bar--dim" style="width: 71%"></div>
+                  <div class="intent-score-bar intent-score-bar--dim" style="width: 88%"></div>
                 </div>
-                <span class="intent-score-pct intent-score-pct--dim">71%</span>
+                <span class="intent-score-pct intent-score-pct--dim">88%</span>
               </div>
               <div class="intent-score-row">
-                <span class="intent-score-label">Shipping issue</span>
+                <span class="intent-score-label">Product search</span>
                 <div class="intent-score-bar-wrap">
-                  <div class="intent-score-bar intent-score-bar--dimmer" style="width: 38%"></div>
+                  <div class="intent-score-bar intent-score-bar--dimmer" style="width: 24%"></div>
                 </div>
-                <span class="intent-score-pct intent-score-pct--dimmer">38%</span>
+                <span class="intent-score-pct intent-score-pct--dimmer">24%</span>
               </div>
             </div>
             <div class="intent-route">
               <svg width="14" height="14" fill="none" stroke="#334155" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
               <div class="intent-route-chip">
                 <svg width="12" height="12" fill="none" stroke="#00d4aa" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
-                Routed to Returns Agent
+                Routed to POS + Policy Agent
               </div>
               <span class="intent-route-time">12ms</span>
             </div>
@@ -200,68 +219,68 @@
 <div class="bg-[#0d0d14] py-20 lg:py-28 px-6">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
-      <div class="inline-block text-[11px] font-medium tracking-[0.14em] uppercase text-[#00d4aa] mb-4">TECH</div>
+      <div class="inline-block text-[11px] font-medium tracking-[0.14em] uppercase text-[#00d4aa] mb-4">UNDER THE HOOD</div>
       <h2 class="text-3xl sm:text-4xl text-white mb-4 font-semibold tracking-tight">
         The infrastructure underneath
       </h2>
       <p class="text-xl text-slate-400 max-w-3xl mx-auto">
-        The technical services that make production AI systems reliable, accurate, and scalable
+        Production-grade systems for catalog sync, compliance filtering, and real-time POS retrieval
       </p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       <FeatureCardDark
         title="Agentic AI Solutions"
-        description="Build intelligent agents that understand context, make decisions, and work autonomously to solve complex business challenges."
+        description="Intelligent agents that query your POS, enforce compliance rules, and guide shoppers through complex purchase decisions autonomously."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>'
       />
 
       <FeatureCardDark
         title="Multi-Agent RAG Systems"
-        description="Advanced retrieval-augmented generation systems that leverage multiple specialized agents for superior accuracy and performance."
+        description="Specialized agents for catalog retrieval, policy lookup, and inventory validation — working together for accurate, grounded answers."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>'
       />
 
       <FeatureCardDark
-        title="Custom Development"
-        description="Tailored solutions designed specifically for your industry, workflows, and business objectives."
+        title="POS API Integration"
+        description="Connectors for Dutchie, Treez, Shopify, WooCommerce, and custom e-commerce stacks with real-time catalog synchronization."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>'
       />
 
       <FeatureCardDark
-        title="Training Data Pipelines"
-        description="End-to-end data collection, labeling, and curation pipelines that produce high-quality training datasets for domain-specific models."
+        title="Catalog Data Pipelines"
+        description="Automated ingestion of product data, potency profiles, tasting notes, and compliance metadata from your POS and CMS."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" /></svg>'
       />
 
       <FeatureCardDark
-        title="AI Evaluation and Testing"
-        description="Rigorous evaluation frameworks, benchmarks, and red-teaming protocols to ensure your AI systems perform reliably in production."
+        title="Compliance Validation"
+        description="Automated checks for age verification, purchase limits, shipping restrictions, and state-specific regulations before every recommendation."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>'
       />
 
       <FeatureCardDark
-        title="Vector Database Setup"
-        description="Architecture, configuration, and optimization of vector stores — Pinecone, Weaviate, Qdrant, or pgvector — for fast semantic retrieval at scale."
+        title="Real-Time Inventory Retrieval"
+        description="Live POS sync ensures every product recommendation reflects current stock levels, pricing, and availability."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 002 2h2.945M11 20v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6" /></svg>'
       />
 
       <FeatureCardDark
         title="Agent Orchestration"
-        description="Design and implement multi-agent workflows with task delegation, tool use, memory management, and inter-agent communication."
+        description="Multi-agent workflows that delegate catalog search, compliance checks, and POS lookups across specialized commerce agents."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /></svg>'
       />
 
       <FeatureCardDark
         title="Production Monitoring"
-        description="Real-time dashboards, drift detection, latency tracking, and automated alerts to keep your deployed models performing at their best."
+        description="Dashboards for conversion lift, AOV tracking, sync latency, and conversation quality across every deployed channel."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>'
       />
@@ -274,116 +293,77 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
       <h2 class="text-3xl sm:text-4xl text-white mb-4 font-semibold tracking-tight">
-        Industries We Serve
+        Built for regulated retail
       </h2>
       <p class="text-xl text-slate-400 max-w-2xl mx-auto">
-        Deep expertise across the sectors where AI creates the most impact
+        Deep vertical expertise for dispensaries and wineries — where compliance and catalog complexity demand specialized AI
       </p>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
 
-      <!-- E-Commerce -->
+      <!-- Dispensaries -->
       <div class="group flex flex-col bg-[#111117] border border-white/[0.06] rounded-2xl overflow-hidden hover:border-[rgba(0,212,170,0.15)] transition-all duration-300 min-h-[420px]">
         <div class="flex-1 p-8">
-          <div class="text-[11px] font-medium tracking-[0.12em] uppercase text-[#00d4aa] mb-6">E-COMMERCE</div>
-          <h3 class="text-2xl font-medium text-white mb-3 leading-tight">AI Product Discovery</h3>
+          <div class="text-[11px] font-medium tracking-[0.12em] uppercase text-[#00d4aa] mb-6">DISPENSARIES</div>
+          <h3 class="text-2xl font-medium text-white mb-3 leading-tight">Compliance-aware product discovery</h3>
           <p class="text-slate-400 text-sm leading-relaxed mb-8">
-            Enhance customer experiences with intelligent AI chat that understands purchase intent and surfaces the right products instantly.
+            Strain recommendations with potency filters, purchase limit awareness, and live Dutchie or Treez inventory sync.
           </p>
           <div class="bg-[#0d0d14] rounded-xl border border-white/[0.05] p-4 space-y-3">
             <div class="flex justify-end">
-              <div class="text-xs text-slate-300 bg-white/5 rounded-xl rounded-tr-sm px-3 py-2 max-w-[85%]">Best wireless headphones under $100?</div>
+              <div class="text-xs text-slate-300 bg-white/5 rounded-xl rounded-tr-sm px-3 py-2 max-w-[85%]">Something relaxing, under $40, in stock?</div>
             </div>
             <div class="flex justify-start">
-              <div class="text-xs text-[#00d4aa] bg-[#00d4aa]/8 rounded-xl rounded-tl-sm px-3 py-2 max-w-[85%]">Found 4 matches. Top pick: 94% confidence</div>
+              <div class="text-xs text-[#00d4aa] bg-[#00d4aa]/8 rounded-xl rounded-tl-sm px-3 py-2 max-w-[85%]">3 matches. Blue Dream 97% · within daily limit</div>
             </div>
             <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
-              <div class="h-full bg-[#00d4aa]/50 rounded-full" style="width:94%"></div>
+              <div class="h-full bg-[#00d4aa]/50 rounded-full" style="width:97%"></div>
             </div>
             <div class="flex items-center gap-2">
               <div class="w-1.5 h-1.5 rounded-full bg-[#00d4aa] animate-pulse"></div>
-              <span class="text-[11px] text-slate-500">Analyzing 1,247 products</span>
+              <span class="text-[11px] text-slate-500">Synced with Dutchie POS</span>
             </div>
           </div>
         </div>
         <div class="px-8 pb-8">
-          <ButtonMinimal label="Learn more" variant="outline" href="/industries/e-commerce" arrow={true} />
+          <ButtonMinimal label="Learn more" variant="outline" href="/industries#dispensaries" arrow={true} />
         </div>
       </div>
 
-      <!-- Legal -->
+      <!-- Wineries -->
       <div class="group flex flex-col bg-[#111117] border border-white/[0.06] rounded-2xl overflow-hidden hover:border-[rgba(0,212,170,0.15)] transition-all duration-300 min-h-[420px]">
         <div class="flex-1 p-8">
-          <div class="text-[11px] font-medium tracking-[0.12em] uppercase text-[#00d4aa] mb-6">LEGAL</div>
-          <h3 class="text-2xl font-medium text-white mb-3 leading-tight">AI Case Research</h3>
+          <div class="text-[11px] font-medium tracking-[0.12em] uppercase text-[#00d4aa] mb-6">WINERIES</div>
+          <h3 class="text-2xl font-medium text-white mb-3 leading-tight">Expert guidance to checkout</h3>
           <p class="text-slate-400 text-sm leading-relaxed mb-8">
-            Streamline document analysis and legal research with AI that understands legal context and surfaces relevant precedents in seconds.
+            Tasting notes, food pairings, club membership tiers, and DTC fulfillment — all connected to your live catalog.
           </p>
           <div class="bg-[#0d0d14] rounded-xl border border-white/[0.05] p-4 space-y-3">
             <div class="flex justify-end">
-              <div class="text-xs text-slate-300 bg-white/5 rounded-xl rounded-tr-sm px-3 py-2 max-w-[85%]">Find contract breach precedents 2022 to 2023</div>
-            </div>
-            <div class="space-y-2">
-              <div class="flex gap-2 items-center">
-                <div class="w-0.5 min-h-[28px] bg-[#00d4aa] rounded-sm flex-shrink-0 self-stretch"></div>
-                <div>
-                  <div class="text-xs text-white">Smith v. Jones (2023)</div>
-                  <div class="text-[11px] text-slate-500">94% relevance</div>
-                </div>
-              </div>
-              <div class="flex gap-2 items-center">
-                <div class="w-0.5 min-h-[28px] bg-[#00d4aa]/40 rounded-sm flex-shrink-0 self-stretch"></div>
-                <div>
-                  <div class="text-xs text-white">ABC Corp v. XYZ (2022)</div>
-                  <div class="text-[11px] text-slate-500">89% relevance</div>
-                </div>
-              </div>
-            </div>
-            <div class="flex items-center gap-2">
-              <div class="w-1.5 h-1.5 rounded-full bg-[#00d4aa] animate-pulse"></div>
-              <span class="text-[11px] text-slate-500">Analyzed 10,247 documents</span>
-            </div>
-          </div>
-        </div>
-        <div class="px-8 pb-8">
-          <ButtonMinimal label="Learn more" variant="outline" href="/industries/law" arrow={true} />
-        </div>
-      </div>
-
-      <!-- Finance -->
-      <div class="group flex flex-col bg-[#111117] border border-white/[0.06] rounded-2xl overflow-hidden hover:border-[rgba(0,212,170,0.15)] transition-all duration-300 min-h-[420px]">
-        <div class="flex-1 p-8">
-          <div class="text-[11px] font-medium tracking-[0.12em] uppercase text-[#00d4aa] mb-6">FINANCE</div>
-          <h3 class="text-2xl font-medium text-white mb-3 leading-tight">AI Financial Analysis</h3>
-          <p class="text-slate-400 text-sm leading-relaxed mb-8">
-            Automate financial analysis and risk assessment with compliant AI that processes complex portfolios in real time.
-          </p>
-          <div class="bg-[#0d0d14] rounded-xl border border-white/[0.05] p-4 space-y-3">
-            <div class="flex justify-end">
-              <div class="text-xs text-slate-300 bg-white/5 rounded-xl rounded-tr-sm px-3 py-2 max-w-[85%]">Analyze Q4 portfolio risk exposure</div>
+              <div class="text-xs text-slate-300 bg-white/5 rounded-xl rounded-tr-sm px-3 py-2 max-w-[85%]">Red wine for grilled lamb, under $50?</div>
             </div>
             <div class="flex justify-start">
-              <div class="text-xs text-[#00d4aa] bg-[#00d4aa]/8 rounded-xl rounded-tl-sm px-3 py-2 max-w-[85%]">Risk score: Low at 94.7% confidence</div>
+              <div class="text-xs text-[#00d4aa] bg-[#00d4aa]/8 rounded-xl rounded-tl-sm px-3 py-2 max-w-[85%]">2019 Cabernet · 94% pairing match · ships to UT</div>
             </div>
             <div class="grid grid-cols-3 gap-2">
               <div class="bg-white/5 rounded-lg p-2 text-center">
-                <div class="text-xs font-medium text-[#00d4aa]">+12%</div>
-                <div class="text-[10px] text-slate-500">YoY</div>
+                <div class="text-xs font-medium text-[#00d4aa]">94%</div>
+                <div class="text-[10px] text-slate-500">Match</div>
               </div>
               <div class="bg-white/5 rounded-lg p-2 text-center">
-                <div class="text-xs font-medium text-white">0.3%</div>
-                <div class="text-[10px] text-slate-500">Risk</div>
+                <div class="text-xs font-medium text-white">$42</div>
+                <div class="text-[10px] text-slate-500">Price</div>
               </div>
               <div class="bg-white/5 rounded-lg p-2 text-center">
-                <div class="text-xs font-medium text-[#00d4aa]">A+</div>
-                <div class="text-[10px] text-slate-500">Rating</div>
+                <div class="text-xs font-medium text-[#00d4aa]">In stock</div>
+                <div class="text-[10px] text-slate-500">36 btl</div>
               </div>
             </div>
           </div>
         </div>
         <div class="px-8 pb-8">
-          <ButtonMinimal label="Learn more" variant="outline" href="/industries/finance" arrow={true} />
+          <ButtonMinimal label="Learn more" variant="outline" href="/industries#wineries" arrow={true} />
         </div>
       </div>
 
@@ -391,15 +371,15 @@
   </div>
 </div>
 
-<!-- RAG Process Section -->
+<!-- How ShopSupport Works -->
 <div class="bg-[#0d0d14] py-20 lg:py-28">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
       <h2 class="text-3xl sm:text-4xl text-white mb-4 font-semibold tracking-tight">
-        Our RAG Process
+        How ShopSupport works
       </h2>
       <p class="text-xl text-slate-400 max-w-3xl mx-auto">
-        Advanced retrieval-augmented generation pipeline with cutting-edge techniques
+        From POS connection to live deployment — a continuous improvement loop for your store
       </p>
     </div>
 
@@ -408,73 +388,37 @@
         <div class="timeline-card relative pl-20">
           <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa] rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
           <FeatureCardDark
-            title="Data Preparation"
-            description="Structured data ingestion, cleaning, and normalization. We prepare your data for optimal embedding generation and retrieval performance."
+            title="1. Connect"
+            description="We integrate with your POS and e-commerce APIs — Dutchie, Treez, Shopify, WooCommerce, or custom stacks — and begin ingesting your live catalog."
             variant="default"
-            icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" /></svg>'
+            icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>'
           />
         </div>
         <div class="timeline-card relative pl-20">
           <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa]/60 rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
           <FeatureCardDark
-            title="Embedding Generation"
-            description="State-of-the-art transformer models generate dense vector embeddings. We use advanced models like OpenAI embeddings, Cohere, or custom fine-tuned encoders for domain-specific accuracy."
+            title="2. Train"
+            description="Your catalog, compliance policies, and customer data are embedded and fine-tuned into domain-specific agents that understand your products and regulations."
             variant="default"
-            icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>'
+            icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>'
           />
         </div>
         <div class="timeline-card relative pl-20">
           <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa] rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
           <FeatureCardDark
-            title="Chunking Strategy"
-            description="Intelligent text segmentation using semantic boundaries, sentence transformers, and sliding window techniques. Optimized chunk sizes for maximum retrieval precision."
-            variant="default"
-            icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>'
-          />
-        </div>
-        <div class="timeline-card relative pl-20">
-          <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa]/60 rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
-          <FeatureCardDark
-            title="Hybrid Retrieval"
-            description="Combines dense vector search (semantic similarity) with sparse retrieval (BM25). Best of both worlds: semantic understanding and keyword precision for superior recall."
-            variant="default"
-            icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>'
-          />
-        </div>
-        <div class="timeline-card relative pl-20">
-          <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa] rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
-          <FeatureCardDark
-            title="Semantic Search and BM25"
-            description="Dual retrieval approach: semantic search captures meaning and context, while BM25 handles exact keyword matches. Weighted combination ensures comprehensive coverage."
-            variant="default"
-            icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>'
-          />
-        </div>
-        <div class="timeline-card relative pl-20">
-          <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa]/60 rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
-          <FeatureCardDark
-            title="HyDE (Hypothetical Document Embeddings)"
-            description="Generate hypothetical answers first, then retrieve based on those embeddings. This advanced technique improves retrieval quality by focusing on answer-relevant content."
+            title="3. Deploy"
+            description="Launch your shopping assistant across web, kiosk, SMS, and embeddable widgets — wherever your customers reach you."
             variant="default"
             icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /></svg>'
           />
         </div>
         <div class="timeline-card relative pl-20">
-          <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa] rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
-          <FeatureCardDark
-            title="Re-ranking"
-            description="Cross-encoder models re-rank initial retrieval results. Fine-tuned BERT, RoBERTa, or specialized re-rankers improve precision by understanding query-document relationships."
-            variant="default"
-            icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" /></svg>'
-          />
-        </div>
-        <div class="timeline-card relative pl-20">
           <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa]/60 rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
           <FeatureCardDark
-            title="Metadata and Graph Databases"
-            description="Structured metadata filtering with Neo4j, ArangoDB, or custom graph structures. Enables complex relationship queries, multi-hop reasoning, and contextual retrieval."
+            title="4. Optimize"
+            description="Conversation analytics, AOV tracking, and continuous retraining improve accuracy and conversion with every shopper interaction."
             variant="default"
-            icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 002 2h2.945M11 20v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6" /></svg>'
+            icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>'
           />
         </div>
       </snippet>
@@ -482,17 +426,17 @@
   </div>
 </div>
 
-<!-- Legal AI Section -->
+<!-- POS Integration Spotlight -->
 <LegalAISection
-  headline="Large Internal Dataset Case Lookup"
-  description="Internal AI Engine for legal professionals. Search through thousands of cases, analyze documents, and find precedents instantly."
+  headline="Your catalog, inventory, and policies — connected in real time"
+  description="ShopSupport syncs with your POS and e-commerce APIs so every recommendation reflects live stock, current pricing, and your store's compliance rules."
   primaryCta={{
-    label: 'Request Demo',
+    label: 'Start free trial',
     href: '/contact'
   }}
   secondaryCta={{
-    label: 'Learn More',
-    href: '/services/legal'
+    label: 'View integrations',
+    href: '/services#integrations'
   }}
 />
 
@@ -501,15 +445,15 @@
 
 <!-- CTA Section -->
 <CTASectionVariation2
-  headline="Ship Artificial Intelligence to production"
-  description="Let's discuss how our AI solutions can drive real results for your organization."
+  headline="Deploy your POS-connected AI assistant"
+  description="Tell us about your store and POS stack. We'll have you live with a trained shopping assistant in weeks, not months."
   colorScheme="dark"
   primaryCta={{
-    label: 'Get Started',
+    label: 'Start free trial',
     href: '/contact'
   }}
   secondaryCta={{
-    label: 'Schedule a Call',
+    label: 'Schedule a call',
     href: '/contact'
   }}
 />

@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-  <title>About | XT SCALE</title>
-  <meta name="description" content="How XT SCALE navigates the frontier of AI agents, RAG systems, and production-ready AI." />
+  <title>About | ShopSupport.ai</title>
+  <meta name="description" content="ShopSupport builds POS-connected AI shopping assistants for dispensaries and wineries. Agentic systems trained on your catalog and compliance policies." />
 </svelte:head>
 
 <Navigation />
@@ -18,12 +18,12 @@
     <div class="about-hero-inner">
       <div class="about-label">OUR MISSION</div>
       <h1 class="about-heading">
-        Navigating the frontier of<br />
-        <span class="heading-teal">AI Agents</span>
+        AI commerce for<br />
+        <span class="heading-teal">regulated retail</span>
       </h1>
       <p class="about-subheading">
-        We research, build, and deploy production-grade AI systems, from multi-agent RAG pipelines
-        to fine-tuned domain specialists, turning cutting-edge papers into working software.
+        ShopSupport connects to your POS and e-commerce APIs, trains agentic systems on your catalog
+        and compliance policies, and deploys shopping assistants for dispensaries and wineries.
       </p>
     </div>
   </section>
@@ -35,22 +35,20 @@
 
         <div class="section-text">
           <div class="section-label">PHILOSOPHY</div>
-          <h2 class="section-heading">Research-first, production-always</h2>
+          <h2 class="section-heading">Integration-first, production-always</h2>
           <p class="section-body">
-            The field of AI moves at a pace that makes most development cycles look slow.
-            A paper on a new retrieval technique, an improved embedding model, or a more effective
-            agent reasoning strategy can shift what's achievable in a matter of weeks.
+            Dispensaries and wineries run on specialized POS systems — Dutchie, Treez, Shopify,
+            custom APIs — with catalogs that change hourly and compliance rules that vary by state.
+            Generic chatbots can't handle that complexity.
           </p>
           <p class="section-body">
-            We stay current. We read preprints from arXiv, test techniques from DeepMind,
-            Anthropic, Meta AI, and academic labs. Not for its own sake, but because each
-            improvement translates directly into better outcomes for the systems we deploy.
-            Our clients get the benefit of that research without needing to follow it themselves.
+            ShopSupport starts with your live data. We connect to your POS, ingest your catalog,
+            embed your policies, and deploy agents that know what's in stock right now — not what
+            was in stock when someone last updated a spreadsheet.
           </p>
           <p class="section-body">
-            But research without execution is just speculation. Everything we explore gets
-            evaluated against one question: does it make production software meaningfully better?
-            If the answer is yes, it goes into our stack.
+            Everything we build gets evaluated against one question: does it help a shopper find
+            the right product and complete a purchase? If the answer is yes, it ships.
           </p>
         </div>
 
@@ -109,11 +107,11 @@
     <div class="about-inner">
       <div class="section-center-header">
         <div class="section-label">VISION</div>
-        <h2 class="section-heading">Towards fully automated intelligence</h2>
+        <h2 class="section-heading">Towards intelligent commerce at scale</h2>
         <p class="section-body section-body--centered">
-          The end state we're working toward: AI systems that handle the repetitive, high-volume
-          layers of customer interaction, so human teams can focus on the work that actually
-          requires them.
+          Every dispensary and winery shopper deserves expert guidance — strain recommendations,
+          wine pairings, compliance-aware suggestions — without waiting for staff. That's what
+          we're building.
         </p>
       </div>
 
@@ -125,12 +123,11 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
             </svg>
           </div>
-          <h3 class="vision-card-title">E-Commerce Automation</h3>
+          <h3 class="vision-card-title">Dispensary Commerce</h3>
           <p class="vision-card-body">
-            Conversational AI that handles product discovery, order tracking, returns, and
-            recommendations at scale, trained on a brand's own catalogue, tone, and policies.
-            A customer asking a complex question at 2 AM gets the same quality response as one
-            talking to your best support rep.
+            Compliance-aware product discovery for cannabis retail. Strain recommendations with
+            potency filters, purchase limit tracking, and live Dutchie or Treez inventory sync.
+            Every suggestion is in stock and within regulations.
           </p>
         </div>
 
@@ -140,11 +137,11 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
             </svg>
           </div>
-          <h3 class="vision-card-title">Customer Service at Depth</h3>
+          <h3 class="vision-card-title">Winery DTC</h3>
           <p class="vision-card-body">
-            Beyond FAQ bots. We build agents that understand account history, escalate
-            intelligently, query internal systems, and resolve multi-step requests without a
-            human in the loop. The goal is resolution, not just response.
+            Expert guidance from vineyard to checkout. Tasting notes, food pairings, club
+            membership tiers, and shipping zone validation — all connected to your live catalog
+            and DTC fulfillment rules.
           </p>
         </div>
 
@@ -154,12 +151,11 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
             </svg>
           </div>
-          <h3 class="vision-card-title">Domain-Specific Expertise</h3>
+          <h3 class="vision-card-title">POS-Native Intelligence</h3>
           <p class="vision-card-body">
-            General-purpose LLMs know a little about everything. We fine-tune and align models
-            to know a great deal about your specific domain: legal language, product catalogues,
-            compliance requirements, internal processes. The result is a system that reasons like
-            a subject matter expert, not a generalist.
+            General-purpose LLMs don't know your inventory. ShopSupport agents query your POS in
+            real time, enforce compliance policies, and reason over your specific catalog — strains,
+            vintages, SKUs — like your best budtender or sommelier.
           </p>
         </div>
 
@@ -272,9 +268,9 @@
         <p class="chunking-body">
           We use a layered approach: semantic chunking at sentence boundaries, overlapping
           windows for context continuity, and per-chunk metadata (section title, document type,
-          date) that can be used as a retrieval filter. A legal query filters to documents of
-          a specific type. A product query filters to a specific category. The retriever finds
-          not just semantically similar content, but the right kind of content.
+          date) that can be used as a retrieval filter. A compliance query filters to policy
+          documents. A product query filters to a specific category and potency range. The retriever
+          finds not just semantically similar content, but the right kind of content.
         </p>
         <div class="chunking-visual">
           <div class="chunk-doc">
@@ -404,16 +400,16 @@
   <section class="about-section about-cta-section">
     <div class="about-inner">
       <div class="about-cta-card">
-        <div class="about-cta-label">BASED IN SALT LAKE CITY, UT</div>
-        <h2 class="about-cta-heading">Small team. Deep focus.</h2>
+        <div class="about-cta-label">SHOPSUPPORT.AI</div>
+        <h2 class="about-cta-heading">Built for dispensaries and wineries.</h2>
         <p class="about-cta-body">
-          We're a small, focused team. Not a large agency taking every project that comes through
-          the door. We work with a limited number of clients at a time so we can actually care
-          about the outcome. If you have a real AI problem to solve, we'd like to hear about it.
+          We work with a focused set of regulated retail stores — connecting to your POS,
+          training on your catalog, and deploying shopping assistants that drive measurable
+          conversion lift. Tell us about your store.
         </p>
         <div class="about-cta-buttons">
-          <ButtonMinimal label="Get in touch" variant="primary" href="/contact" arrow={true} />
-          <ButtonMinimal label="See what we build" variant="outline" href="/#services" />
+          <ButtonMinimal label="Start free trial" variant="primary" href="/contact" arrow={true} />
+          <ButtonMinimal label="See what we build" variant="outline" href="/services" />
         </div>
       </div>
     </div>
