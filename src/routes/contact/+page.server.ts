@@ -1,9 +1,14 @@
 import { fail } from '@sveltejs/kit';
-import { RESEND_API_KEY } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import type { Actions } from './$types';
 
 export const actions: Actions = {
   default: async ({ request }) => {
+    const resendApiKey = env.RESEND_API_KEY;
+    if (!resendApiKey) {
+      return fail(503, { error: 'Contact form is temporarily unavailable. Please email info@shopsupport.ai directly.' });
+    }
+
     const data = await request.formData();
     const name = data.get('name') as string;
     const email = data.get('email') as string;
@@ -13,7 +18,7 @@ export const actions: Actions = {
     const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
-        Authorization: `Bearer ${RESEND_API_KEY}`,
+        Authorization: `Bearer ${resendApiKey}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
