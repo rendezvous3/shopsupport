@@ -88,7 +88,6 @@
         <div class="showcase__widget">
           <BudtenderWidget
             view={item.guidedViews ? item.guidedViews[guidedIndex] : item.view}
-            showFab={false}
           />
         </div>
       </article>

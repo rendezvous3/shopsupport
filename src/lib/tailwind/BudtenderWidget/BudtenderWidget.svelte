@@ -12,13 +12,11 @@
   interface Props {
     view?: BudtenderView;
     storeName?: string;
-    showFab?: boolean;
   }
 
   let {
     view = 'shortcuts',
-    storeName = 'Your Store',
-    showFab = true
+    storeName = 'Your Store'
   }: Props = $props();
 
   const quickStart = [
@@ -271,10 +269,6 @@
       </p>
     </div>
   </div>
-
-  {#if showFab}
-    <div class="widget__fab">×</div>
-  {/if}
 </div>
 
 <style>
@@ -455,11 +449,4 @@
   .widget__send { color: #d4af7a; font-size: 0.85rem; }
   .widget__disclaimer { margin: 0; font-size: 0.58rem; color: #64748b; text-align: center; line-height: 1.4; }
   .widget__learn { color: #d4af7a; text-decoration: underline; }
-
-  .widget__fab {
-    position: absolute; right: -0.25rem; bottom: -0.75rem; width: 3.25rem; height: 3.25rem;
-    border-radius: 50%; background: #c9a06c; color: #fff;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1.35rem; font-weight: 300; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-  }
 </style>
