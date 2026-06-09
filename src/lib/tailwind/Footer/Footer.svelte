@@ -28,18 +28,18 @@
   let {
     columns = [
       {
-        title: 'Services',
+        title: 'Platform',
         links: [
+          { label: 'Guided Selling', href: '/guided-selling' },
+          { label: 'Analytics', href: '/analytics' },
           { label: 'POS Integration', href: '/services#pos-integration' },
-          { label: 'Shopping Assistant', href: '/services#shopping-assistant' },
-          { label: 'Compliance AI', href: '/services#compliance-ai' }
+          { label: 'Shopping Assistant', href: '/services#shopping-assistant' }
         ]
       },
       {
         title: 'Industries',
         links: [
           { label: 'Dispensaries', href: '/industries#dispensaries' },
-          { label: 'Wineries', href: '/industries#wineries' },
           { label: 'Customer Service (Soon)', href: '/industries#customer-service' }
         ]
       },
@@ -75,7 +75,7 @@
           Agentic AI for regulated retail commerce
         </p>
         <p class="text-sm text-gray-500 mb-4 max-w-xs">
-          POS-connected shopping assistants for dispensaries and wineries.
+          POS-connected shopping assistants for dispensaries.
         </p>
         {#if contactInfo.email}
           <p class="text-sm text-gray-400 mb-1">

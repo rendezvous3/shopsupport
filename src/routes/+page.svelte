@@ -17,8 +17,8 @@
 </script>
 
 <svelte:head>
-  <title>ShopSupport.ai | AI Agent for Dispensary & Winery Commerce</title>
-  <meta name="description" content="POS-connected AI shopping assistants for dispensaries and wineries. ShopSupport integrates with your e-commerce APIs and deploys trained agentic systems on your live catalog." />
+  <title>ShopSupport.ai | AI Agent for Dispensary Commerce</title>
+  <meta name="description" content="POS-connected AI shopping assistants for dispensaries. ShopSupport connects to your Dutchie catalog and deploys trained agentic systems on your live inventory." />
 </svelte:head>
 
 <Navigation dropdownTrigger="hover" />
@@ -35,15 +35,15 @@
       POS-connected platform underneath
     </h2>
     <p class="text-slate-400 max-w-2xl mx-auto">
-      The same agent stack powers your storefront widget — live catalog sync, analytics, and multi-store management.
+      The same agent stack powers your storefront widget: live catalog sync, analytics, and multi-store management.
     </p>
   </div>
   <HeroSectionV7
     compact={true}
     badge="Admin · Analytics · Multi-store"
     headline="One platform for every channel"
-    subheadline="Deploy the budtender on your site, kiosk, or SMS — then monitor conversions, sync latency, and catalog accuracy from a single dashboard."
-    primaryCta={{ label: 'Start free trial', href: '/contact' }}
+    subheadline="Deploy the budtender on your site, kiosk, or SMS, then monitor conversions, sync latency, and catalog accuracy from a single dashboard."
+    primaryCta={{ label: 'Schedule a demo', href: '/contact' }}
     secondaryCta={{ label: 'See features above', href: '/#chat-preview' }}
   />
 </div>
@@ -57,7 +57,7 @@
         AI that knows your catalog in real time
       </h2>
       <p class="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-        POS-connected assistants for dispensaries and wineries — trained on your inventory, policies, and customers
+        POS-connected assistants for dispensaries, trained on your inventory, policies, and customers
       </p>
     </div>
 
@@ -72,7 +72,7 @@
             AI that reads live inventory from your POS, understands purchase intent and compliance rules, and surfaces the right products at the right moment.
           </p>
           <div class="bento-cta">
-            <ButtonMinimal label="Learn more" variant="outline" href="/services#shopping-assistant" arrow={true} />
+            <ButtonMinimal label="Learn more" variant="outline" href="/guided-selling" arrow={true} />
           </div>
         </div>
         <div class="bento-visual">
@@ -143,12 +143,12 @@
                 <span class="cs-action-icon">
                   <svg width="12" height="12" fill="none" stroke="#00d4aa" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </span>
-                Yes — 450 points available. Applied $15 credit to order #4821.
+                Yes. 450 points available. Applied $15 credit to order #4821.
               </div>
             </div>
             <div class="cs-resolution">
               <span class="cs-res-dot"></span>
-              <span class="cs-res-text">POS-integrated resolution — launching soon</span>
+              <span class="cs-res-text">POS-integrated resolution, launching soon</span>
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@
           <div class="bento-label">INTENT & API ROUTING</div>
           <h3 class="bento-heading">Every message to the right agent</h3>
           <p class="bento-desc">
-            Intent classification routes shoppers to the right handler — catalog lookup, compliance check, or POS query — in milliseconds. No rigid keyword matching.
+            Intent classification routes shoppers to the right handler: catalog lookup, compliance check, or POS query, all in milliseconds. No rigid keyword matching.
           </p>
           <div class="bento-cta">
             <ButtonMinimal label="Learn more" variant="outline" href="/services#pos-integration" arrow={true} />
@@ -238,21 +238,21 @@
 
       <FeatureCardDark
         title="Multi-Agent RAG Systems"
-        description="Specialized agents for catalog retrieval, policy lookup, and inventory validation — working together for accurate, grounded answers."
+        description="Specialized agents for catalog retrieval, policy lookup, and inventory validation, working together for accurate, grounded answers."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>'
       />
 
       <FeatureCardDark
         title="POS API Integration"
-        description="Connectors for Dutchie, Treez, Shopify, WooCommerce, and custom e-commerce stacks with real-time catalog synchronization."
+        description="A direct connector to Dutchie with real-time catalog, pricing, and inventory synchronization."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>'
       />
 
       <FeatureCardDark
         title="Catalog Data Pipelines"
-        description="Automated ingestion of product data, potency profiles, tasting notes, and compliance metadata from your POS and CMS."
+        description="Automated ingestion of product data, potency profiles, terpene data, and compliance metadata from your POS and CMS."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" /></svg>'
       />
@@ -296,11 +296,11 @@
         Built for regulated retail
       </h2>
       <p class="text-xl text-slate-400 max-w-2xl mx-auto">
-        Deep vertical expertise for dispensaries and wineries — where compliance and catalog complexity demand specialized AI
+        Deep expertise in dispensary commerce, where compliance and catalog complexity demand specialized AI
       </p>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+    <div class="max-w-2xl mx-auto">
 
       <!-- Dispensaries -->
       <div class="group flex flex-col bg-[#111117] border border-white/[0.06] rounded-2xl overflow-hidden hover:border-[rgba(0,212,170,0.15)] transition-all duration-300 min-h-[420px]">
@@ -308,7 +308,7 @@
           <div class="text-[11px] font-medium tracking-[0.12em] uppercase text-[#00d4aa] mb-6">DISPENSARIES</div>
           <h3 class="text-2xl font-medium text-white mb-3 leading-tight">Compliance-aware product discovery</h3>
           <p class="text-slate-400 text-sm leading-relaxed mb-8">
-            Strain recommendations with potency filters, purchase limit awareness, and live Dutchie or Treez inventory sync.
+            Strain recommendations with potency filters, purchase limit awareness, and live Dutchie inventory sync.
           </p>
           <div class="bg-[#0d0d14] rounded-xl border border-white/[0.05] p-4 space-y-3">
             <div class="flex justify-end">
@@ -331,42 +331,6 @@
         </div>
       </div>
 
-      <!-- Wineries -->
-      <div class="group flex flex-col bg-[#111117] border border-white/[0.06] rounded-2xl overflow-hidden hover:border-[rgba(0,212,170,0.15)] transition-all duration-300 min-h-[420px]">
-        <div class="flex-1 p-8">
-          <div class="text-[11px] font-medium tracking-[0.12em] uppercase text-[#00d4aa] mb-6">WINERIES</div>
-          <h3 class="text-2xl font-medium text-white mb-3 leading-tight">Expert guidance to checkout</h3>
-          <p class="text-slate-400 text-sm leading-relaxed mb-8">
-            Tasting notes, food pairings, club membership tiers, and DTC fulfillment — all connected to your live catalog.
-          </p>
-          <div class="bg-[#0d0d14] rounded-xl border border-white/[0.05] p-4 space-y-3">
-            <div class="flex justify-end">
-              <div class="text-xs text-slate-300 bg-white/5 rounded-xl rounded-tr-sm px-3 py-2 max-w-[85%]">Red wine for grilled lamb, under $50?</div>
-            </div>
-            <div class="flex justify-start">
-              <div class="text-xs text-[#00d4aa] bg-[#00d4aa]/8 rounded-xl rounded-tl-sm px-3 py-2 max-w-[85%]">2019 Cabernet · 94% pairing match · ships to UT</div>
-            </div>
-            <div class="grid grid-cols-3 gap-2">
-              <div class="bg-white/5 rounded-lg p-2 text-center">
-                <div class="text-xs font-medium text-[#00d4aa]">94%</div>
-                <div class="text-[10px] text-slate-500">Match</div>
-              </div>
-              <div class="bg-white/5 rounded-lg p-2 text-center">
-                <div class="text-xs font-medium text-white">$42</div>
-                <div class="text-[10px] text-slate-500">Price</div>
-              </div>
-              <div class="bg-white/5 rounded-lg p-2 text-center">
-                <div class="text-xs font-medium text-[#00d4aa]">In stock</div>
-                <div class="text-[10px] text-slate-500">36 btl</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="px-8 pb-8">
-          <ButtonMinimal label="Learn more" variant="outline" href="/industries#wineries" arrow={true} />
-        </div>
-      </div>
-
     </div>
   </div>
 </div>
@@ -379,7 +343,7 @@
         How ShopSupport works
       </h2>
       <p class="text-xl text-slate-400 max-w-3xl mx-auto">
-        From POS connection to live deployment — a continuous improvement loop for your store
+        From POS connection to live deployment. A continuous improvement loop for your store
       </p>
     </div>
 
@@ -389,7 +353,7 @@
           <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa] rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
           <FeatureCardDark
             title="1. Connect"
-            description="We integrate with your POS and e-commerce APIs — Dutchie, Treez, Shopify, WooCommerce, or custom stacks — and begin ingesting your live catalog."
+            description="We connect to your Dutchie account through its API and begin ingesting your live catalog."
             variant="default"
             icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>'
           />
@@ -407,7 +371,7 @@
           <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa] rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
           <FeatureCardDark
             title="3. Deploy"
-            description="Launch your shopping assistant across web, kiosk, SMS, and embeddable widgets — wherever your customers reach you."
+            description="Launch your shopping assistant across web, kiosk, SMS, and embeddable widgets, wherever your customers reach you."
             variant="default"
             icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /></svg>'
           />
@@ -428,10 +392,10 @@
 
 <!-- POS Integration Spotlight -->
 <LegalAISection
-  headline="Your catalog, inventory, and policies — connected in real time"
+  headline="Your catalog, inventory, and policies, connected in real time"
   description="ShopSupport syncs with your POS and e-commerce APIs so every recommendation reflects live stock, current pricing, and your store's compliance rules."
   primaryCta={{
-    label: 'Start free trial',
+    label: 'Schedule a demo',
     href: '/contact'
   }}
   secondaryCta={{
@@ -449,11 +413,11 @@
   description="Tell us about your store and POS stack. We'll have you live with a trained shopping assistant in weeks, not months."
   colorScheme="dark"
   primaryCta={{
-    label: 'Start free trial',
+    label: 'Schedule a demo',
     href: '/contact'
   }}
   secondaryCta={{
-    label: 'Schedule a call',
+    label: 'Contact us',
     href: '/contact'
   }}
 />

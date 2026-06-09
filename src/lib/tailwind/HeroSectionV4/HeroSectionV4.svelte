@@ -28,7 +28,7 @@
 
   <div class="hero__inner">
 
-    <!-- LEFT: Large app mock — upper-left corner closest to viewer -->
+    <!-- LEFT: Large app mock - upper-left corner closest to viewer -->
     <div class="hero__mockup-col">
       <div class="hero__mockup-perspective">
         <div class="hero__mockup">
@@ -659,7 +659,7 @@
     pointer-events: none;
   }
 
-  /* Teal glow near bottom-right — the "close" corner of the mock */
+  /* Teal glow near bottom-right - the "close" corner of the mock */
   .orb--teal {
     width: 700px;
     height: 700px;
@@ -668,7 +668,7 @@
     right: 8%;
   }
 
-  /* Blue glow near upper-left — the "far" receding corner */
+  /* Blue glow near upper-left - the "far" receding corner */
   .orb--blue {
     width: 550px;
     height: 550px;
@@ -742,7 +742,7 @@
     }
   }
 
-  /* ─── App mock outer — 4-panel, wider than V3 ───────────── */
+  /* ─── App mock outer - 4-panel, wider than V3 ───────────── */
   .hero__mockup {
     display: flex;
     width: 1140px;

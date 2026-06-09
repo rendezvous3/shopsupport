@@ -6,7 +6,7 @@
 
 <svelte:head>
   <title>Industries | ShopSupport.ai</title>
-  <meta name="description" content="POS-connected AI for dispensaries and wineries. Domain-trained shopping assistants that understand compliance, catalog complexity, and regulated retail workflows." />
+  <meta name="description" content="POS-connected AI for dispensaries. Domain-trained shopping assistants that understand compliance, catalog complexity, and regulated retail workflows." />
 </svelte:head>
 
 <Navigation dropdownTrigger="hover" />
@@ -25,13 +25,12 @@
           Retail Commerce
         </h1>
         <p class="ind-hero-sub">
-          Generic chatbots fail in dispensaries and wineries. ShopSupport builds agents trained on your
-          POS catalog, compliance rules, and customer data — so every recommendation is accurate,
+          Generic chatbots fail in dispensaries. ShopSupport builds agents trained on your
+          POS catalog, compliance rules, and customer data, so every recommendation is accurate,
           in-stock, and regulation-aware.
         </p>
         <div class="ind-hero-pills">
           <a href="#dispensaries" class="ind-hero-pill">Dispensaries</a>
-          <a href="#wineries" class="ind-hero-pill">Wineries</a>
           <a href="#customer-service" class="ind-hero-pill">Customer Service (Soon)</a>
         </div>
       </div>
@@ -64,24 +63,24 @@
             <line x1="120" y1="50" x2="165" y2="152" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" marker-end="url(#ind-arrow)" />
             <rect x="130" y="85" width="44" height="16" rx="8" fill="rgba(0,212,170,0.08)" stroke="rgba(0,212,170,0.2)" stroke-width="0.75" />
             <text x="152" y="96" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">+23% AOV</text>
-            <!-- WINERIES (top-right) -->
+            <!-- COMPLIANCE (top-right) -->
             <rect x="270" y="55" width="100" height="36" rx="6" fill="#0d0d14" stroke="rgba(0,212,170,0.22)" stroke-width="1" />
-            <text x="320" y="69" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">WINERY</text>
-            <text x="320" y="81" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">pairings + DTC</text>
+            <text x="320" y="69" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">COMPLIANCE</text>
+            <text x="320" y="81" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">age + limits</text>
             <line x1="270" y1="73" x2="245" y2="155" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" marker-end="url(#ind-arrow)" />
             <rect x="246" y="108" width="50" height="16" rx="8" fill="rgba(0,212,170,0.08)" stroke="rgba(0,212,170,0.2)" stroke-width="0.75" />
-            <text x="271" y="119" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">94% match</text>
+            <text x="271" y="119" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">100% checks</text>
             <!-- POS APIs (bottom-right) -->
             <rect x="265" y="240" width="100" height="36" rx="6" fill="#0d0d14" stroke="rgba(0,212,170,0.22)" stroke-width="1" />
             <text x="315" y="254" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">POS APIs</text>
-            <text x="315" y="266" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">Dutchie + Treez</text>
+            <text x="315" y="266" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">Dutchie</text>
             <line x1="265" y1="253" x2="245" y2="198" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" marker-end="url(#ind-arrow)" />
             <rect x="238" y="218" width="52" height="16" rx="8" fill="rgba(0,212,170,0.08)" stroke="rgba(0,212,170,0.2)" stroke-width="0.75" />
             <text x="264" y="229" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">&lt;200ms</text>
             <!-- E-COMMERCE (bottom-left) -->
             <rect x="15" y="240" width="110" height="36" rx="6" fill="#0d0d14" stroke="rgba(0,212,170,0.22)" stroke-width="1" />
             <text x="70" y="254" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">E-COMMERCE</text>
-            <text x="70" y="266" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">Shopify + Woo</text>
+            <text x="70" y="266" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">live catalog</text>
             <line x1="125" y1="252" x2="163" y2="198" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" marker-end="url(#ind-arrow)" />
             <rect x="120" y="220" width="38" height="16" rx="8" fill="rgba(0,212,170,0.08)" stroke="rgba(0,212,170,0.2)" stroke-width="0.75" />
             <text x="139" y="231" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">Live</text>
@@ -106,13 +105,13 @@
             <div class="ind-label">DISPENSARIES</div>
             <h2 class="ind-section-heading">Turn Every Shopper Into a Guided Buyer</h2>
             <p class="ind-body">
-              Dispensary shoppers don't browse like typical e-commerce customers. They ask about effects, potency, consumption method, and what's actually in stock right now. ShopSupport agents connect to Dutchie or Treez and answer with live inventory — never recommending an out-of-stock strain.
+              Dispensary shoppers don't browse like typical e-commerce customers. They ask about effects, potency, consumption method, and what's actually in stock right now. ShopSupport agents connect to Dutchie and answer with live inventory, never recommending an out-of-stock strain.
             </p>
             <p class="ind-body">
               Compliance is built in. Agents enforce daily purchase limits, age verification prompts, and state-specific regulations before every recommendation. A shopper asking for "something strong" gets matched to products within their remaining daily allowance, not just the highest THC on the menu.
             </p>
             <p class="ind-body">
-              Strain discovery goes beyond category filters. Our agents understand indica vs. sativa effects, terpene profiles, and cross-category intent — surfacing edibles, vapes, and flower that match what the customer is actually trying to accomplish.
+              Strain discovery goes beyond category filters. Our agents understand indica vs. sativa effects, terpene profiles, and cross-category intent, surfacing edibles, vapes, and flower that match what the customer is actually trying to accomplish.
             </p>
 
             <div class="ind-metrics-row">
@@ -196,113 +195,6 @@
     </div>
   </section>
 
-  <!-- ─── Wineries Section ──────────────────────────────────── -->
-  <section id="wineries" class="ind-section ind-section--alt">
-    <div class="px-6">
-      <div class="max-w-7xl mx-auto">
-        <div class="ind-split ind-split--visual-left">
-
-          <!-- Visual -->
-          <div class="ind-split-visual">
-            <div class="mock-panel">
-              <div class="mock-panel-header">
-                <div class="mock-panel-title-row">
-                  <span class="mock-panel-title">Wine Pairing</span>
-                  <span class="mock-status-badge mock-status-badge--warn">94% Match</span>
-                </div>
-                <div class="mock-panel-sub">Query: Red wine for grilled lamb, under $50</div>
-              </div>
-
-              <!-- Document list -->
-              <div class="mock-doc-list">
-                <div class="mock-doc-item mock-doc-item--risk-high">
-                  <div class="mock-doc-risk-bar mock-doc-risk-bar--high"></div>
-                  <div class="mock-doc-content">
-                    <div class="mock-doc-clause">2019 Estate Cabernet</div>
-                    <div class="mock-doc-flag">Bold tannins · Grilled lamb · $42 · 36 btl in stock</div>
-                  </div>
-                  <span class="mock-risk-chip mock-risk-chip--high">TOP</span>
-                </div>
-                <div class="mock-doc-item mock-doc-item--risk-med">
-                  <div class="mock-doc-risk-bar mock-doc-risk-bar--med"></div>
-                  <div class="mock-doc-content">
-                    <div class="mock-doc-clause">2020 Merlot Reserve</div>
-                    <div class="mock-doc-flag">Soft tannins · Herb-crusted · $38 · Ships to UT</div>
-                  </div>
-                  <span class="mock-risk-chip mock-risk-chip--med">89%</span>
-                </div>
-                <div class="mock-doc-item mock-doc-item--risk-med">
-                  <div class="mock-doc-risk-bar mock-doc-risk-bar--med"></div>
-                  <div class="mock-doc-content">
-                    <div class="mock-doc-clause">2018 Syrah</div>
-                    <div class="mock-doc-flag">Peppery finish · BBQ lamb · $45 · Club discount</div>
-                  </div>
-                  <span class="mock-risk-chip mock-risk-chip--med">82%</span>
-                </div>
-                <div class="mock-doc-item">
-                  <div class="mock-doc-risk-bar mock-doc-risk-bar--ok"></div>
-                  <div class="mock-doc-content">
-                    <div class="mock-doc-clause">Shipping zone check</div>
-                    <div class="mock-doc-flag mock-doc-flag--ok">Zip 84111 eligible for DTC delivery</div>
-                  </div>
-                  <span class="mock-risk-chip mock-risk-chip--ok">OK</span>
-                </div>
-                <div class="mock-doc-item">
-                  <div class="mock-doc-risk-bar mock-doc-risk-bar--ok"></div>
-                  <div class="mock-doc-content">
-                    <div class="mock-doc-clause">Wine club tier</div>
-                    <div class="mock-doc-flag mock-doc-flag--ok">Gold member · 15% discount applied</div>
-                  </div>
-                  <span class="mock-risk-chip mock-risk-chip--ok">OK</span>
-                </div>
-              </div>
-
-              <div class="mock-footer">
-                <span class="mock-footer-dot"></span>
-                <span class="mock-footer-text">Matched 3 vintages · Shipping verified · 1.8s</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Text -->
-          <div class="ind-split-text">
-            <div class="ind-label">WINERIES</div>
-            <h2 class="ind-section-heading">Expert Guidance from Vineyard to Checkout</h2>
-            <p class="ind-body">
-              Winery customers ask about tasting notes, food pairings, vintage availability, and whether you ship to their zip code. ShopSupport agents know your full catalog — including club membership tiers, limited releases, and DTC shipping zones — and guide shoppers to the right bottle without human intervention.
-            </p>
-            <p class="ind-body">
-              Pairing recommendations go beyond "red with meat." Our agents understand tannin structure, acidity, and regional characteristics to match wines with specific dishes, occasions, and price points. A customer planning a dinner party gets a curated selection, not a generic category browse.
-            </p>
-            <p class="ind-body">
-              Wine club management is integrated. Agents know which tier a customer belongs to, what discounts apply, and when the next shipment is scheduled — answering membership questions and upselling upgrades in the same conversation.
-            </p>
-
-            <div class="ind-stats-stack">
-              <div class="ind-stat-row">
-                <div class="ind-stat-num">94%</div>
-                <div class="ind-stat-desc">pairing match accuracy</div>
-              </div>
-              <div class="ind-stat-row">
-                <div class="ind-stat-num">+18%</div>
-                <div class="ind-stat-desc">average order value lift</div>
-              </div>
-              <div class="ind-stat-row">
-                <div class="ind-stat-num">Live</div>
-                <div class="ind-stat-desc">inventory from your POS</div>
-              </div>
-            </div>
-
-            <div class="ind-cta-row">
-              <ButtonMinimal label="See Winery Solutions" variant="outline" href="/services#shopping-assistant" arrow={true} />
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ─── Customer Service Section ─────────────────────────── -->
   <section id="customer-service" class="ind-section ind-section--alt">
     <div class="px-6">
@@ -313,7 +205,7 @@
           <h2 class="ind-section-heading ind-section-heading--centered">Support That Scales Without Headcount</h2>
           <p class="ind-body ind-body--centered">
             Full-resolution support agents that query order history, loyalty points, and store policies via your POS APIs.
-            Join the waitlist for early access — launching soon for dispensaries and wineries.
+            Join the waitlist for early access. Launching soon for dispensaries.
           </p>
 
           <!-- Feature pills row -->
@@ -480,11 +372,11 @@
           <div class="ind-label" style="margin-bottom: 1rem;">GET STARTED</div>
           <h2 class="ind-cta-heading">Your Store Deserves AI That Knows Your Catalog.</h2>
           <p class="ind-cta-body">
-            Tell us about your POS stack and whether you run a dispensary or winery.
+            Tell us about your dispensary and your Dutchie setup.
             We'll connect to your APIs, train on your catalog, and deploy a shopping assistant in weeks.
           </p>
           <div class="ind-cta-buttons">
-            <ButtonMinimal label="Start free trial" variant="primary" href="/contact" arrow={true} />
+            <ButtonMinimal label="Schedule a demo" variant="primary" href="/contact" arrow={true} />
             <ButtonMinimal label="View Services" variant="outline" href="/services" />
           </div>
         </div>

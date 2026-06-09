@@ -26,7 +26,7 @@
       label: 'Quick shortcuts',
       tag: 'Feature 1',
       title: 'Popular requests, zero blank-page anxiety',
-      desc: 'Shoppers tap curated chips — energetic flower, mellow pre-rolls, berry gummies — and jump straight into your catalog.',
+      desc: 'Shoppers tap curated chips like energetic flower, mellow pre-rolls, or berry gummies, and jump straight into your catalog.',
       bullets: [
         'Configurable quick-start grid per store',
         'Compliance disclaimer always visible',
@@ -39,7 +39,7 @@
       label: 'Natural conversation',
       tag: 'Feature 2',
       title: 'A real budtender tone, not a FAQ bot',
-      desc: 'Open-ended questions get warm, knowledgeable answers about your full menu — categories, formats, and what to explore next.',
+      desc: 'Open-ended questions get warm, knowledgeable answers about your full menu: categories, formats, and what to explore next.',
       bullets: [
         'Trained on your catalog and brand voice',
         'Handles “what do you carry?” without scripts',
@@ -52,7 +52,7 @@
       label: 'Entity extraction',
       tag: 'Feature 2',
       title: 'Understands strain, format, flavor, and effect',
-      desc: '“Berry flavored indica edibles” becomes structured intent — then POS-backed recommendations with potency and price.',
+      desc: '“Berry flavored indica edibles” becomes structured intent, then POS-backed recommendations with potency and price.',
       bullets: [
         'Extracts category, effect, flavor, and potency',
         'Surfaces matching products from live inventory',
@@ -65,7 +65,7 @@
       label: 'Guided flow',
       tag: 'Feature 2',
       title: 'Step-by-step product finder',
-      desc: 'Category → effects → THC range → price — the same guided flow your AiChatBot deploys, built from your live catalog availability.',
+      desc: 'Category, effects, THC range, then price. The same guided flow your AiChatBot deploys, built from your live catalog availability.',
       bullets: [
         'Categories: Flower, Prerolls, Vape, Edible, Concentrates',
         'Effects: up to 2 (Energized, Euphoric, Calm, etc.)',
@@ -78,7 +78,7 @@
       label: 'Product deep-dive',
       tag: 'Feature 3',
       title: 'Individual product Q&A',
-      desc: 'Shoppers ask about a specific SKU — potency, brand story, format — and get grounded answers pulled from your catalog data.',
+      desc: 'Shoppers ask about a specific SKU, from potency to brand story to format, and get grounded answers pulled from your catalog data.',
       bullets: [
         'Lookup by product name or brand',
         'Brand narrative, format, and potency in one reply',
@@ -91,7 +91,7 @@
       label: 'Compliance built-in',
       tag: 'Trust',
       title: 'Policy before purchase',
-      desc: 'State-specific warnings, medical disclaimers, and AI disclosure — rendered alongside recommendations, not buried in footer legalese.',
+      desc: 'State-specific warnings, medical disclaimers, and AI disclosure, rendered alongside recommendations, not buried in footer legalese.',
       bullets: [
         'NY Part 129 warnings + impairment bullets',
         'Medical guidance disclaimer on health questions',
@@ -125,12 +125,12 @@
     <div class="hero__text">
       <div class="hero__badge">
         <span class="badge-dot"></span>
-        Dispensaries · Wineries · POS-Connected AI
+        Dispensaries · Dutchie · POS-Connected AI
       </div>
 
       <h1 class="hero__h1">The AI budtender your storefront deserves</h1>
       <p class="hero__sub">
-        ShopSupport embeds on your site as a branded shopping assistant — shortcuts, natural conversation,
+        ShopSupport embeds on your site as a branded shopping assistant with shortcuts, natural conversation,
         guided flows, and compliance built in. Connected to your live POS catalog.
       </p>
 
@@ -178,7 +178,7 @@
       </ul>
 
       <div class="hero__ctas">
-        <ButtonMinimal label="Start free trial" variant="primary" size="md" href="/contact" arrow={true} />
+        <ButtonMinimal label="Schedule a demo" variant="primary" size="md" href="/contact" arrow={true} />
         <ButtonMinimal label="View integrations" variant="outline" size="md" href="/services#integrations" arrow={true} />
       </div>
     </div>

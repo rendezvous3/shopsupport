@@ -6,7 +6,7 @@
 
 <svelte:head>
   <title>Services | ShopSupport.ai</title>
-  <meta name="description" content="POS integration, shopping assistants, and compliance AI for dispensaries and wineries. Commerce AI built on your existing stack." />
+  <meta name="description" content="POS integration, shopping assistants, and compliance AI for dispensaries. Commerce AI built on your Dutchie catalog." />
 </svelte:head>
 
 <Navigation dropdownTrigger="hover" />
@@ -25,10 +25,10 @@
         on Your POS
       </h1>
       <p class="hero-sub">
-        ShopSupport connects to your POS and e-commerce APIs, trains agentic systems on your catalog and policies, and deploys shopping assistants for dispensaries and wineries.
+        ShopSupport connects to your Dutchie catalog, trains agentic systems on your products and policies, and deploys shopping assistants for dispensaries.
       </p>
       <div class="hero-ctas">
-        <ButtonMinimal label="Start free trial" variant="primary" size="lg" href="/contact" arrow={true} />
+        <ButtonMinimal label="Schedule a demo" variant="primary" size="lg" href="/contact" arrow={true} />
         <ButtonMinimal label="View integrations" variant="outline" size="lg" href="#integrations" />
       </div>
     </div>
@@ -120,7 +120,7 @@
 </section>
 
 <!-- ============================================================
-     2. BUSINESS AI — 6 dedicated sections
+     2. BUSINESS AI - 6 dedicated sections
      ============================================================ -->
 <section id="business-ai" class="section-business-ai px-6">
   <div class="max-w-7xl mx-auto">
@@ -129,7 +129,7 @@
       <div class="section-label">BUSINESS AI</div>
       <h2 class="section-h2">AI Trained on Your Catalog</h2>
       <p class="section-sub">
-        Purpose-built agents for dispensary and winery commerce. Each system connects to your POS, trains on your products and policies, and deploys where your customers shop.
+        Purpose-built agents for dispensary commerce. Each system connects to your Dutchie catalog, trains on your products and policies, and deploys where your customers shop.
       </p>
     </div>
 
@@ -139,7 +139,7 @@
         <div class="bai-tag">INTEGRATION</div>
         <h3 class="bai-title">POS &amp; Catalog Integration</h3>
         <p class="bai-desc">
-          Connectors for Dutchie, Treez, Shopify, WooCommerce, and custom e-commerce APIs. ShopSupport ingests your live catalog, pricing, and inventory — then keeps everything in sync as your POS updates in real time.
+          A direct connector to Dutchie. ShopSupport ingests your live catalog, pricing, and inventory, then keeps everything in sync as your menu updates in real time.
         </p>
         <ul class="bai-bullets">
           <li>Real-time inventory sync from your POS</li>
@@ -148,7 +148,7 @@
           <li>Under 200ms API response latency</li>
         </ul>
         <div class="bai-stats">
-          <div class="bai-stat"><span class="bai-stat-num">50+</span><span class="bai-stat-label">POS APIs supported</span></div>
+          <div class="bai-stat"><span class="bai-stat-num">Real-time</span><span class="bai-stat-label">Dutchie sync</span></div>
           <div class="bai-stat"><span class="bai-stat-num">&lt;200ms</span><span class="bai-stat-label">Sync latency</span></div>
           <div class="bai-stat"><span class="bai-stat-num">99.2%</span><span class="bai-stat-label">Match accuracy</span></div>
         </div>
@@ -161,7 +161,7 @@
           </div>
           <div class="bai-panel-body">
             <div class="bai-panel-label">Connected sources</div>
-            <div class="intent-chip">Dutchie POS · Shopify · Live sync</div>
+            <div class="intent-chip">Dutchie POS · Live sync</div>
             <div class="bai-panel-label" style="margin-top: 1rem;">Recently synced SKUs</div>
             <div class="rec-item">
               <div class="rec-item-info">
@@ -172,7 +172,7 @@
             </div>
             <div class="rec-item">
               <div class="rec-item-info">
-                <div class="rec-item-name">2019 Estate Cabernet</div>
+                <div class="rec-item-name">Wedding Cake 3.5g</div>
                 <div class="rec-item-meta">36 btl · $42.00</div>
               </div>
               <div class="rec-score">Live</div>
@@ -195,7 +195,7 @@
         <div class="bai-tag">CUSTOMER SERVICE · SOON</div>
         <h3 class="bai-title">Customer Service Automation</h3>
         <p class="bai-desc">
-          Full-resolution support agents that query order history, loyalty points, and store policies via your POS APIs. Launching soon — join the waitlist for early access.
+          Full-resolution support agents that query order history, loyalty points, and store policies via your POS APIs. Launching soon. Join the waitlist for early access.
         </p>
         <ul class="bai-bullets">
           <li>Multi-channel support across email, chat, and tickets</li>
@@ -254,7 +254,7 @@
         <div class="bai-tag">COMMERCE</div>
         <h3 class="bai-title">Shopping Assistant</h3>
         <p class="bai-desc">
-          Conversational commerce agents that understand purchase intent, browsing context, and live inventory. Shoppers get expert product guidance — strains, wines, pairings — without waiting for staff.
+          Conversational commerce agents that understand purchase intent, browsing context, and live inventory. Shoppers get expert product guidance across strains, edibles, and effects, without waiting for staff.
         </p>
         <ul class="bai-bullets">
           <li>Natural language product discovery</li>
@@ -290,7 +290,7 @@
               <div class="route-pct">88%</div>
             </div>
             <div class="route-item">
-              <div class="route-label">PAIRING</div>
+              <div class="route-label">EFFECTS</div>
               <div class="route-bar-wrap"><div class="route-bar" style="width: 94%"></div></div>
               <div class="route-pct">94%</div>
             </div>
@@ -315,7 +315,7 @@
         <ul class="bai-bullets">
           <li>Age verification prompts before recommendations</li>
           <li>Daily purchase limit tracking for dispensaries</li>
-          <li>DTC shipping zone validation for wineries</li>
+          <li>State-specific regulation enforcement</li>
           <li>Policy agent validates every response</li>
         </ul>
         <div class="bai-stats">
@@ -347,8 +347,8 @@
             <div class="clause-item clause-ok">
               <div class="clause-risk">OK</div>
               <div class="clause-body">
-                <div class="clause-title">Shipping zone</div>
-                <div class="clause-desc">Zip 84111 eligible for DTC delivery</div>
+                <div class="clause-title">Age check</div>
+                <div class="clause-desc">Verified 21+ before checkout</div>
               </div>
             </div>
             <div class="clause-item clause-med">
@@ -367,31 +367,29 @@
     <div id="integrations" class="bai-service">
       <div class="bai-text">
         <div class="bai-tag">INTEGRATIONS</div>
-        <h3 class="bai-title">Works With Your Stack</h3>
+        <h3 class="bai-title">Built for Dutchie</h3>
         <p class="bai-desc">
-          ShopSupport integrates with the POS and e-commerce platforms dispensaries and wineries already use. No rip-and-replace — we connect to your existing APIs and deploy alongside your current site.
+          ShopSupport connects directly to Dutchie, the POS dispensaries already run on. No rip-and-replace. We deploy alongside your existing site and read from your live menu.
         </p>
         <ul class="bai-bullets">
-          <li>Dutchie and Treez for dispensary POS</li>
-          <li>Shopify and WooCommerce for DTC storefronts</li>
-          <li>Square and custom REST API connectors</li>
-          <li>Webhook-driven real-time inventory sync</li>
+          <li>Direct Dutchie POS and catalog connection</li>
+          <li>Live menu, pricing, and inventory sync</li>
+          <li>Compliance metadata pulled from your menu</li>
+          <li>Webhook-driven real-time inventory updates</li>
         </ul>
       </div>
       <div class="bai-visual">
         <div class="bai-panel">
           <div class="bai-panel-header">
-            <span class="bai-panel-title">Supported Platforms</span>
-            <span class="bai-panel-badge live-badge"><span class="live-dot"></span>50+ APIs</span>
+            <span class="bai-panel-title">Dutchie Integration</span>
+            <span class="bai-panel-badge live-badge"><span class="live-dot"></span>Live sync</span>
           </div>
           <div class="bai-panel-body">
             <div class="mock-cross-sell-chips" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-              <span class="intent-chip">Dutchie</span>
-              <span class="intent-chip">Treez</span>
-              <span class="intent-chip">Shopify</span>
-              <span class="intent-chip">WooCommerce</span>
-              <span class="intent-chip">Square</span>
-              <span class="intent-chip">Custom API</span>
+              <span class="intent-chip">Dutchie POS</span>
+              <span class="intent-chip">Catalog API</span>
+              <span class="intent-chip">Webhooks</span>
+              <span class="intent-chip">Live menu</span>
             </div>
             <div class="route-divider" style="margin: 1rem 0;"></div>
             <div class="route-summary">
@@ -544,7 +542,7 @@
         </div>
         <div class="tech-card-body">
           <div class="tech-card-title">Vector Database Setup</div>
-          <div class="tech-card-desc">Pinecone, Weaviate, Qdrant, or pgvector — configured and optimized for your data</div>
+          <div class="tech-card-desc">Pinecone, Weaviate, Qdrant, or pgvector, configured and optimized for your data</div>
         </div>
       </div>
       <div class="tech-card">
@@ -555,7 +553,7 @@
         </div>
         <div class="tech-card-body">
           <div class="tech-card-title">Agent Orchestration</div>
-          <div class="tech-card-desc">LangGraph, AutoGen, or custom frameworks — we build the coordination layer</div>
+          <div class="tech-card-desc">LangGraph, AutoGen, or custom frameworks. We build the coordination layer</div>
         </div>
       </div>
       <div class="tech-card">
@@ -760,11 +758,11 @@
       <div class="section-label">GET STARTED</div>
       <h2 class="cta-h2">Ready to connect your POS?</h2>
       <p class="cta-sub">
-        Tell us about your store — dispensary or winery — and we'll get your shopping assistant live in weeks.
+        Tell us about your dispensary and we'll get your shopping assistant live in weeks.
       </p>
       <div class="cta-buttons">
-        <ButtonMinimal label="Start free trial" variant="primary" size="lg" href="/contact" arrow={true} />
-        <ButtonMinimal label="Schedule a call" variant="outline" size="lg" href="/contact" />
+        <ButtonMinimal label="Schedule a demo" variant="primary" size="lg" href="/contact" arrow={true} />
+        <ButtonMinimal label="Contact us" variant="outline" size="lg" href="/contact" />
       </div>
     </div>
   </div>

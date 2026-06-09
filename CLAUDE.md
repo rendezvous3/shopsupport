@@ -36,6 +36,9 @@ This rule was established explicitly by the project owner. Violations are unacce
 - Borders: `rgba(255, 255, 255, 0.06)` standard, `rgba(0, 212, 170, 0.2)` teal
 - Text: `#ffffff` headings, `#94a3b8` body, `#64748b` secondary, `#475569` muted
 
+> For full design work, read **`DESIGN.md`** (repo root): complete token list, typography, the signature
+> visual patterns, the component inventory (active vs dead), a page-by-page map, and current visual debt.
+
 ## Navigation Anchors
 - Services page sections: `#business-ai`, `#tech`, `#ai-engineering`
 - Industries page sections: `#e-commerce`, `#legal`, `#finance`, `#customer-service`

@@ -6,7 +6,7 @@
 
 <svelte:head>
   <title>About | ShopSupport.ai</title>
-  <meta name="description" content="ShopSupport builds POS-connected AI shopping assistants for dispensaries and wineries. Agentic systems trained on your catalog and compliance policies." />
+  <meta name="description" content="ShopSupport builds POS-connected AI shopping assistants for dispensaries. Agentic systems trained on your catalog and compliance policies." />
 </svelte:head>
 
 <Navigation />
@@ -22,8 +22,8 @@
         <span class="heading-teal">regulated retail</span>
       </h1>
       <p class="about-subheading">
-        ShopSupport connects to your POS and e-commerce APIs, trains agentic systems on your catalog
-        and compliance policies, and deploys shopping assistants for dispensaries and wineries.
+        ShopSupport connects to your Dutchie catalog, trains agentic systems on your products
+        and compliance policies, and deploys shopping assistants for dispensaries.
       </p>
     </div>
   </section>
@@ -37,13 +37,13 @@
           <div class="section-label">PHILOSOPHY</div>
           <h2 class="section-heading">Integration-first, production-always</h2>
           <p class="section-body">
-            Dispensaries and wineries run on specialized POS systems — Dutchie, Treez, Shopify,
-            custom APIs — with catalogs that change hourly and compliance rules that vary by state.
+            Dispensaries run on specialized POS systems like Dutchie, with catalogs
+            that change hourly and compliance rules that vary by state.
             Generic chatbots can't handle that complexity.
           </p>
           <p class="section-body">
             ShopSupport starts with your live data. We connect to your POS, ingest your catalog,
-            embed your policies, and deploy agents that know what's in stock right now — not what
+            embed your policies, and deploy agents that know what's in stock right now, not what
             was in stock when someone last updated a spreadsheet.
           </p>
           <p class="section-body">
@@ -109,8 +109,8 @@
         <div class="section-label">VISION</div>
         <h2 class="section-heading">Towards intelligent commerce at scale</h2>
         <p class="section-body section-body--centered">
-          Every dispensary and winery shopper deserves expert guidance — strain recommendations,
-          wine pairings, compliance-aware suggestions — without waiting for staff. That's what
+          Every dispensary shopper deserves expert guidance: strain recommendations,
+          effect-based matches, and compliance-aware suggestions, without waiting for staff. That's what
           we're building.
         </p>
       </div>
@@ -126,7 +126,7 @@
           <h3 class="vision-card-title">Dispensary Commerce</h3>
           <p class="vision-card-body">
             Compliance-aware product discovery for cannabis retail. Strain recommendations with
-            potency filters, purchase limit tracking, and live Dutchie or Treez inventory sync.
+            potency filters, purchase limit tracking, and live Dutchie inventory sync.
             Every suggestion is in stock and within regulations.
           </p>
         </div>
@@ -134,14 +134,13 @@
         <div class="vision-card">
           <div class="vision-card-icon">
             <svg width="22" height="22" fill="none" stroke="#00d4aa" stroke-width="1.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
             </svg>
           </div>
-          <h3 class="vision-card-title">Winery DTC</h3>
+          <h3 class="vision-card-title">Demand Intelligence</h3>
           <p class="vision-card-body">
-            Expert guidance from vineyard to checkout. Tasting notes, food pairings, club
-            membership tiers, and shipping zone validation — all connected to your live catalog
-            and DTC fulfillment rules.
+            Every conversation is a demand signal. ShopSupport surfaces the products, effects, and
+            price points shoppers search for, including demand you cannot see on a sales report.
           </p>
         </div>
 
@@ -154,8 +153,8 @@
           <h3 class="vision-card-title">POS-Native Intelligence</h3>
           <p class="vision-card-body">
             General-purpose LLMs don't know your inventory. ShopSupport agents query your POS in
-            real time, enforce compliance policies, and reason over your specific catalog — strains,
-            vintages, SKUs — like your best budtender or sommelier.
+            real time, enforce compliance policies, and reason over your specific catalog of strains,
+            products, and SKUs, like your best budtender.
           </p>
         </div>
 
@@ -401,14 +400,14 @@
     <div class="about-inner">
       <div class="about-cta-card">
         <div class="about-cta-label">SHOPSUPPORT.AI</div>
-        <h2 class="about-cta-heading">Built for dispensaries and wineries.</h2>
+        <h2 class="about-cta-heading">Built for dispensaries.</h2>
         <p class="about-cta-body">
-          We work with a focused set of regulated retail stores — connecting to your POS,
+          We work with a focused set of regulated retail stores, connecting to your POS,
           training on your catalog, and deploying shopping assistants that drive measurable
           conversion lift. Tell us about your store.
         </p>
         <div class="about-cta-buttons">
-          <ButtonMinimal label="Start free trial" variant="primary" href="/contact" arrow={true} />
+          <ButtonMinimal label="Schedule a demo" variant="primary" href="/contact" arrow={true} />
           <ButtonMinimal label="See what we build" variant="outline" href="/services" />
         </div>
       </div>

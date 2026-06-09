@@ -28,7 +28,7 @@
 
   <div class="hero__inner">
 
-    <!-- BELOW: Large app mock — lower-left corner closest to viewer -->
+    <!-- BELOW: Large app mock - lower-left corner closest to viewer -->
     <div class="hero__mockup-col">
       <div class="hero__mockup-perspective">
         <div class="hero__mockup">
@@ -659,7 +659,7 @@
     pointer-events: none;
   }
 
-  /* Teal glow — behind the mock on the right */
+  /* Teal glow - behind the mock on the right */
   .orb--teal {
     width: 800px;
     height: 800px;
@@ -669,7 +669,7 @@
     transform: translateY(-50%);
   }
 
-  /* Blue glow — upper left, behind the text */
+  /* Blue glow - upper left, behind the text */
   .orb--blue {
     width: 500px;
     height: 500px;
@@ -702,7 +702,7 @@
       flex-direction: row;      /* text LEFT, mock RIGHT */
       align-items: center;
       gap: 1.5rem;
-      padding: 0 0 0 2.5rem;   /* tight left padding — maximize mock space */
+      padding: 0 0 0 2.5rem;   /* tight left padding - maximize mock space */
     }
   }
 
@@ -719,7 +719,7 @@
   }
 
   /* Large perspective + strong rotateY = clearly visible tilt, minimal right-side shrink.
-     perspective(6000px) = very gentle vanishing point — right edge ≈ 94% height of left,
+     perspective(6000px) = very gentle vanishing point - right edge ≈ 94% height of left,
      barely perceptible compared to perspective(1800px) where it was ~85%.
      rotateY(28deg) = strong visible tilt angle.
      Result: looks clearly angled without the "horizon/vanishing" compression. */

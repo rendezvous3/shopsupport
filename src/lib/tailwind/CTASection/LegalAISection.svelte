@@ -37,7 +37,7 @@
     headline,
     description,
     stats = [
-      { value: '50+', label: 'POS APIs' },
+      { value: 'Real-time', label: 'Dutchie sync' },
       { value: '99.2%', label: 'Match accuracy' },
       { value: '<200ms', label: 'Sync' }
     ],

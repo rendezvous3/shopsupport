@@ -22,10 +22,10 @@
   }
 
   let {
-    badge = 'Dispensaries · Wineries · POS-Connected AI',
+    badge = 'Dispensaries · Dutchie · POS-Connected AI',
     headline = 'The AI agent for regulated retail commerce',
     subheadline = 'ShopSupport connects to your POS and e-commerce APIs, then deploys a trained shopping assistant that knows your live inventory, policies, and customers.',
-    primaryCta = { label: 'Start free trial', href: '/contact' },
+    primaryCta = { label: 'Schedule a demo', href: '/contact' },
     secondaryCta = { label: 'See the chat', href: '/#chat-preview' },
     trustMetrics = [
       { value: '99.2%', label: 'Live inventory accuracy' },
@@ -43,7 +43,7 @@
 
   <div class="hero__inner">
 
-    <!-- BELOW: Large app mock — lower-left corner closest to viewer -->
+    <!-- BELOW: Large app mock - lower-left corner closest to viewer -->
     <div class="hero__mockup-col">
       <div class="hero__mockup-perspective">
         <div class="hero__mockup">
@@ -673,7 +673,7 @@
     pointer-events: none;
   }
 
-  /* Teal glow — behind the mock on the right */
+  /* Teal glow - behind the mock on the right */
   .orb--teal {
     width: 800px;
     height: 800px;
@@ -683,7 +683,7 @@
     transform: translateY(-50%);
   }
 
-  /* Blue glow — upper left, behind the text */
+  /* Blue glow - upper left, behind the text */
   .orb--blue {
     width: 500px;
     height: 500px;
@@ -757,7 +757,7 @@
     }
   }
 
-  /* ─── App mock outer — V4 dimensions ────────────────────── */
+  /* ─── App mock outer - V4 dimensions ────────────────────── */
   .hero__mockup {
     display: flex;
     width: 1240px;

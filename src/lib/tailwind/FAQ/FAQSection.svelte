@@ -12,19 +12,19 @@
   const faqs = [
     {
       question: 'Which POS systems do you integrate with?',
-      answer: 'ShopSupport connects to Dutchie, Treez, Shopify, WooCommerce, Square, and custom e-commerce APIs. If your system has a REST API or webhook, we can build a connector. See our full integrations list on the Services page.'
+      answer: 'ShopSupport connects directly to Dutchie. We ingest your live catalog, pricing, and inventory through the Dutchie API and keep everything in sync as your menu updates.'
     },
     {
       question: 'How does ShopSupport handle compliance?',
-      answer: 'For dispensaries, our agents enforce age verification prompts, daily purchase limits, and state-specific regulations before recommending products. For wineries, we handle shipping zone restrictions, club membership rules, and DTC compliance. Every recommendation is validated against your configured policies.'
+      answer: 'Our agents enforce age verification prompts, daily purchase limits, and state-specific regulations before recommending products. Every recommendation is validated against your configured policies before it is shown.'
     },
     {
       question: 'How long until we\'re live on our store?',
-      answer: 'Most dispensary and winery deployments go from kickoff to production in 4 to 6 weeks. Simple Shopify or WooCommerce integrations can be live in under two weeks. You\'ll see a working prototype connected to your catalog within the first week.'
+      answer: 'Most dispensary deployments go from kickoff to production in 4 to 6 weeks. You\'ll see a working prototype connected to your Dutchie catalog within the first week.'
     },
     {
       question: 'Can it work with our existing e-commerce site?',
-      answer: 'Yes. ShopSupport deploys as an embeddable widget, standalone page, or kiosk interface alongside your existing site. It reads from the same POS and catalog APIs your store already uses — no rip-and-replace required.'
+      answer: 'Yes. ShopSupport deploys as an embeddable widget, standalone page, or kiosk interface alongside your existing site. It reads from the same POS and catalog APIs your store already uses. No rip-and-replace required.'
     },
     {
       question: 'What happens when inventory changes?',
@@ -32,7 +32,7 @@
     },
     {
       question: 'Is customer service chat coming?',
-      answer: 'Yes — full-resolution customer service agents that query order history, loyalty points, and store policies via your POS APIs are launching soon. Join the waitlist through our contact page to get early access.'
+      answer: 'Yes. Full-resolution customer service agents that query order history, loyalty points, and store policies via your POS APIs are launching soon. Join the waitlist through our contact page to get early access.'
     }
   ];
 </script>

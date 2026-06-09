@@ -13,13 +13,13 @@
     {
       tag: 'Feature 1',
       title: 'Quick shortcuts',
-      desc: 'Curated chips for your top intents — no typing required. Compliance panel and Guided entry built into the welcome state.',
+      desc: 'Curated chips for your top intents. No typing required. Compliance panel and Guided entry built into the welcome state.',
       view: 'shortcuts'
     },
     {
       tag: 'Feature 2a',
       title: 'Natural budtended conversation',
-      desc: 'Warm, menu-aware replies that feel like your best budtender — not a rigid decision tree.',
+      desc: 'Warm, menu-aware replies that feel like your best budtender, not a rigid decision tree.',
       view: 'conversation'
     },
     {
@@ -30,7 +30,7 @@
     },
     {
       tag: 'Feature 2c',
-      title: 'Guided flow — category, effects, potency',
+      title: 'Guided flow: category, effects, potency',
       desc: 'Same step engine as AiChatBot: product type, up to 2 effects, adaptive THC tiers from live catalog counts.',
       view: 'guided-category',
       guidedViews: ['guided-category', 'guided-effects', 'guided-thc']
@@ -38,13 +38,13 @@
     {
       tag: 'Feature 3',
       title: 'Individual product deep-dive',
-      desc: 'Shoppers ask about a specific SKU — brand story, format, potency — grounded in your catalog data.',
+      desc: 'Shoppers ask about a specific SKU: brand story, format, potency, all grounded in your catalog data.',
       view: 'product-detail'
     },
     {
       tag: 'Compliance',
       title: 'Policy alongside every recommendation',
-      desc: 'State warnings, medical disclaimers, and AI disclosure rendered in-context — not hidden in a legal footer.',
+      desc: 'State warnings, medical disclaimers, and AI disclosure rendered in-context, not hidden in a legal footer.',
       view: 'compliance'
     }
   ];
@@ -57,7 +57,7 @@
     <div class="showcase__label">PRODUCT WALKTHROUGH</div>
     <h2 class="showcase__title">Every capability your shoppers actually see</h2>
     <p class="showcase__desc">
-      The same widget your dispensary deploys — shortcuts, conversation, guided flow, and compliance — white-labeled to your brand.
+      The same widget your dispensary deploys: shortcuts, conversation, guided flow, and compliance, white-labeled to your brand.
     </p>
   </div>
 

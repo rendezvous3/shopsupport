@@ -121,7 +121,7 @@
       {:else if view === 'entity'}
         <div class="widget__user-msg">I am interested in berry flavored indica edibles.</div>
         <p class="widget__ai-msg">
-          I completely understand what you're looking for —
+          I completely understand what you're looking for:
           <strong class="widget__entity">indica edibles, berry flavor</strong>.
           Let me check what we have that matches your preferences.
         </p>
@@ -221,7 +221,7 @@
           Let me look up <strong>Edie Parker | Maui Mango</strong> for you.
         </p>
         <p class="widget__ai-msg widget__ai-msg--block">
-          A 1-gram sativa vape cartridge formulated for an uplifting morning experience — $42, 87% THC.
+          A 1-gram sativa vape cartridge formulated for an uplifting morning experience. $42, 87% THC.
         </p>
         <p class="widget__ai-msg widget__ai-msg--block">
           <strong>Brand &amp; style:</strong> Founded in NYC (2010), Edie Parker draws on mid-century acrylic bag design.
@@ -231,7 +231,7 @@
 
       {:else if view === 'compliance'}
         <p class="widget__ai-msg widget__ai-msg--small">
-          I can't make health claims — please consult a healthcare provider for medical guidance.
+          I can't make health claims. Please consult a healthcare provider for medical guidance.
         </p>
         <div class="widget__product">
           <div class="widget__product-img widget__product-img--vape"></div>
