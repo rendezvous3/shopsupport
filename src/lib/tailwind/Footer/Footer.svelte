@@ -1,4 +1,6 @@
 <script lang="ts">
+  import BrandLockup from '$lib/custom/BrandLockup/BrandLockup.svelte';
+  import BrandName from '$lib/custom/BrandName/BrandName.svelte';
   interface FooterLink {
     label: string;
     href: string;
@@ -33,19 +35,24 @@
           { label: 'Guided Selling', href: '/guided-selling' },
           { label: 'Analytics', href: '/analytics' },
           { label: 'POS Integration', href: '/services#pos-integration' },
-          { label: 'Shopping Assistant', href: '/services#shopping-assistant' }
+          { label: 'Shopping Agent', href: '/services#shopping-assistant' }
         ]
       },
       {
         title: 'Industries',
         links: [
-          { label: 'Dispensaries', href: '/industries#dispensaries' },
+          { label: 'Cannabis dispensaries', href: '/industries#cannabis' },
+          { label: 'Drugstore & beauty', href: '/industries#drugstore' },
+          { label: 'Wine & beverage', href: '/industries#beverage' },
+          { label: 'Fashion & apparel', href: '/industries#fashion' },
+          { label: 'Automotive', href: '/industries#automotive' },
           { label: 'Customer Service (Soon)', href: '/industries#customer-service' }
         ]
       },
       {
         title: 'Company',
         links: [
+          { label: 'Pricing', href: '/pricing' },
           { label: 'About', href: '/about' },
           { label: 'Contact', href: '/contact' }
         ]
@@ -59,7 +66,7 @@
       { name: 'LinkedIn', href: 'https://linkedin.com/company/shopsupport' },
       { name: 'Twitter', href: 'https://twitter.com/shopsupport' }
     ],
-    copyright = `© ${new Date().getFullYear()} ShopSupport.ai. All rights reserved.`
+    copyright = ''
   }: FooterProps = $props();
 </script>
 
@@ -67,15 +74,15 @@
   <div class="max-w-7xl mx-auto py-12 lg:py-16">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 items-start">
       <!-- Brand Column -->
-      <div class="lg:col-span-1 flex flex-col -mt-6 lg:-mt-8">
-        <div class="mb-2">
-          <img src="/logo/Transparent Logo.svg" alt="Shopsupport.ai" class="h-9 w-auto" />
+      <div class="lg:col-span-1 flex flex-col">
+        <div class="mb-3 self-start">
+          <BrandLockup height="2.5rem" offset="0.625rem" />
         </div>
         <p class="text-gray-400 mb-2">
           Agentic AI for regulated retail commerce
         </p>
         <p class="text-sm text-gray-500 mb-4 max-w-xs">
-          POS-connected shopping assistants for dispensaries.
+          Expert shopping AI agents for retail. Connected to the live catalog, compliance in the answer.
         </p>
         {#if contactInfo.email}
           <p class="text-sm text-gray-400 mb-1">
@@ -114,13 +121,17 @@
     </div>
 
     <!-- Bottom Bar -->
-    <div class="mt-12 pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row justify-between items-center">
-      <p class="text-sm text-gray-400">
-        {copyright}
+    <div class="mt-12 pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row gap-4 w-full">
+      <p class="text-sm text-gray-400 text-left">
+        {#if copyright}
+          {copyright}
+        {:else}
+          © {new Date().getFullYear()} <BrandName variant="onDark" />. All rights reserved.
+        {/if}
       </p>
       
       {#if socialLinks.length > 0}
-        <div class="mt-4 sm:mt-0 flex space-x-6">
+        <div class="flex space-x-6 sm:ml-auto">
           {#each socialLinks as social}
             <a
               href={social.href}
@@ -137,4 +148,3 @@
     </div>
   </div>
 </footer>
-

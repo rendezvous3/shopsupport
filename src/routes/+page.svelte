@@ -4,48 +4,129 @@
   // import HeroSectionV3 from '$lib/tailwind/HeroSectionV3/HeroSectionV3.svelte';
   // import HeroSectionV4 from '$lib/tailwind/HeroSectionV4/HeroSectionV4.svelte';
   // import HeroSectionV5 from '$lib/tailwind/HeroSectionV5/HeroSectionV5.svelte';
-  import HeroSectionChat from '$lib/tailwind/HeroSectionChat/HeroSectionChat.svelte';
+  import VerticalHero from '$lib/tailwind/VerticalHero/VerticalHero.svelte';
+  import { verticals } from '$lib/data/verticals';
   import HeroSectionV7 from '$lib/tailwind/HeroSectionV7/HeroSectionV7.svelte';
   import FeatureCardDark from '$lib/tailwind/FeatureCard/FeatureCardDark.svelte';
   import CTASectionVariation2 from '$lib/tailwind/CTASection/CTASectionVariation2.svelte';
-  import LegalAISection from '$lib/tailwind/CTASection/LegalAISection.svelte';
   import Footer from '$lib/tailwind/Footer/Footer.svelte';
   import CardLayoutTimeline from '$lib/tailwind/CardLayouts/CardLayoutTimeline.svelte';
   import FAQSection from '$lib/tailwind/FAQ/FAQSection.svelte';
   import ButtonMinimal from '$lib/custom/ButtonMinimal/ButtonMinimal.svelte';
-  import BudtenderChatPreview from '$lib/tailwind/BudtenderChatPreview/BudtenderChatPreview.svelte';
+  import BrandName from '$lib/custom/BrandName/BrandName.svelte';
 </script>
 
 <svelte:head>
-  <title>ShopSupport.ai | AI Agent for Dispensary Commerce</title>
-  <meta name="description" content="POS-connected AI shopping assistants for dispensaries. ShopSupport connects to your Dutchie catalog and deploys trained agentic systems on your live inventory." />
+  <title>shopsupport.ai | Expert shopping AI agents for retail</title>
+  <meta name="description" content="shopsupport.ai builds expert shopping AI agents for retail: guided selling on your live catalog with compliance in the answer. Cannabis, drugstore and beauty, wine, fashion, sporting goods, jewelry, automotive." />
 </svelte:head>
 
 <Navigation dropdownTrigger="hover" />
 
-<HeroSectionChat />
+<VerticalHero />
 
-<BudtenderChatPreview />
+<!-- Industries grid -->
+<div class="bg-[var(--bg-alt)] py-16 lg:py-24 border-t border-white/[0.04]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <div class="inline-block text-[11px] font-medium tracking-[0.14em] uppercase text-[#00d4aa] mb-4">ONE ENGINE, MANY CATALOGS</div>
+      <h2 class="text-3xl sm:text-4xl text-white mb-4 font-semibold tracking-tight">
+        Trained on the decision logic of each industry
+      </h2>
+      <p class="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+        Not seven chatbots. One guided-selling engine, connected to the catalog, tuned to how people actually buy in each vertical, with that vertical's rules in every answer.
+      </p>
+    </div>
+    <div class="vert-grid">
+      {#each verticals as v}
+        <a class="vert-card" href={`/industries#${v.id}`}>
+          <div class="vert-card-top">
+            <span class="vert-card-agent">{v.agent}</span>
+            <span class="vert-card-status vert-card-status--{v.status}">{v.status === 'live' ? 'In production' : v.status === 'pilot' ? 'Pilot' : 'Working demo'}</span>
+          </div>
+          <h3 class="vert-card-title">{v.label}</h3>
+          <p class="vert-card-desc">{v.card}</p>
+          <div class="vert-card-int">
+            {#each v.integrations.slice(0, 3) as i}<span>{i}</span>{/each}
+          </div>
+        </a>
+      {/each}
+    </div>
+  </div>
+</div>
 
 <!-- Platform dashboard (admin view) -->
 <div class="bg-[#09090f] py-16 lg:py-20 border-t border-white/[0.04]">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10">
     <div class="inline-block text-[11px] font-medium tracking-[0.14em] uppercase text-[#00d4aa] mb-4">BEHIND THE WIDGET</div>
-    <h2 class="text-2xl sm:text-3xl text-white font-semibold tracking-tight mb-3">
-      POS-connected platform underneath
+    <h2 class="text-2xl sm:text-3xl text-white font-semibold tracking-tight mb-4">
+      Chat analytics your sales report cannot show
     </h2>
-    <p class="text-slate-400 max-w-2xl mx-auto">
-      The same agent stack powers your storefront widget: live catalog sync, analytics, and multi-store management.
+    <p class="text-slate-400 leading-relaxed mb-3">
+      From one live dispensary deployment: 477 product-seeking searches logged with session IDs, timestamps, and full query history.
+      451 started in chat. Top category: edibles (145). Top effect: uplifted (89 mentions). The same dashboard reads skin types, grape varieties or body styles in the other verticals.
+    </p>
+    <p class="text-slate-400 leading-relaxed">
+      30 searches returned no catalog match (6.3%). Every session is monitored and stored for compliance review.
+      Product lookups, guided flow events, and unresolved threads included.
     </p>
   </div>
   <HeroSectionV7
     compact={true}
-    badge="Admin · Analytics · Multi-store"
-    headline="One platform for every channel"
-    subheadline="Deploy the budtender on your site, kiosk, or SMS, then monitor conversions, sync latency, and catalog accuracy from a single dashboard."
+    badge="Product Demand · Sessions · Compliance"
+    headline="Demand signals from real shopper sessions"
+    subheadline="Category, subcategory, potency, and effect demand on one screen. Guided flow: 100% completion across 24 sessions. Drill down from uplifted (89) to edibles · gummies (37) to flower · THC ≥ 28% (31)."
     primaryCta={{ label: 'Schedule a demo', href: '/contact' }}
-    secondaryCta={{ label: 'See features above', href: '/#chat-preview' }}
+    secondaryCta={{ label: 'Explore analytics', href: '/analytics' }}
+    trustMetrics={[
+      { value: '477', label: 'Product-seeking searches' },
+      { value: '6.3%', label: 'No-result rate (30 gaps)' },
+      { value: '100%', label: 'Guided flow completion' }
+    ]}
   />
+</div>
+
+<!-- Analytics spotlight -->
+<div class="bg-[var(--bg-alt)] py-16 lg:py-20 border-t border-white/[0.04]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+      <div>
+        <div class="inline-block text-[11px] font-medium tracking-[0.14em] uppercase text-[var(--accent)] mb-4">ANALYTICS</div>
+        <h2 class="text-2xl sm:text-3xl text-white font-semibold tracking-tight mb-4">
+          Every chat leaves a demand trail
+        </h2>
+        <p class="text-slate-400 leading-relaxed mb-6 max-w-lg">
+          The agent tracks every product-seeking search with category, subcategory, attribute and need breakdowns.
+          In a dispensary that is potency and effect: edibles · gummies at 37, flower · THC ≥ 28% at 31, and the 30 no-result gaps the POS never reports.
+          In a drugstore it is skin type and concern; in a wine shop, grape and occasion. Every session is stored for compliance review.
+        </p>
+        <ButtonMinimal label="Explore analytics" variant="outline" href="/analytics" arrow={true} />
+      </div>
+
+      <div class="home-analytics-grid">
+        <div class="home-analytics-stat">
+          <div class="home-analytics-label">Demand</div>
+          <div class="home-analytics-value">477</div>
+          <div class="home-analytics-sub">Product-seeking searches</div>
+        </div>
+        <div class="home-analytics-stat">
+          <div class="home-analytics-label">Top effect</div>
+          <div class="home-analytics-value home-analytics-value--sm">uplifted</div>
+          <div class="home-analytics-sub">89 mentions</div>
+        </div>
+        <div class="home-analytics-stat">
+          <div class="home-analytics-label">No results</div>
+          <div class="home-analytics-value home-analytics-value--alert">6.3%</div>
+          <div class="home-analytics-sub">30 unmet searches</div>
+        </div>
+        <div class="home-analytics-stat">
+          <div class="home-analytics-label">Entry mode</div>
+          <div class="home-analytics-value home-analytics-value--sm">Chat</div>
+          <div class="home-analytics-sub">451 of 477 searches</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Business AI Section -->
@@ -57,7 +138,7 @@
         AI that knows your catalog in real time
       </h2>
       <p class="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-        POS-connected assistants for dispensaries, trained on your inventory, policies, and customers
+        Branded agents trained on your inventory, your policies and your customers, in every vertical
       </p>
     </div>
 
@@ -66,10 +147,10 @@
       <!-- Card 1: POS-Connected Recommendations -->
       <div class="bento-card bento-card--ecom">
         <div class="bento-card-text">
-          <div class="bento-label">POS-CONNECTED</div>
+          <div class="bento-label">CATALOG-CONNECTED</div>
           <h3 class="bento-heading">Intelligent product recommendations</h3>
           <p class="bento-desc">
-            AI that reads live inventory from your POS, understands purchase intent and compliance rules, and surfaces the right products at the right moment.
+            AI that reads live inventory from your POS or commerce platform, understands purchase intent and the rules of your category, and surfaces the right products at the right moment.
           </p>
           <div class="bento-cta">
             <ButtonMinimal label="Learn more" variant="outline" href="/guided-selling" arrow={true} />
@@ -112,7 +193,7 @@
             </div>
             <div class="rec-status">
               <span class="rec-status-dot"></span>
-              <span class="rec-status-text">Synced with Dutchie POS</span>
+              <span class="rec-status-text">Synced with the live catalog</span>
             </div>
           </div>
         </div>
@@ -244,22 +325,22 @@
       />
 
       <FeatureCardDark
-        title="POS API Integration"
-        description="A direct connector to Dutchie with real-time catalog, pricing, and inventory synchronization."
+        title="POS and Commerce Connectors"
+        description="Direct connectors to Dutchie, Shopify, WooCommerce, Magento, Salesforce Commerce and dealership DMS feeds, with real-time catalog, pricing and inventory sync."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>'
       />
 
       <FeatureCardDark
         title="Catalog Data Pipelines"
-        description="Automated ingestion of product data, potency profiles, terpene data, and compliance metadata from your POS and CMS."
+        description="Automated ingestion of product data, attributes, specifications, usage and claims metadata from your POS, commerce platform and CMS, in any language."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" /></svg>'
       />
 
       <FeatureCardDark
         title="Compliance Validation"
-        description="Automated checks for age verification, purchase limits, shipping restrictions, and state-specific regulations before every recommendation."
+        description="Automated checks for age verification, purchase limits, shipping restrictions, product-claim rules and regional regulations before every recommendation."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>'
       />
@@ -280,7 +361,7 @@
 
       <FeatureCardDark
         title="Production Monitoring"
-        description="Dashboards for conversion lift, AOV tracking, sync latency, and conversation quality across every deployed channel."
+        description="Dashboards for conversion lift, AOV tracking, sync latency, and conversation quality across every deployed channel, with a judged test suite on every release."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>'
       />
@@ -288,62 +369,15 @@
   </div>
 </div>
 
-<!-- Industries Section -->
-<div class="bg-[#09090f] py-20 lg:py-28">
+<!-- How we integrate the agent -->
+<div class="bg-[var(--bg-inner)] py-20 lg:py-28">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
       <h2 class="text-3xl sm:text-4xl text-white mb-4 font-semibold tracking-tight">
-        Built for regulated retail
-      </h2>
-      <p class="text-xl text-slate-400 max-w-2xl mx-auto">
-        Deep expertise in dispensary commerce, where compliance and catalog complexity demand specialized AI
-      </p>
-    </div>
-
-    <div class="max-w-2xl mx-auto">
-
-      <!-- Dispensaries -->
-      <div class="group flex flex-col bg-[#111117] border border-white/[0.06] rounded-2xl overflow-hidden hover:border-[rgba(0,212,170,0.15)] transition-all duration-300 min-h-[420px]">
-        <div class="flex-1 p-8">
-          <div class="text-[11px] font-medium tracking-[0.12em] uppercase text-[#00d4aa] mb-6">DISPENSARIES</div>
-          <h3 class="text-2xl font-medium text-white mb-3 leading-tight">Compliance-aware product discovery</h3>
-          <p class="text-slate-400 text-sm leading-relaxed mb-8">
-            Strain recommendations with potency filters, purchase limit awareness, and live Dutchie inventory sync.
-          </p>
-          <div class="bg-[#0d0d14] rounded-xl border border-white/[0.05] p-4 space-y-3">
-            <div class="flex justify-end">
-              <div class="text-xs text-slate-300 bg-white/5 rounded-xl rounded-tr-sm px-3 py-2 max-w-[85%]">Something relaxing, under $40, in stock?</div>
-            </div>
-            <div class="flex justify-start">
-              <div class="text-xs text-[#00d4aa] bg-[#00d4aa]/8 rounded-xl rounded-tl-sm px-3 py-2 max-w-[85%]">3 matches. Blue Dream 97% · within daily limit</div>
-            </div>
-            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
-              <div class="h-full bg-[#00d4aa]/50 rounded-full" style="width:97%"></div>
-            </div>
-            <div class="flex items-center gap-2">
-              <div class="w-1.5 h-1.5 rounded-full bg-[#00d4aa] animate-pulse"></div>
-              <span class="text-[11px] text-slate-500">Synced with Dutchie POS</span>
-            </div>
-          </div>
-        </div>
-        <div class="px-8 pb-8">
-          <ButtonMinimal label="Learn more" variant="outline" href="/industries#dispensaries" arrow={true} />
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- How ShopSupport Works -->
-<div class="bg-[#0d0d14] py-20 lg:py-28">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl sm:text-4xl text-white mb-4 font-semibold tracking-tight">
-        How ShopSupport works
+        How we integrate the agent into your site
       </h2>
       <p class="text-xl text-slate-400 max-w-3xl mx-auto">
-        From POS connection to live deployment. A continuous improvement loop for your store
+        From POS connection to embedded widget. A continuous improvement loop for your store
       </p>
     </div>
 
@@ -353,7 +387,7 @@
           <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa] rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
           <FeatureCardDark
             title="1. Connect"
-            description="We connect to your Dutchie account through its API and begin ingesting your live catalog."
+            description="We connect to your POS or commerce platform, Dutchie, Shopify, WooCommerce, Magento or a product feed, and begin ingesting your live catalog."
             variant="default"
             icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>'
           />
@@ -362,7 +396,7 @@
           <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa]/60 rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
           <FeatureCardDark
             title="2. Train"
-            description="Your catalog, compliance policies, and customer data are embedded and fine-tuned into domain-specific agents that understand your products and regulations."
+            description="Your catalog and compliance policies are embedded and fine-tuned into domain-specific agents that understand your products and regulations."
             variant="default"
             icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>'
           />
@@ -371,7 +405,7 @@
           <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa] rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
           <FeatureCardDark
             title="3. Deploy"
-            description="Launch your shopping assistant across web, kiosk, SMS, and embeddable widgets, wherever your customers reach you."
+            description="Launch the agent on your website as an embeddable widget, one script tag, wherever your customers browse your catalog."
             variant="default"
             icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /></svg>'
           />
@@ -390,35 +424,21 @@
   </div>
 </div>
 
-<!-- POS Integration Spotlight -->
-<LegalAISection
-  headline="Your catalog, inventory, and policies, connected in real time"
-  description="ShopSupport syncs with your POS and e-commerce APIs so every recommendation reflects live stock, current pricing, and your store's compliance rules."
-  primaryCta={{
-    label: 'Schedule a demo',
-    href: '/contact'
-  }}
-  secondaryCta={{
-    label: 'View integrations',
-    href: '/services#integrations'
-  }}
-/>
-
 <!-- FAQ Section -->
 <FAQSection />
 
 <!-- CTA Section -->
 <CTASectionVariation2
-  headline="Deploy your POS-connected AI assistant"
-  description="Tell us about your store and POS stack. We'll have you live with a trained shopping assistant in weeks, not months."
+  headline="Deploy an expert shopping agent on your storefront"
+  description="Dispensaries start at $499/month plus usage, with a $299 setup that connects the POS. Other verticals are scoped per catalog and integration, from a fixed-fee pilot to a platform fee plus usage."
   colorScheme="dark"
   primaryCta={{
     label: 'Schedule a demo',
     href: '/contact'
   }}
   secondaryCta={{
-    label: 'Contact us',
-    href: '/contact'
+    label: 'View pricing',
+    href: '/pricing'
   }}
 />
 
@@ -857,4 +877,80 @@
     0%, 100% { opacity: 1; }
     50% { opacity: 0.3; }
   }
+
+  .home-analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .home-analytics-stat {
+    background: var(--bg-card);
+    border: 1px solid var(--border-standard);
+    border-radius: 1rem;
+    padding: 1rem 1.1rem;
+  }
+
+  .home-analytics-label {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.35rem;
+  }
+
+  .home-analytics-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-heading);
+    line-height: 1.1;
+    margin-bottom: 0.2rem;
+  }
+
+  .home-analytics-value--sm {
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+
+  .home-analytics-value--alert {
+    color: var(--danger);
+  }
+
+  .home-analytics-sub {
+    font-size: 11px;
+    color: var(--text-secondary);
+  }
+
+  /* Industries grid (home) */
+  .vert-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  @media (min-width: 640px) { .vert-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 1024px) { .vert-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (min-width: 1280px) { .vert-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  .vert-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.35rem 1.4rem 1.25rem;
+    border-radius: 1.25rem;
+    background: #111117;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+  }
+  .vert-card:hover { border-color: rgba(0, 212, 170, 0.35); background: #141420; transform: translateY(-2px); }
+  .vert-card:focus-visible { outline: 2px solid #00d4aa; outline-offset: 2px; }
+  .vert-card-top { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+  .vert-card-agent { font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #00d4aa; }
+  .vert-card-status { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.5rem; border-radius: 999px; border: 1px solid rgba(255,255,255,0.08); color: #64748b; white-space: nowrap; }
+  .vert-card-status--live { color: #00d4aa; border-color: rgba(0, 212, 170, 0.3); background: rgba(0, 212, 170, 0.08); }
+  .vert-card-status--pilot { color: #94a3b8; border-color: rgba(148, 163, 184, 0.3); }
+  .vert-card-title { margin: 0; color: #ffffff; font-size: 1.15rem; font-weight: 500; letter-spacing: -0.01em; }
+  .vert-card-desc { margin: 0; color: #94a3b8; font-size: 0.9rem; line-height: 1.55; flex: 1; }
+  .vert-card-int { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.35rem; }
+  .vert-card-int span { font-family: ui-monospace, monospace; font-size: 10.5px; color: #64748b; border: 1px solid rgba(255,255,255,0.06); border-radius: 999px; padding: 0.15rem 0.5rem; }
 </style>

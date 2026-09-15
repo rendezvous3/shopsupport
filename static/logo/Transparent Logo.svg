@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 36" fill="none">
-  <g transform="translate(0, 3) scale(0.14) translate(-131, -147)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228 36" fill="none">
+  <g transform="translate(2, 2) scale(0.15) translate(-131, -147)">
     <rect x="289.4" y="202.56" width="11.65" height="9.56" fill="#00D4AA"/>
     <path fill="#00D4AA" d="M189.28,244.75l-15,15v0l-7.35,7.33a2.12,2.12,0,0,0-.28.31,20.89,20.89,0,0,0,0,28.93l-14.47-14.47-9.44-9.44a39.14,39.14,0,0,1,0-55.33l9.44-9.44L166.84,193a20.91,20.91,0,0,0-.09,29.24Z"/>
     <path fill="#00D4AA" d="M249.41,304.88,212.32,342l-45.38-45.35a2.8,2.8,0,0,1-.28-.31,20.89,20.89,0,0,1,0-28.93,2.12,2.12,0,0,1,.28-.31l7.35-7.33v0l15-15Z"/>
@@ -10,7 +10,7 @@
     <path fill="#00D4AA" d="M249.41,304.88l60.13-60.16,22.53,22.54a20.89,20.89,0,0,1-.09,29.23s-.07.1-.1.13L286.5,342Z"/>
     <path fill="#00D4AA" d="M324.53,229.76v0l7.35-7.33a1.7,1.7,0,0,0,.28-.31,20.85,20.85,0,0,0,0-28.92,2.21,2.21,0,0,0-.28-.32l-3.12-3.12h0a16.41,16.41,0,0,1,0,23.21l-25.48,25.48,6.3,6.3Z"/>
   </g>
-  <text x="46" y="24" font-family="Space Grotesk, system-ui, -apple-system, sans-serif" font-size="18" font-weight="500" letter-spacing="-0.01em">
-    <tspan fill="#f3f3f3">Shopsupport</tspan><tspan fill="#00D4AA" font-weight="500">.ai</tspan>
+  <text x="32" y="25" font-family="Space Grotesk, system-ui, -apple-system, sans-serif" font-size="19" font-weight="600" letter-spacing="-0.03em">
+    <tspan fill="#ffffff">Shopsupport</tspan><tspan fill="#00D4AA" font-weight="600">.ai</tspan>
   </text>
 </svg>

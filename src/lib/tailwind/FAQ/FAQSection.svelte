@@ -1,4 +1,6 @@
 <script lang="ts">
+  import BrandName from '$lib/custom/BrandName/BrandName.svelte';
+
   let openItems = $state<number[]>([]);
 
   function toggle(index: number) {
@@ -10,30 +12,12 @@
   }
 
   const faqs = [
-    {
-      question: 'Which POS systems do you integrate with?',
-      answer: 'ShopSupport connects directly to Dutchie. We ingest your live catalog, pricing, and inventory through the Dutchie API and keep everything in sync as your menu updates.'
-    },
-    {
-      question: 'How does ShopSupport handle compliance?',
-      answer: 'Our agents enforce age verification prompts, daily purchase limits, and state-specific regulations before recommending products. Every recommendation is validated against your configured policies before it is shown.'
-    },
-    {
-      question: 'How long until we\'re live on our store?',
-      answer: 'Most dispensary deployments go from kickoff to production in 4 to 6 weeks. You\'ll see a working prototype connected to your Dutchie catalog within the first week.'
-    },
-    {
-      question: 'Can it work with our existing e-commerce site?',
-      answer: 'Yes. ShopSupport deploys as an embeddable widget, standalone page, or kiosk interface alongside your existing site. It reads from the same POS and catalog APIs your store already uses. No rip-and-replace required.'
-    },
-    {
-      question: 'What happens when inventory changes?',
-      answer: 'ShopSupport syncs with your POS in real time. When stock levels, pricing, or product availability change, recommendations update automatically. Out-of-stock items are never suggested.'
-    },
-    {
-      question: 'Is customer service chat coming?',
-      answer: 'Yes. Full-resolution customer service agents that query order history, loyalty points, and store policies via your POS APIs are launching soon. Join the waitlist through our contact page to get early access.'
-    }
+    { id: 'pos', question: 'Which POS and commerce systems do you integrate with?' },
+    { id: 'compliance', question: 'How does compliance work in each industry?' },
+    { id: 'timeline', question: 'How long until we\'re live on our store?' },
+    { id: 'embed', question: 'Can it work with our existing e-commerce site?' },
+    { id: 'inventory', question: 'What happens when inventory changes?' },
+    { id: 'cs', question: 'Is customer service chat coming?' }
   ];
 </script>
 
@@ -51,7 +35,19 @@
           </button>
           {#if isOpen}
             <div class="faq-answer">
-              <p class="faq-answer-text">{faq.answer}</p>
+              {#if faq.id === 'pos'}
+                <p class="faq-answer-text"><BrandName variant="onDark" /> connects to the system your catalog already lives in: Dutchie for dispensaries, Shopify, WooCommerce, Magento or Salesforce Commerce for retail, a dealership DMS or inventory feed for automotive, or a plain product feed. We ingest the live catalog, pricing and inventory and keep everything in sync as it changes.</p>
+              {:else if faq.id === 'compliance'}
+                <p class="faq-answer-text">Each vertical carries its own rulebook and the agent applies it before a recommendation is shown: purchase limits, age verification and state warnings in cannabis; cosmetics, supplement and infant-formula claim rules in drugstore and beauty; age gating and shipping eligibility in wine and spirits; approved pricing and availability in automotive. In the EU, AI Act Article 50 disclosure, GDPR storage and accessibility come as standard. A forbidden-claim test suite runs on every release.</p>
+              {:else if faq.id === 'timeline'}
+                <p class="faq-answer-text">Dispensaries run as SaaS: after the $299 setup, most stores are live within days once the Dutchie catalog is connected, at $499/month plus token usage. Other verticals start with a scoped pilot on one catalog and one market, typically eight to ten weeks from kick-off, ending in a decision meeting. See our <a href="/pricing" class="faq-link">pricing page</a> for details.</p>
+              {:else if faq.id === 'embed'}
+                <p class="faq-answer-text">Yes. The agent deploys as an embeddable widget, one script tag, or as a standalone page alongside your existing site. It reads from the same POS and catalog APIs your store already uses, and your existing site search stays exactly as it is. No rip-and-replace required.</p>
+              {:else if faq.id === 'inventory'}
+                <p class="faq-answer-text">The agent syncs with your POS or commerce platform in real time. When stock levels, pricing, sizes or availability change, recommendations update automatically. Out-of-stock items are never suggested.</p>
+              {:else if faq.id === 'cs'}
+                <p class="faq-answer-text">Yes. Full-resolution customer service agents that query order history, loyalty points, and store policies via your POS APIs are launching soon. Join the waitlist through our contact page to get early access.</p>
+              {/if}
             </div>
           {/if}
         </div>
@@ -62,7 +58,7 @@
 
 <style>
   .faq-section {
-    background-color: #09090f;
+    background-color: var(--bg-outer, #09090f);
     padding: 5rem 1.5rem;
   }
 
@@ -132,5 +128,14 @@
     font-size: 14px;
     line-height: 1.7;
     margin: 0;
+  }
+
+  .faq-answer-text :global(.faq-link) {
+    color: #00d4aa;
+    text-decoration: none;
+  }
+
+  .faq-answer-text :global(.faq-link:hover) {
+    text-decoration: underline;
   }
 </style>

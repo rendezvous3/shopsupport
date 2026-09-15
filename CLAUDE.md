@@ -39,9 +39,16 @@ This rule was established explicitly by the project owner. Violations are unacce
 > For full design work, read **`DESIGN.md`** (repo root): complete token list, typography, the signature
 > visual patterns, the component inventory (active vs dead), a page-by-page map, and current visual debt.
 
+## Positioning (since 2026-09-15)
+- shopsupport.ai builds **expert shopping AI agents for retail**. The AI Budtender is ONE vertical of seven.
+- Verticals are data: `src/lib/data/verticals.ts` drives the hero tabs, home grid, nav dropdown and the
+  `/industries` deep dives. Add or reword a vertical there, nowhere else.
+- Brand is always spelled `shopsupport.ai` (lowercase, with .ai). Use `BrandName`.
+- Never mention cartender.ai, Riffinity or Alpine in public copy.
+
 ## Navigation Anchors
 - Services page sections: `#business-ai`, `#tech`, `#ai-engineering`
-- Industries page sections: `#e-commerce`, `#legal`, `#finance`, `#customer-service`
+- Industries page sections: `#cannabis`, `#drugstore`, `#beverage`, `#fashion`, `#sporting`, `#jewelry`, `#automotive`, `#customer-service`
 - All anchored sections must have `scroll-margin-top: 100px` to account for the fixed nav
 
 ## Components

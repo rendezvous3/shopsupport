@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 530 150" fill="none">
+  <defs>
+    
+    <linearGradient id="pf1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#cafff2"></stop><stop offset="100%" stop-color="#00d4aa"></stop></linearGradient>
+    <linearGradient id="pf2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00d4aa"></stop><stop offset="100%" stop-color="#0a6f5b"></stop></linearGradient>
+    <linearGradient id="pf3" x1="1" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#5ad6ff"></stop><stop offset="100%" stop-color="#1a8fae"></stop></linearGradient>
+    <linearGradient id="pf4" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#063f34"></stop><stop offset="100%" stop-color="#0a8f76"></stop></linearGradient>
+    <linearGradient id="pwarm" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#d8ff85"></stop><stop offset="100%" stop-color="#34d9b0"></stop></linearGradient>
+    <radialGradient id="pHalo" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#00d4aa" stop-opacity="0.4"></stop><stop offset="100%" stop-color="#00d4aa" stop-opacity="0"></stop></radialGradient>
+    <linearGradient id="wmgrad" x1="106" y1="0" x2="430" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"></stop><stop offset="0.55" stop-color="#7fffe8"></stop><stop offset="0.92" stop-color="#45c8ff"></stop>
+    </linearGradient>
+  </defs>
+  <g transform="translate(0,10) scale(0.86)">
+    <circle cx="70" cy="74" r="58" fill="url(#pHalo)"></circle>
+    <polygon points="70,18 38,58 70,70" fill="url(#pf1)"></polygon>
+    <polygon points="70,18 102,58 70,70" fill="url(#pwarm)"></polygon>
+    <polygon points="38,58 70,70 70,134" fill="url(#pf2)"></polygon>
+    <polygon points="102,58 70,70 70,134" fill="url(#pf3)"></polygon>
+    <polygon points="38,58 28,66 70,134" fill="url(#pf4)"></polygon>
+    <polygon points="102,58 112,66 70,134" fill="url(#pf4)"></polygon>
+    <polyline points="70,18 38,58" fill="none" stroke="#eafff9" stroke-width="1.5" opacity="0.7"></polyline>
+    <polyline points="70,18 70,70" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.5"></polyline>
+  </g>
+  <text x="106" y="95" font-family="Sora, &#39;Segoe UI&#39;, system-ui, sans-serif" font-size="58" font-weight="600" letter-spacing="-2"><tspan fill="url(#wmgrad)">shopsupport</tspan><tspan fill="#00d4aa">.ai</tspan></text>
+</svg>

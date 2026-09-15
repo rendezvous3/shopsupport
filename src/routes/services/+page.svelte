@@ -2,11 +2,12 @@
   import Navigation from '$lib/tailwind/Navigation/Navigation.svelte';
   import Footer from '$lib/tailwind/Footer/Footer.svelte';
   import ButtonMinimal from '$lib/custom/ButtonMinimal/ButtonMinimal.svelte';
+  import BrandName from '$lib/custom/BrandName/BrandName.svelte';
 </script>
 
 <svelte:head>
-  <title>Services | ShopSupport.ai</title>
-  <meta name="description" content="POS integration, shopping assistants, and compliance AI for dispensaries. Commerce AI built on your Dutchie catalog." />
+  <title>Services | shopsupport.ai</title>
+  <meta name="description" content="Catalog and POS integration, expert shopping agents and compliance AI for retail. Built on your live catalog: Dutchie, Shopify, WooCommerce, Magento or a product feed." />
 </svelte:head>
 
 <Navigation dropdownTrigger="hover" />
@@ -25,7 +26,7 @@
         on Your POS
       </h1>
       <p class="hero-sub">
-        ShopSupport connects to your Dutchie catalog, trains agentic systems on your products and policies, and deploys shopping assistants for dispensaries.
+        <BrandName variant="onDark" /> connects to the system your catalog lives in, trains agentic systems on your products and policies, and deploys an expert shopping agent for your vertical.
       </p>
       <div class="hero-ctas">
         <ButtonMinimal label="Schedule a demo" variant="primary" size="lg" href="/contact" arrow={true} />
@@ -93,7 +94,7 @@
           <!-- API -->
           <rect x="425" y="110" width="40" height="26" rx="5" fill="#0d0d14" stroke="rgba(0,212,170,0.18)" stroke-width="1" />
           <text x="445" y="121" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7.5" font-weight="600">POS</text>
-          <text x="445" y="130" text-anchor="middle" fill="#334155" font-family="ui-monospace,monospace" font-size="6">Dutchie</text>
+          <text x="445" y="130" text-anchor="middle" fill="#334155" font-family="ui-monospace,monospace" font-size="6">POS · Shopify · feeds</text>
           <!-- LLM -->
           <rect x="425" y="175" width="40" height="26" rx="5" fill="#0d0d14" stroke="rgba(0,212,170,0.18)" stroke-width="1" />
           <text x="445" y="186" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7.5" font-weight="600">LLM</text>
@@ -129,7 +130,7 @@
       <div class="section-label">BUSINESS AI</div>
       <h2 class="section-h2">AI Trained on Your Catalog</h2>
       <p class="section-sub">
-        Purpose-built agents for dispensary commerce. Each system connects to your Dutchie catalog, trains on your products and policies, and deploys where your customers shop.
+        Purpose-built agents for considered, regulated retail. Each system connects to your catalog, trains on your products and policies, and deploys where your customers shop.
       </p>
     </div>
 
@@ -139,7 +140,7 @@
         <div class="bai-tag">INTEGRATION</div>
         <h3 class="bai-title">POS &amp; Catalog Integration</h3>
         <p class="bai-desc">
-          A direct connector to Dutchie. ShopSupport ingests your live catalog, pricing, and inventory, then keeps everything in sync as your menu updates in real time.
+          Direct connectors to Dutchie, Shopify, WooCommerce, Magento, Salesforce Commerce and dealership inventory feeds. <BrandName variant="onDark" /> ingests your live catalog, pricing, attributes and inventory, then keeps everything in sync as it changes in real time.
         </p>
         <ul class="bai-bullets">
           <li>Real-time inventory sync from your POS</li>
@@ -148,7 +149,7 @@
           <li>Under 200ms API response latency</li>
         </ul>
         <div class="bai-stats">
-          <div class="bai-stat"><span class="bai-stat-num">Real-time</span><span class="bai-stat-label">Dutchie sync</span></div>
+          <div class="bai-stat"><span class="bai-stat-num">Real-time</span><span class="bai-stat-label">catalog sync</span></div>
           <div class="bai-stat"><span class="bai-stat-num">&lt;200ms</span><span class="bai-stat-label">Sync latency</span></div>
           <div class="bai-stat"><span class="bai-stat-num">99.2%</span><span class="bai-stat-label">Match accuracy</span></div>
         </div>
@@ -161,7 +162,7 @@
           </div>
           <div class="bai-panel-body">
             <div class="bai-panel-label">Connected sources</div>
-            <div class="intent-chip">Dutchie POS · Live sync</div>
+            <div class="intent-chip">POS · Live sync</div>
             <div class="bai-panel-label" style="margin-top: 1rem;">Recently synced SKUs</div>
             <div class="rec-item">
               <div class="rec-item-info">
@@ -252,15 +253,15 @@
     <div id="shopping-assistant" class="bai-service">
       <div class="bai-text">
         <div class="bai-tag">COMMERCE</div>
-        <h3 class="bai-title">Shopping Assistant</h3>
+        <h3 class="bai-title">Shopping Agent</h3>
         <p class="bai-desc">
-          Conversational commerce agents that understand purchase intent, browsing context, and live inventory. Shoppers get expert product guidance across strains, edibles, and effects, without waiting for staff.
+          Conversational commerce agents that understand purchase intent, browsing context, and live inventory. Shoppers get the guidance your best salesperson gives: effects and potency in a dispensary, skin type and claims in a drugstore, pairing and occasion in a wine shop, fit and size in fashion.
         </p>
         <ul class="bai-bullets">
           <li>Natural language product discovery</li>
           <li>Live inventory-aware recommendations</li>
           <li>Cross-sell and upsell per interaction</li>
-          <li>Deploy on web, kiosk, SMS, or embeddable widget</li>
+          <li>Deploy on your website or as an embeddable widget</li>
         </ul>
         <div class="bai-stats">
           <div class="bai-stat"><span class="bai-stat-num">+23%</span><span class="bai-stat-label">Avg. AOV lift</span></div>
@@ -270,7 +271,7 @@
       <div class="bai-visual">
         <div class="bai-panel">
           <div class="bai-panel-header">
-            <span class="bai-panel-title">Shopping Assistant</span>
+            <span class="bai-panel-title">Shopping Agent</span>
             <span class="bai-panel-badge">Real-time</span>
           </div>
           <div class="bai-panel-body">
@@ -310,11 +311,12 @@
         <div class="bai-tag">COMPLIANCE</div>
         <h3 class="bai-title">Compliance-Aware Recommendations</h3>
         <p class="bai-desc">
-          Regulated retail requires more than good recommendations. ShopSupport enforces age verification, daily purchase limits, shipping zone restrictions, and state-specific rules before every product suggestion.
+          Regulated retail requires more than good recommendations. <BrandName variant="onDark" /> enforces age verification, daily purchase limits, shipping zone restrictions, and state-specific rules before every product suggestion.
         </p>
         <ul class="bai-bullets">
           <li>Age verification prompts before recommendations</li>
-          <li>Daily purchase limit tracking for dispensaries</li>
+          <li>Purchase limits, age gates and shipping eligibility where they apply</li>
+          <li>Product-claim rules per category: cosmetics, supplements, alcohol, medicines</li>
           <li>State-specific regulation enforcement</li>
           <li>Policy agent validates every response</li>
         </ul>
@@ -367,12 +369,12 @@
     <div id="integrations" class="bai-service">
       <div class="bai-text">
         <div class="bai-tag">INTEGRATIONS</div>
-        <h3 class="bai-title">Built for Dutchie</h3>
+        <h3 class="bai-title">Built for your stack</h3>
         <p class="bai-desc">
-          ShopSupport connects directly to Dutchie, the POS dispensaries already run on. No rip-and-replace. We deploy alongside your existing site and read from your live menu.
+          <BrandName variant="onDark" /> connects directly to the platform you already run on: Dutchie for dispensaries, Shopify, WooCommerce, Magento or Salesforce Commerce for retail, a DMS for dealerships. No rip-and-replace. We deploy alongside your existing site and search, and read from your live catalog.
         </p>
         <ul class="bai-bullets">
-          <li>Direct Dutchie POS and catalog connection</li>
+          <li>Direct POS, commerce-platform and feed connections</li>
           <li>Live menu, pricing, and inventory sync</li>
           <li>Compliance metadata pulled from your menu</li>
           <li>Webhook-driven real-time inventory updates</li>
@@ -381,12 +383,12 @@
       <div class="bai-visual">
         <div class="bai-panel">
           <div class="bai-panel-header">
-            <span class="bai-panel-title">Dutchie Integration</span>
+            <span class="bai-panel-title">Catalog Integration</span>
             <span class="bai-panel-badge live-badge"><span class="live-dot"></span>Live sync</span>
           </div>
           <div class="bai-panel-body">
             <div class="mock-cross-sell-chips" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-              <span class="intent-chip">Dutchie POS</span>
+              <span class="intent-chip">POS · Commerce · Feeds</span>
               <span class="intent-chip">Catalog API</span>
               <span class="intent-chip">Webhooks</span>
               <span class="intent-chip">Live menu</span>
@@ -758,7 +760,7 @@
       <div class="section-label">GET STARTED</div>
       <h2 class="cta-h2">Ready to connect your POS?</h2>
       <p class="cta-sub">
-        Tell us about your dispensary and we'll get your shopping assistant live in weeks.
+        Dispensaries start at $499/month plus token usage after a $299 setup. Other verticals begin with a scoped pilot. Custom work billed hourly.
       </p>
       <div class="cta-buttons">
         <ButtonMinimal label="Schedule a demo" variant="primary" size="lg" href="/contact" arrow={true} />

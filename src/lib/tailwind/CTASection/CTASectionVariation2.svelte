@@ -25,10 +25,10 @@
   }: CTASectionProps = $props();
 
   const metrics = [
-    { label: 'Response time', value: '<200ms', bar: 0.92 },
-    { label: 'Uptime', value: '99.9%', bar: 0.999 },
-    { label: 'Accuracy', value: '94.7%', bar: 0.947 },
-    { label: 'Cost reduction', value: '60%', bar: 0.60 }
+    { label: 'Routine menu Q&A offloaded', value: 'Up to 47%', bar: 0.47 },
+    { label: 'Conversion with AI chat', value: '4×', bar: 0.85 },
+    { label: 'AOV (engaged shoppers)', value: '+25%', bar: 0.75 },
+    { label: 'Demand signals tracked', value: '477', bar: 1.0 }
   ];
 </script>
 
@@ -59,7 +59,7 @@
         <div class="metrics-panel">
           <!-- Header -->
           <div class="metrics-header">
-            <span class="metrics-title">Deployment Metrics</span>
+            <span class="metrics-title">Business Impact</span>
             <span class="metrics-live-badge">
               <span class="metrics-live-dot"></span>
               Live
@@ -80,6 +80,10 @@
               </div>
             {/each}
           </div>
+
+          <p class="metrics-footnote">
+            Routine Q&A benchmark from Ingka Group (IKEA) AI deployments. Conversion and AOV figures from Rep AI 2025 ecommerce shopper report (12.3% vs 3.1% purchase rate; +25% AOV with AI chat). Demand signals from live dispensary analytics.
+          </p>
         </div>
       </div>
 
@@ -233,5 +237,14 @@
     background-color: #00d4aa;
     border-radius: 2px;
     opacity: 0.6;
+  }
+
+  .metrics-footnote {
+    margin: 0.75rem 0 0;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 10px;
+    line-height: 1.5;
+    color: #475569;
   }
 </style>

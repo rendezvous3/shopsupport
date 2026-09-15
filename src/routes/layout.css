@@ -8,6 +8,25 @@ html {
 
 :root {
   font-family: 'Space Grotesk', system-ui, sans-serif;
+
+  /* Design tokens */
+  --bg-outer: #09090f;
+  --bg-alt: #0a0a12;
+  --bg-inner: #0d0d14;
+  --bg-card: #111117;
+  --bg-card-hover: #141420;
+  --accent: #00d4aa;
+  --accent-tint-08: rgba(0, 212, 170, 0.08);
+  --accent-tint-10: rgba(0, 212, 170, 0.1);
+  --accent-tint-12: rgba(0, 212, 170, 0.12);
+  --accent-border: rgba(0, 212, 170, 0.2);
+  --border-standard: rgba(255, 255, 255, 0.06);
+  --border-faint: rgba(255, 255, 255, 0.04);
+  --text-heading: #ffffff;
+  --text-body: #94a3b8;
+  --text-secondary: #64748b;
+  --text-muted: #475569;
+  --danger: #f87171;
 }
 
 h1 {
