@@ -372,7 +372,7 @@
                   </div>
                   <div class="chat-toolbar-right">
                     <!-- Model badge -->
-                    <span class="chat-model-badge">GPT-4o</span>
+                    <span class="chat-model-badge">GPT 4o</span>
                     <!-- Send -->
                     <button class="chat-send-btn" aria-label="Send">
                       <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -545,7 +545,7 @@
             <!-- Product gaps -->
             <div class="insights-section">
               <div class="insights-label">UNRESOLVED</div>
-              <div class="gaps-note">No-result and open queries</div>
+              <div class="gaps-note">No result and open queries</div>
               <div class="gaps-list">
                 <div class="gap-row">
                   <span class="gap-dot"></span>
@@ -630,7 +630,7 @@
         <p class="hero__sub">{subheadline}</p>
       {:else}
         <p class="hero__sub">
-          <BrandName variant="onDark" /> connects to your POS and e-commerce APIs, then deploys an expert shopping agent with your live inventory, policies, and catalog.
+          <BrandName variant="onDark" /> connects to your POS and ecommerce APIs, then deploys an expert shopping agent with your live inventory, policies, and catalog.
         </p>
       {/if}
 

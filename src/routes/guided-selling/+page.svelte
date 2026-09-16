@@ -47,7 +47,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
       <!-- Open-ended -->
       <div class="bg-[#111117] border border-white/[0.06] rounded-2xl p-8">
-        <div class="text-[11px] font-medium tracking-[0.12em] uppercase text-slate-500 mb-6">OPEN-ENDED CHAT</div>
+        <div class="text-[11px] font-medium tracking-[0.12em] uppercase text-slate-500 mb-6">OPEN TEXT BOX</div>
         <ul class="space-y-4">
           {#each ['Shoppers have to know what to ask.', 'Vague queries return vague results.', 'Most people type one message, then leave.', 'No structure means no path to a product.'] as point}
             <li class="flex items-start gap-3 text-sm text-slate-400 leading-relaxed">
@@ -92,7 +92,7 @@
           <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa] rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
           <FeatureCardDark
             title="1. Pick a category"
-            description="Flower, pre-rolls and edibles in a dispensary; face, hair and body in a drugstore; red, white and sparkling in a wine shop. One tap narrows the whole catalog."
+            description="Flower, pre rolls and edibles in a dispensary; face, hair and body in a drugstore; red, white and sparkling in a wine shop. One tap narrows the whole catalog."
             variant="default"
             icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 10h16M4 14h10M4 18h10" /></svg>'
           />
@@ -143,12 +143,12 @@
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
       <FeatureCardDark
-        title="Catalog-aware options"
+        title="Catalog aware options"
         description="The flow never offers a choice you cannot fulfill. If sleepy gummies under $30 are sold out, that path does not appear."
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 002 2v1a2 2 0 002 2h.945M3.055 11A9.001 9.001 0 0021 12.001M3.055 11C3.02 11.328 3 11.662 3 12c0 .339.02.673.055 1.001" /></svg>'
       />
       <FeatureCardDark
-        title="Category-specific steps"
+        title="Category specific steps"
         description="Edibles add a dosage step. Chocolates skip it, because they dose flexibly. The flow fits the product, not a rigid template."
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" /></svg>'
       />
@@ -168,7 +168,7 @@
       Some shoppers tap. Some shoppers talk. Both convert.
     </h2>
     <p class="text-lg text-slate-400 leading-relaxed">
-      Guided flow is the fast lane for shoppers who know roughly what they want. Natural conversation handles the ones with questions: "will this help me sleep?", "is this too strong for a first-timer?". Same catalog-aware agent behind both, so every answer is grounded in live inventory.
+      Guided flow is the fast lane for shoppers who know roughly what they want. Natural conversation handles the ones with questions: "will this help me sleep?", "is this too strong for a first timer?". Same catalog aware agent behind both, so every answer is grounded in live inventory.
     </p>
   </div>
 </div>
@@ -192,12 +192,12 @@
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>'
       />
       <FeatureCardDark
-        title="Cross-sell in context"
-        description="Complementary products and add-ons surface at the right moment, not as a popup."
+        title="Cross sell in context"
+        description="Complementary products and add ons surface at the right moment, not as a popup."
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>'
       />
       <FeatureCardDark
-        title="Deep-dive Q&A"
+        title="Deep dive Q&A"
         description="Shoppers can ask about any single product without losing their place."
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>'
       />

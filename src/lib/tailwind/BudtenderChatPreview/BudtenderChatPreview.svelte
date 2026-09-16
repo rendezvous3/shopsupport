@@ -15,14 +15,14 @@
       id: 'conversation',
       tag: 'Feature 1',
       title: 'Natural AI Budtender conversation',
-      desc: 'Menu questions, follow-ups, and product picks in one thread. Shoppers ask about your catalog, refine intent, and land on POS-synced recommendations without leaving chat.',
+      desc: 'Menu questions, follow ups, and product picks in one thread. Shoppers ask about your catalog, refine intent, and land on POS synced recommendations without leaving chat.',
       view: 'conversation'
     },
     {
       id: 'entity',
       tag: 'Feature 2',
       title: 'Entity extraction & recommendations',
-      desc: 'Parses “berry flavored indica edibles” into structured intent, then returns POS-synced product cards with potency, format, and price.',
+      desc: 'Parses “berry flavored indica edibles” into structured intent, then returns POS synced product cards with potency, format, and price.',
       view: 'entity'
     },
     {
@@ -51,7 +51,7 @@
     {
       id: 'product-detail',
       tag: 'Feature 4',
-      title: 'Individual product deep-dive',
+      title: 'Individual product deep dive',
       desc: 'Shoppers ask about a specific SKU: brand story, format, potency, all grounded in your catalog data.',
       view: 'product-detail'
     },
@@ -59,7 +59,7 @@
       id: 'compliance',
       tag: 'Trust',
       title: 'Policy alongside every recommendation',
-      desc: 'State warnings, medical disclaimers, and AI disclosure rendered in-context, not hidden in a legal footer.',
+      desc: 'State warnings, medical disclaimers, and AI disclosure rendered in context, not hidden in a legal footer.',
       view: 'compliance'
     }
   ];

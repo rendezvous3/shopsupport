@@ -17,9 +17,9 @@
   ];
 
   const demandKpis = [
-    { label: 'Demand', value: '477', sub: 'Product-seeking searches' },
+    { label: 'Demand', value: '477', sub: 'Product seeking searches' },
     { label: 'Top category', value: 'edibles', sub: '145 searches' },
-    { label: 'No results', value: '6.3%', sub: '30 no-result searches', alert: true },
+    { label: 'No results', value: '6.3%', sub: '30 no result searches', alert: true },
     { label: 'Entry mode', value: 'Free-form', sub: '451 searches' }
   ];
 
@@ -34,14 +34,14 @@
     { category: 'edibles', sub: 'gummies', potency: 'THC/unit 5-9mg', effect: 'uplifted', demand: 145, noResults: '9 (6.2%)' },
     { category: 'flower', sub: 'whole-flower', potency: 'THC ≥ 28%', effect: 'energetic', demand: 120, noResults: '7 (5.8%)' },
     { category: 'prerolls', sub: 'singles', potency: 'THC ≥ 28%', effect: 'relaxed', demand: 93, noResults: '6 (6.5%)' },
-    { category: 'vaporizers', sub: 'cartridges', potency: 'THC 85-90%', effect: 'uplifted', demand: 61, noResults: '1 (1.6%)' }
+    { category: 'vaporizers', sub: 'cartridges', potency: 'THC 85 90%', effect: 'uplifted', demand: 61, noResults: '1 (1.6%)' }
   ];
 
   const subcategoryRows = [
     { label: 'edibles · gummies', demand: 37, noResults: '4 (10.8%)' },
     { label: 'edibles · drinks', demand: 27, noResults: '1 (3.7%)' },
     { label: 'prerolls · singles', demand: 18, noResults: '0 (0%)' },
-    { label: 'flower · whole-flower', demand: 16, noResults: '2 (12.5%)' }
+    { label: 'flower · whole flower', demand: 16, noResults: '2 (12.5%)' }
   ];
 
   const potencyRows = [
@@ -58,7 +58,7 @@
 
   const unresolvedRows = [
     { query: 'flower less than 18% thc please', reasons: 'no_results', satisfaction: 'resolved' },
-    { query: 'chew edibles, berry flavored, 3-5 thc per piece less than $25', reasons: 'no_results', satisfaction: 'open' },
+    { query: 'chew edibles, berry flavored, 3 5 thc per piece less than $25', reasons: 'no_results', satisfaction: 'open' },
     { query: 'vape for focus', reasons: 'sequence_timeout, no_results', satisfaction: 'unresolved' }
   ];
 
@@ -72,20 +72,20 @@
       description: 'Uplifted, energetic, relaxed: track which effects drive searches and which categories they pull from. Know when shoppers specify category (89.8%), effect (53.5%), or potency (22.6%).'
     },
     {
-      title: 'No-result and unresolved queries',
+      title: 'No result and unresolved queries',
       description: '30 searches returned no catalog match (6.3%). Unresolved threads capture flower under 18% THC, berry edibles under $25, and vape for focus. Every session ID is stored for compliance review.'
     },
     {
-      title: 'Product lookups and follow-ups',
-      description: 'Hawaiian Thunderfuck, Green Revolution Nano Shot, and Kiva Camino Sours: see which SKUs shoppers ask about by name, with example queries and click-through.'
+      title: 'Product lookups and follow ups',
+      description: 'Hawaiian Thunderfuck, Green Revolution Nano Shot, and Kiva Camino Sours: see which SKUs shoppers ask about by name, with example queries and click through.'
     },
     {
-      title: 'Guided flow funnel and drop-offs',
+      title: 'Guided flow funnel and drop offs',
       description: 'Track every step from category to checkout. See where shoppers leave: effects, budget, shortlist, or pick.'
     },
     {
-      title: 'Free-form vs. guided entry mode',
-      description: 'Compare how free conversation and guided flows convert. 451 of 477 demand searches started as a free-form question. Guided flow: 100% completion across 24 sessions. Double down on what moves product.'
+      title: 'Free form vs. guided entry mode',
+      description: 'Compare how free conversation and guided flows convert. 451 of 477 demand searches started as a free form question. Guided flow: 100% completion across 24 sessions. Double down on what moves product.'
     }
   ];
 </script>
@@ -105,7 +105,7 @@
       See what your shoppers actually want
     </h1>
     <p class="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed mb-8">
-      Every conversation is a survey you never had to send. In one live dispensary deployment, <BrandName variant="onDark" /> logged 477 product-seeking searches: edibles (145), uplifted (89 mentions), and 30 no-result gaps. The same dashboard reads skin types in a drugstore, grapes and occasions in a wine shop, sizes in fashion. Every session is monitored and stored for compliance.
+      Every conversation is a survey you never had to send. In one live dispensary deployment, <BrandName variant="onDark" /> logged 477 product seeking searches: edibles (145), uplifted (89 mentions), and 30 no result gaps. The same dashboard reads skin types in a drugstore, grapes and occasions in a wine shop, sizes in fashion. Every session is monitored and stored for compliance.
     </p>
     <div class="flex items-center justify-center gap-3 flex-wrap">
       <ButtonMinimal label="Schedule a demo" variant="primary" href="/contact" />
@@ -121,7 +121,7 @@
       Read the room, not just the receipts
     </h2>
     <p class="text-lg text-slate-400 leading-relaxed">
-      A sales report tells you what sold. It cannot tell you what a shopper wanted, could not find, and walked away from. <BrandName variant="onDark" /> captures the full path: category demand, effect mentions, no-result rates, unresolved threads, and whether it ended in a pick.
+      A sales report tells you what sold. It cannot tell you what a shopper wanted, could not find, and walked away from. <BrandName variant="onDark" /> captures the full path: category demand, effect mentions, no result rates, unresolved threads, and whether it ended in a pick.
     </p>
   </div>
 </div>
@@ -329,7 +329,7 @@
         </div>
         <div class="panel-footer">
           <span class="footer-dot"></span>
-          <span class="footer-text">30 no-result searches · 6.3% of product demand · sessions stored for compliance</span>
+          <span class="footer-text">30 no result searches · 6.3% of product demand · sessions stored for compliance</span>
         </div>
       </div>
     </div>

@@ -36,7 +36,7 @@
 
         <div class="section-text">
           <div class="section-label">PHILOSOPHY</div>
-          <h2 class="section-heading">Integration-first, production-always</h2>
+          <h2 class="section-heading">Integration first, production always</h2>
           <p class="section-body">
             Considered retail runs on specialized systems, Dutchie in dispensaries, Shopify or Magento in fashion, WooCommerce in a drugstore, with catalogs
             that change hourly and compliance rules that vary by state.
@@ -66,7 +66,7 @@
               <div class="research-item">
                 <div class="research-item-teal-bar"></div>
                 <div class="research-item-content">
-                  <div class="research-item-title">Self-RAG: Learning to Retrieve, Generate, and Critique</div>
+                  <div class="research-item-title">Self RAG: Learning to Retrieve, Generate, and Critique</div>
                   <div class="research-item-meta">Retrieval · Adaptive reasoning</div>
                 </div>
               </div>
@@ -80,7 +80,7 @@
               <div class="research-item">
                 <div class="research-item-teal-bar"></div>
                 <div class="research-item-content">
-                  <div class="research-item-title">RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval</div>
+                  <div class="research-item-title">RAPTOR: Recursive Abstractive Processing for Tree Organized Retrieval</div>
                   <div class="research-item-meta">Hierarchical chunking · Long docs</div>
                 </div>
               </div>
@@ -111,7 +111,7 @@
         <h2 class="section-heading">Towards intelligent commerce at scale</h2>
         <p class="section-body section-body--centered">
           Every shopper deserves expert guidance: the recommendation a specialist would give,
-          effect-based matches, and compliance-aware suggestions, without waiting for staff. That's what
+          effect based matches, and compliance aware suggestions, without waiting for staff. That's what
           we're building.
         </p>
       </div>
@@ -126,7 +126,7 @@
           </div>
           <h3 class="vision-card-title">Vertical Commerce</h3>
           <p class="vision-card-body">
-            Compliance-aware product discovery for each vertical. Strains and purchase limits in cannabis, claims and skin types in beauty,
+            Compliance aware product discovery for each vertical. Strains and purchase limits in cannabis, claims and skin types in beauty,
             pairing and age gates in wine, fit and size in fashion, all on live inventory.
             Every suggestion is in stock and within regulations.
           </p>
@@ -151,11 +151,11 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
             </svg>
           </div>
-          <h3 class="vision-card-title">POS-Native Intelligence</h3>
+          <h3 class="vision-card-title">POS Native Intelligence</h3>
           <p class="vision-card-body">
-            General-purpose LLMs don't know your inventory. <BrandName variant="onDark" /> agents query your POS in
+            General purpose LLMs don't know your inventory. <BrandName variant="onDark" /> agents query your POS in
             real time, enforce compliance policies, and reason over your specific catalog of products,
-            products, and SKUs, with budtender-level expertise.
+            products, and SKUs, with budtender level expertise.
           </p>
         </div>
 
@@ -170,7 +170,7 @@
         <div class="section-label">HOW IT WORKS</div>
         <h2 class="section-heading">From your data to a working AI, practically</h2>
         <p class="section-body section-body--centered">
-          RAG (Retrieval-Augmented Generation) sounds complex. The practical version is
+          RAG (Retrieval Augmented Generation) sounds complex. The practical version is
           straightforward: the AI retrieves relevant pieces of your knowledge before generating
           an answer. Here's what that looks like in production.
         </p>
@@ -185,7 +185,7 @@
             If your product data, knowledge base, or content is already served via a REST or
             GraphQL API, we connect directly. The AI queries your live data at inference time,
             meaning it always reflects the current state of your catalogue, pricing, or policies
-            without any re-indexing.
+            without any re indexing.
           </p>
           <div class="rag-path-flow">
             <div class="rag-flow-step">
@@ -209,7 +209,7 @@
               <span>Answer generated</span>
             </div>
           </div>
-          <div class="rag-path-note">Real-time · Always current · No indexing lag</div>
+          <div class="rag-path-note">Real time · Always current · No indexing lag</div>
         </div>
 
         <div class="rag-path-divider">or</div>
@@ -267,7 +267,7 @@
         </p>
         <p class="chunking-body">
           We use a layered approach: semantic chunking at sentence boundaries, overlapping
-          windows for context continuity, and per-chunk metadata (section title, document type,
+          windows for context continuity, and per chunk metadata (section title, document type,
           date) that can be used as a retrieval filter. A compliance query filters to policy
           documents. A product query filters to a specific category and potency range. The retriever
           finds not just semantically similar content, but the right kind of content.
@@ -329,7 +329,7 @@
                 <div class="training-step-num">01</div>
                 <div class="training-step-content">
                   <div class="training-step-title">Domain corpus collection</div>
-                  <div class="training-step-desc">Gather high-quality in-domain text, clean and deduplicate</div>
+                  <div class="training-step-desc">Gather high quality in domain text, clean and deduplicate</div>
                 </div>
               </div>
               <div class="training-connector"></div>
@@ -337,15 +337,15 @@
                 <div class="training-step-num">02</div>
                 <div class="training-step-content">
                   <div class="training-step-title">Instruction dataset construction</div>
-                  <div class="training-step-desc">Format examples as prompt–completion pairs with domain-specific Q&A</div>
+                  <div class="training-step-desc">Format examples as prompt completion pairs with domain specific Q&A</div>
                 </div>
               </div>
               <div class="training-connector"></div>
               <div class="training-step">
                 <div class="training-step-num">03</div>
                 <div class="training-step-content">
-                  <div class="training-step-title">Supervised fine-tuning (SFT)</div>
-                  <div class="training-step-desc">LoRA or full fine-tune on base model; evaluate on held-out domain set</div>
+                  <div class="training-step-title">Supervised fine tuning (SFT)</div>
+                  <div class="training-step-desc">LoRA or full fine tune on base model; evaluate on held out domain set</div>
                 </div>
               </div>
               <div class="training-connector"></div>
@@ -360,8 +360,8 @@
               <div class="training-step">
                 <div class="training-step-num">05</div>
                 <div class="training-step-content">
-                  <div class="training-step-title">Eval + red-teaming</div>
-                  <div class="training-step-desc">Benchmark against domain-specific metrics; probe for edge cases</div>
+                  <div class="training-step-title">Eval + red teaming</div>
+                  <div class="training-step-desc">Benchmark against domain specific metrics; probe for edge cases</div>
                 </div>
               </div>
             </div>
@@ -369,23 +369,23 @@
         </div>
 
         <div class="section-text">
-          <div class="section-label">FINE-TUNING</div>
+          <div class="section-label">FINE TUNING</div>
           <h2 class="section-heading">Training AI into subject matter expertise</h2>
           <p class="section-body">
-            Retrieval can answer questions about your data. Fine-tuning shapes how the model
+            Retrieval can answer questions about your data. Fine tuning shapes how the model
             reasons, responds, and represents your domain. The two approaches are complementary.
             Most production systems need both.
           </p>
           <p class="section-body">
-            We work with LoRA (Low-Rank Adaptation) for efficient fine-tuning of large models
+            We work with LoRA (Low Rank Adaptation) for efficient fine tuning of large models
             without full parameter updates, making it practical to specialize a strong base model
-            on domain-specific instruction data. For smaller models that need to run on-premise
-            or with tight latency requirements, we handle full fine-tuning and quantization.
+            on domain specific instruction data. For smaller models that need to run on premise
+            or with tight latency requirements, we handle full fine tuning and quantization.
           </p>
           <p class="section-body">
             The result is a model that writes in your brand voice, knows your terminology,
             handles your edge cases, and refuses gracefully when a question falls outside its
-            competence, rather than hallucinating a confident-sounding wrong answer.
+            competence, rather than hallucinating a confident sounding wrong answer.
           </p>
           <div class="section-cta">
             <ButtonMinimal label="Talk to us about training" variant="primary" href="/contact" arrow={true} />

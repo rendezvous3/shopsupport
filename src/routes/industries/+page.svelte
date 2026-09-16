@@ -91,7 +91,7 @@
           </svg>
           <div class="ind-hero-diagram-footer">
             <span class="ind-hero-footer-dot"></span>
-            <span class="ind-hero-footer-text">2 verticals · POS-connected agents</span>
+            <span class="ind-hero-footer-text">2 verticals · POS connected agents</span>
           </div>
         </div>
       </div>
@@ -200,7 +200,7 @@
           <div class="ind-label" style="margin-bottom: 1rem;">CUSTOMER SERVICE · COMING SOON</div>
           <h2 class="ind-section-heading ind-section-heading--centered">Support That Scales Without Headcount</h2>
           <p class="ind-body ind-body--centered">
-            Full-resolution support agents that query order history, loyalty points, and store policies via your POS APIs.
+            Full resolution support agents that query order history, loyalty points, and store policies via your POS APIs.
             Join the waitlist for early access. Launching first for dispensaries, then every vertical above.
           </p>
 
@@ -216,7 +216,7 @@
               <svg width="14" height="14" fill="none" stroke="#00d4aa" stroke-width="1.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
               </svg>
-              Self-learning
+              Self learning
             </div>
             <div class="cs-feature-pill">
               <svg width="14" height="14" fill="none" stroke="#00d4aa" stroke-width="1.5" viewBox="0 0 24 24">
@@ -237,8 +237,8 @@
         <div class="cs-stats-grid">
           <div class="cs-stat-card">
             <div class="cs-stat-num">87%</div>
-            <div class="cs-stat-label">First-contact resolution</div>
-            <div class="cs-stat-desc">Tickets resolved without escalation or follow-up</div>
+            <div class="cs-stat-label">First contact resolution</div>
+            <div class="cs-stat-desc">Tickets resolved without escalation or follow up</div>
           </div>
           <div class="cs-stat-card">
             <div class="cs-stat-num">24/7</div>
@@ -272,7 +272,7 @@
 
         <div class="text-center mb-14">
           <div class="ind-label" style="margin-bottom: 1rem;">THE DIFFERENCE</div>
-          <h2 class="ind-section-heading ind-section-heading--centered">Generic AI vs. Domain-Trained Agents</h2>
+          <h2 class="ind-section-heading ind-section-heading--centered">Generic AI vs. Domain Trained Agents</h2>
         </div>
 
         <div class="cmp-table">
@@ -284,7 +284,7 @@
               <svg width="16" height="16" fill="none" stroke="#ef4444" stroke-width="1.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
-              Off-the-shelf AI
+              Off the shelf AI
             </div>
             <div class="cmp-header cmp-header--good">
               <svg width="16" height="16" fill="none" stroke="#00d4aa" stroke-width="1.5" viewBox="0 0 24 24">
@@ -315,7 +315,7 @@
             </div>
             <div class="cmp-cell cmp-cell--good">
               <span class="cmp-check">✓</span>
-              Understands field-specific language
+              Understands field specific language
             </div>
           </div>
 
@@ -347,11 +347,11 @@
             <div class="cmp-category">Fit</div>
             <div class="cmp-cell cmp-cell--bad">
               <span class="cmp-x">✕</span>
-              One-size-fits-all approach
+              One size fits all approach
             </div>
             <div class="cmp-cell cmp-cell--good">
               <span class="cmp-check">✓</span>
-              Fine-tuned per use case
+              Fine tuned per use case
             </div>
           </div>
 

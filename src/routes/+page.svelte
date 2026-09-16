@@ -34,7 +34,7 @@
         Trained on the decision logic of each industry
       </h2>
       <p class="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-        One guided-selling engine, connected to the catalog, tuned to how people actually buy in each industry, with that industry's rules in every answer.
+        One guided selling engine, connected to the catalog, tuned to how people actually buy in each industry, with that industry's rules in every answer.
       </p>
     </div>
     <div class="vert-grid">
@@ -63,8 +63,8 @@
       Insights your sales report cannot show
     </h2>
     <p class="text-slate-400 leading-relaxed mb-3">
-      From one live dispensary deployment: 477 product-seeking searches logged with session IDs, timestamps, and full query history.
-      451 started as a free-form question. Top category: edibles (145). Top effect: uplifted (89 mentions). The same dashboard reads skin types, grape varieties or body styles in the other verticals.
+      From one live dispensary deployment: 477 product seeking searches logged with session IDs, timestamps, and full query history.
+      451 started as a free form question. Top category: edibles (145). Top effect: uplifted (89 mentions). The same dashboard reads skin types, grape varieties or body styles in the other verticals.
     </p>
     <p class="text-slate-400 leading-relaxed">
       30 searches returned no catalog match (6.3%). Every session is monitored and stored for compliance review.
@@ -96,8 +96,8 @@
           Every conversation leaves a demand trail
         </h2>
         <p class="text-slate-400 leading-relaxed mb-6 max-w-lg">
-          The agent tracks every product-seeking search with category, subcategory, attribute and need breakdowns.
-          In a dispensary that is potency and effect: edibles · gummies at 37, flower · THC ≥ 28% at 31, and the 30 no-result gaps the POS never reports.
+          The agent tracks every product seeking search with category, subcategory, attribute and need breakdowns.
+          In a dispensary that is potency and effect: edibles · gummies at 37, flower · THC ≥ 28% at 31, and the 30 no result gaps the POS never reports.
           In a drugstore it is skin type and concern; in a wine shop, grape and occasion. Every session is stored for compliance review.
         </p>
         <ButtonMinimal label="Explore analytics" variant="outline" href="/analytics" arrow={true} />
@@ -107,7 +107,7 @@
         <div class="home-analytics-stat">
           <div class="home-analytics-label">Demand</div>
           <div class="home-analytics-value">477</div>
-          <div class="home-analytics-sub">Product-seeking searches</div>
+          <div class="home-analytics-sub">Product seeking searches</div>
         </div>
         <div class="home-analytics-stat">
           <div class="home-analytics-label">Top effect</div>
@@ -121,7 +121,7 @@
         </div>
         <div class="home-analytics-stat">
           <div class="home-analytics-label">Entry mode</div>
-          <div class="home-analytics-value home-analytics-value--sm">Free-form</div>
+          <div class="home-analytics-value home-analytics-value--sm">Free form</div>
           <div class="home-analytics-sub">451 of 477 searches</div>
         </div>
       </div>
@@ -147,7 +147,7 @@
       <!-- Card 1: POS-Connected Recommendations -->
       <div class="bento-card bento-card--ecom">
         <div class="bento-card-text">
-          <div class="bento-label">CATALOG-CONNECTED</div>
+          <div class="bento-label">CATALOG CONNECTED</div>
           <h3 class="bento-heading">Intelligent product recommendations</h3>
           <p class="bento-desc">
             AI that reads live inventory from your POS or commerce platform, understands purchase intent and the rules of your category, and surfaces the right products at the right moment.
@@ -205,7 +205,7 @@
           <div class="bento-label">CUSTOMER SERVICE · SOON</div>
           <h3 class="bento-heading">Resolution without escalation</h3>
           <p class="bento-desc">
-            Full-resolution support agents that query order history, loyalty points, and store policies via your POS APIs. Launching soon.
+            Full resolution support agents that query order history, loyalty points, and store policies via your POS APIs. Launching soon.
           </p>
           <div class="bento-cta">
             <ButtonMinimal label="Join waitlist" variant="outline" href="/contact" arrow={true} />
@@ -229,7 +229,7 @@
             </div>
             <div class="cs-resolution">
               <span class="cs-res-dot"></span>
-              <span class="cs-res-text">POS-integrated resolution, launching soon</span>
+              <span class="cs-res-text">POS integrated resolution, launching soon</span>
             </div>
           </div>
         </div>
@@ -305,7 +305,7 @@
         The infrastructure underneath
       </h2>
       <p class="text-xl text-slate-400 max-w-3xl mx-auto">
-        Production-grade systems for catalog sync, compliance filtering, and real-time POS retrieval
+        Production grade systems for catalog sync, compliance filtering, and real time POS retrieval
       </p>
     </div>
 
@@ -318,7 +318,7 @@
       />
 
       <FeatureCardDark
-        title="Multi-Agent RAG Systems"
+        title="Multi Agent RAG Systems"
         description="Specialized agents for catalog retrieval, policy lookup, and inventory validation, working together for accurate, grounded answers."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>'
@@ -326,7 +326,7 @@
 
       <FeatureCardDark
         title="POS and Commerce Connectors"
-        description="Direct connectors to Dutchie, Shopify, WooCommerce, Magento, Salesforce Commerce and product feeds, with real-time catalog, pricing and inventory sync."
+        description="Direct connectors to Dutchie, Shopify, WooCommerce, Magento, Salesforce Commerce and product feeds, with real time catalog, pricing and inventory sync."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>'
       />
@@ -340,13 +340,13 @@
 
       <FeatureCardDark
         title="Compliance Validation"
-        description="Automated checks for age verification, purchase limits, shipping restrictions, product-claim rules and regional regulations before every recommendation."
+        description="Automated checks for age verification, purchase limits, shipping restrictions, product claim rules and regional regulations before every recommendation."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>'
       />
 
       <FeatureCardDark
-        title="Real-Time Inventory Retrieval"
+        title="Real Time Inventory Retrieval"
         description="Live POS sync ensures every product recommendation reflects current stock levels, pricing, and availability."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 002 2h2.945M11 20v-5a2 2 0 012-2h2a2 2 0 012 2v5m-6 0h6" /></svg>'
@@ -354,7 +354,7 @@
 
       <FeatureCardDark
         title="Agent Orchestration"
-        description="Multi-agent workflows that delegate catalog search, compliance checks, and POS lookups across specialized commerce agents."
+        description="Multi agent workflows that delegate catalog search, compliance checks, and POS lookups across specialized commerce agents."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /></svg>'
       />
@@ -396,7 +396,7 @@
           <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa]/60 rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
           <FeatureCardDark
             title="2. Train"
-            description="Your catalog and compliance policies are embedded and fine-tuned into domain-specific agents that understand your products and regulations."
+            description="Your catalog and compliance policies are embedded and fine tuned into domain specific agents that understand your products and regulations."
             variant="default"
             icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>'
           />

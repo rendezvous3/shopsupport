@@ -21,7 +21,7 @@
 
   const quickStart = [
     'Energetic Flower',
-    'Mellow Pre-Rolls',
+    'Mellow Pre Rolls',
     'Uplifting Vape',
     'Nighttime Edibles',
     'CBD Oil',
@@ -138,14 +138,14 @@
       {:else if view === 'conversation'}
         <div class="widget__user-msg">Tell me about your menu?</div>
         <p class="widget__ai-msg widget__ai-msg--block">
-          We carry a wide selection across several categories, including flower, pre-rolls, edibles,
+          We carry a wide selection across several categories, including flower, pre rolls, edibles,
           vaporizers, concentrates, tinctures, CBD products, topicals, and accessories.
           Let me know if you'd like details on any specific category or product type?
         </p>
         <div class="widget__user-msg">How about some uplifting pre rolls?</div>
         <p class="widget__ai-msg widget__ai-msg--block">
           I completely understand what you're looking for:
-          <strong class="widget__entity">uplifting pre-rolls</strong>.
+          <strong class="widget__entity">uplifting pre rolls</strong>.
           Let me check what we have that matches your preferences.
         </p>
         <div class="widget__rec-label">AI Budtender recommendations</div>
@@ -270,10 +270,10 @@
           Let me look up <strong>Edie Parker | Maui Mango</strong> for you.
         </p>
         <p class="widget__ai-msg widget__ai-msg--block">
-          A 1-gram sativa vape cartridge formulated for an uplifting morning experience. $42, 87% THC.
+          A 1 gram sativa vape cartridge formulated for an uplifting morning experience. $42, 87% THC.
         </p>
         <p class="widget__ai-msg widget__ai-msg--block">
-          <strong>Brand &amp; style:</strong> Founded in NYC (2010), Edie Parker draws on mid-century acrylic bag design.
+          <strong>Brand &amp; style:</strong> Founded in NYC (2010), Edie Parker draws on mid century acrylic bag design.
           Maui Mango delivers vibrant, juicy mango with sweet tropical notes.
         </p>
         <button type="button" class="widget__guided-btn widget__guided-btn--inline">Guided</button>

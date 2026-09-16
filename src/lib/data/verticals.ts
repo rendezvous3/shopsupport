@@ -75,11 +75,11 @@ export const verticals: Vertical[] = [
       agentName: 'AI Personal Shopper',
       turns: [
         { role: 'user', text: 'What do I need for a newborn\'s first bath?' },
-        { role: 'ai', text: 'A very mild baby wash, a soft hooded towel, and wipes for quick clean-ups. All in stock:' }
+        { role: 'ai', text: 'A very mild baby wash, a soft hooded towel, and wipes for quick clean ups. All in stock:' }
       ],
       recLabel: 'Your personal shopper suggests',
       products: [
-        { brand: 'BABYLOVE', name: 'Bath & Shampoo 2-in-1 Ultra Sensitive, 250 ml', tags: ['BABY', 'WASH'], price: '€1.90', spec: '250 ml', tint: 'b' },
+        { brand: 'BABYLOVE', name: 'Bath & Shampoo 2 in 1 Ultra Sensitive, 250 ml', tags: ['BABY', 'WASH'], price: '€1.90', spec: '250 ml', tint: 'b' },
         { brand: 'FREEON', name: 'Hooded Towel, Teddy', tags: ['BABY', 'TOWEL'], price: '€26.95', spec: '1 pc', tint: 'a' },
         { brand: 'PAMPERS', name: 'Sensitive Wipes, 80 pcs', tags: ['BABY', 'WIPES'], price: '€2.50', spec: '80 pcs', tint: 'd' }
       ],
@@ -91,7 +91,7 @@ export const verticals: Vertical[] = [
       heading: 'A personal shopper for every department',
       paragraphs: [
         'A retail catalog is wide: thousands of products across departments, each with its own vocabulary and its own rules. Shoppers describe a situation ("everything for a newborn\'s first bath", "a detergent for wool and delicates") and site search wants the product\'s name. The personal shopper hands the need to the right department expert, answers from what is actually in stock with the reason each pick fits, and builds the basket across departments when the need spans them.',
-        'Claims are governed per category. Cosmetics stay inside cosmetics claims rules, supplements use authorised health-claim wording only, baby food is presented neutrally, biocides carry their mandatory safety sentence, and non-prescription health products are described from the label, with anything beyond it referred to a pharmacist. Every release passes a claims test suite before it ships.',
+        'Claims are governed per category. Cosmetics stay inside cosmetics claims rules, supplements use authorised health claim wording only, baby food is presented neutrally, biocides carry their mandatory safety sentence, and non prescription health products are described from the label, with anything beyond it referred to a pharmacist. Every release passes a claims test suite before it ships.',
         'Ready for European stores: AI disclosure under the AI Act, data kept in the EU, no identity data collected, accessible to WCAG 2.1 AA. Several languages on one catalog, with the store\'s own product names, so every shopper sees the same products at the same prices.'
       ],
       pills: ['Every department', 'Baskets from one need', 'Any language'],
@@ -101,7 +101,7 @@ export const verticals: Vertical[] = [
         intentLabel: 'Session intent detected',
         intent: 'Newborn · First bath · Ultra sensitive · Basket',
         products: [
-          { name: 'babylove Bath & Shampoo 2-in-1', price: '€1.90', score: '97%' },
+          { name: 'babylove Bath & Shampoo 2 in 1', price: '€1.90', score: '97%' },
           { name: 'HiPP Bath, high tolerance', price: '€4.45', score: '92%' },
           { name: 'FreeON Hooded Towel, Teddy', price: '€26.95', score: '88%' }
         ],
@@ -148,7 +148,7 @@ export const verticals: Vertical[] = [
       heading: 'Sell the pairing, not the shelf',
       paragraphs: [
         'Wine and spirits shoppers rarely search by producer. They describe a dinner, a gift, a mood or a price, and expect the shortlist a good floor sommelier would give: grape, region, style, why it fits. The agent turns that description into structured intent, filters live stock, and explains the pairing in one reply.',
-        'Compliance sits in the answer, not in the footer: age verification before any recommendation, shipping eligibility by destination state or country, quantity limits where they apply, and responsible-drinking language. Allocations, club pricing and case discounts are catalog facts the agent reads, never promises it invents.',
+        'Compliance sits in the answer, not in the footer: age verification before any recommendation, shipping eligibility by destination state or country, quantity limits where they apply, and responsible drinking language. Allocations, club pricing and case discounts are catalog facts the agent reads, never promises it invents.',
         'Taste is data. Producer notes, tasting descriptors, sweetness, body and tannin become filters, so "something like the Barolo I had, but cheaper" resolves to a Langhe Nebbiolo at a third of the price, in stock.'
       ],
       pills: ['Pairing engine', 'Age + shipping gate', 'Club and allocation aware'],
@@ -184,18 +184,18 @@ export const verticals: Vertical[] = [
         'Occasion and climate as filters: "rainy city weekend, smart casual"'
       ]
     },
-    card: 'Occasion, fit and climate become a complete look, size-checked per item. Fewer returns, bigger baskets.',
+    card: 'Occasion, fit and climate become a complete look, size checked per item. Fewer returns, bigger baskets.',
     scene: {
       agentName: 'AI Stylist',
       turns: [
         { role: 'user', text: 'Smart casual for a rainy weekend in Amsterdam, I am usually a medium' },
-        { role: 'ai', text: 'Rain-ready and smart casual, all three in your size:' }
+        { role: 'ai', text: 'Rain ready and smart casual, all three in your size:' }
       ],
       recLabel: 'AI Stylist picks',
       products: [
         { brand: 'RAINS', name: 'Long Jacket, Olive', tags: ['OUTERWEAR', 'WATERPROOF'], price: '€115', spec: 'M in stock', tint: 'd' },
         { brand: 'NN07', name: 'Theo Regular Chino, Navy', tags: ['TROUSERS', 'REGULAR'], price: '€129', spec: 'W32 in stock', tint: 'a' },
-        { brand: 'VEJA', name: 'V-10 Leather, White', tags: ['SNEAKERS', 'LEATHER'], price: '€150', spec: 'EU 43 in stock', tint: 'b' }
+        { brand: 'VEJA', name: 'V10 Leather, White', tags: ['SNEAKERS', 'LEATHER'], price: '€150', spec: 'EU 43 in stock', tint: 'b' }
       ],
       compliance: 'Sizes checked against live stock. Free returns within 30 days.',
       placeholder: 'Describe the occasion, the weather or your size',
@@ -206,7 +206,7 @@ export const verticals: Vertical[] = [
       paragraphs: [
         'Apparel shoppers know the occasion and how they want to feel, not the product name. The agent turns "wedding guest in July, not too formal" into a complete look from live inventory, checks the size for each piece, and explains why the pieces work together.',
         'Fit is the return problem, so the agent reads size charts, model measurements and what customers of a similar size kept, and says when to size up or down. Returns fall when the first order fits.',
-        'Merchandising rules are respected: new season first, markdowns when the shopper asks for a budget, brand exclusions and regional catalogs. Every look ends in an add-to-bag for the whole outfit or a saved shortlist.'
+        'Merchandising rules are respected: new season first, markdowns when the shopper asks for a budget, brand exclusions and regional catalogs. Every look ends in an add to bag for the whole outfit or a saved shortlist.'
       ],
       pills: ['Outfit builder', 'Size confidence', 'Lower returns'],
       mock: {
@@ -217,7 +217,7 @@ export const verticals: Vertical[] = [
         products: [
           { name: 'Rains Long Jacket, Olive', price: '€115', score: '96%' },
           { name: 'NN07 Theo Chino, Navy', price: '€129', score: '92%' },
-          { name: 'Veja V-10 Leather, White', price: '€150', score: '88%' }
+          { name: 'Veja V10 Leather, White', price: '€150', score: '88%' }
         ],
         checkLabel: 'Fit check passed',
         chips: ['M in stock', 'W32 in stock', 'EU 43 in stock'],
@@ -265,7 +265,7 @@ export const verticals: Vertical[] = [
         'Materials are explained, not marketed: gold purity, plating, stone grading, movement type, water resistance. Certifications and provenance come from supplier data and are shown as such.',
         'The practical parts close the sale: ring sizing guidance, engraving options, gift wrapping, delivery dates and the returns policy, all in the same conversation, with the shortlist saved for a partner to approve.'
       ],
-      pills: ['Occasion engine', 'Materials explained', 'Delivery-date aware'],
+      pills: ['Occasion engine', 'Materials explained', 'Delivery date aware'],
       mock: {
         title: 'Concierge Intelligence',
         sub: 'Occasion and materials engine',
@@ -302,14 +302,14 @@ export const verticals: Vertical[] = [
     scene: {
       agentName: 'AI Budtender',
       turns: [
-        { role: 'user', text: 'Something uplifting for a hike, pre-rolls?' },
-        { role: 'ai', text: 'Got it, uplifting pre-rolls. Here is what is in stock right now, within your daily limit:' }
+        { role: 'user', text: 'Something uplifting for a hike, pre rolls?' },
+        { role: 'ai', text: 'Got it, uplifting pre rolls. Here is what is in stock right now, within your daily limit:' }
       ],
       recLabel: 'AI Budtender recommendations',
       products: [
-        { brand: 'LOWELL FARMS', name: 'Sativa Pre-Roll Pack 3.5g', tags: ['PRE-ROLL', 'SATIVA'], price: '$38.00', spec: 'THC 24%', tint: 'a' },
-        { brand: 'JEETER', name: 'Maui Wowie Infused Pre-Roll 1g', tags: ['PRE-ROLL', 'SATIVA'], price: '$18.00', spec: 'THC 38%', tint: 'b' },
-        { brand: 'PACIFIC STONE', name: 'Blue Dream Pre-Rolls 14 pk', tags: ['PRE-ROLL', 'HYBRID'], price: '$45.00', spec: 'THC 21%', tint: 'c' }
+        { brand: 'LOWELL FARMS', name: 'Sativa Pre Roll Pack 3.5g', tags: ['PRE ROLL', 'SATIVA'], price: '$38.00', spec: 'THC 24%', tint: 'a' },
+        { brand: 'JEETER', name: 'Maui Wowie Infused Pre Roll 1g', tags: ['PRE ROLL', 'SATIVA'], price: '$18.00', spec: 'THC 38%', tint: 'b' },
+        { brand: 'PACIFIC STONE', name: 'Blue Dream Pre Rolls 14 pk', tags: ['PRE ROLL', 'HYBRID'], price: '$45.00', spec: 'THC 21%', tint: 'c' }
       ],
       compliance: 'For adults 21+. Within today\'s purchase limit. Not medical advice.',
       placeholder: 'Ask about a strain, format or effect',
@@ -318,14 +318,14 @@ export const verticals: Vertical[] = [
     deep: {
       heading: 'Turn every shopper into a guided buyer',
       paragraphs: [
-        'Dispensary shoppers don\'t browse like typical e-commerce customers. They ask about effects, potency, consumption method, and what\'s actually in stock right now. shopsupport.ai agents connect to Dutchie and answer with live inventory, never recommending an out-of-stock strain.',
-        'Compliance is built in. Agents enforce daily purchase limits, age verification prompts, and state-specific regulations before every recommendation. A shopper asking for "something strong" gets matched to products within their remaining daily allowance, not just the highest THC on the menu.',
-        'Strain discovery goes beyond category filters. Our agents understand indica vs. sativa effects, terpene profiles, and cross-category intent, surfacing edibles, vapes, and flower that match what the customer is actually trying to accomplish.'
+        'Dispensary shoppers don\'t browse like typical ecommerce customers. They ask about effects, potency, consumption method, and what\'s actually in stock right now. shopsupport.ai agents connect to Dutchie and answer with live inventory, never recommending an out of stock strain.',
+        'Compliance is built in. Agents enforce daily purchase limits, age verification prompts, and state specific regulations before every recommendation. A shopper asking for "something strong" gets matched to products within their remaining daily allowance, not just the highest THC on the menu.',
+        'Strain discovery goes beyond category filters. Our agents understand indica vs. sativa effects, terpene profiles, and cross category intent, surfacing edibles, vapes, and flower that match what the customer is actually trying to accomplish.'
       ],
       pills: ['+23% AOV', '<200ms POS sync', '99.2% accuracy'],
       mock: {
         title: 'Product Intelligence',
-        sub: 'Real-time recommendation engine',
+        sub: 'Real time recommendation engine',
         intentLabel: 'Session intent detected',
         intent: 'Relaxing · Evening · Under $40 · In stock',
         products: [

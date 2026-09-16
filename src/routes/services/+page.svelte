@@ -60,7 +60,7 @@
           <rect x="150" y="135" width="110" height="56" rx="8" fill="#111117" stroke="#00d4aa" stroke-width="1.5" />
           <text x="205" y="157" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="9" font-weight="700">ORCHESTRATOR</text>
           <text x="205" y="170" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">routing + planning</text>
-          <text x="205" y="181" text-anchor="middle" fill="#334155" font-family="ui-monospace,monospace" font-size="6.5">gpt-4o / claude</text>
+          <text x="205" y="181" text-anchor="middle" fill="#334155" font-family="ui-monospace,monospace" font-size="6.5">gpt 4o / claude</text>
           <!-- ORCHESTRATOR → agents -->
           <line x1="260" y1="152" x2="308" y2="71" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" marker-end="url(#svc-arrow)" />
           <line x1="260" y1="160" x2="308" y2="136" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" marker-end="url(#svc-arrow)" />
@@ -130,7 +130,7 @@
       <div class="section-label">BUSINESS AI</div>
       <h2 class="section-h2">AI Trained on Your Catalog</h2>
       <p class="section-sub">
-        Purpose-built agents for stores where expertise sells. Each system connects to your catalog, trains on your products and policies, and deploys where your customers shop.
+        Purpose built agents for stores where expertise sells. Each system connects to your catalog, trains on your products and policies, and deploys where your customers shop.
       </p>
     </div>
 
@@ -143,13 +143,13 @@
           Direct connectors to Dutchie, Shopify, WooCommerce, Magento, Salesforce Commerce and product feeds. <BrandName variant="onDark" /> ingests your live catalog, pricing, attributes and inventory, then keeps everything in sync as it changes in real time.
         </p>
         <ul class="bai-bullets">
-          <li>Real-time inventory sync from your POS</li>
+          <li>Real time inventory sync from your POS</li>
           <li>Catalog normalization across product types</li>
-          <li>Webhook-driven updates on stock changes</li>
+          <li>Webhook driven updates on stock changes</li>
           <li>Under 200ms API response latency</li>
         </ul>
         <div class="bai-stats">
-          <div class="bai-stat"><span class="bai-stat-num">Real-time</span><span class="bai-stat-label">catalog sync</span></div>
+          <div class="bai-stat"><span class="bai-stat-num">Real time</span><span class="bai-stat-label">catalog sync</span></div>
           <div class="bai-stat"><span class="bai-stat-num">&lt;200ms</span><span class="bai-stat-label">Sync latency</span></div>
           <div class="bai-stat"><span class="bai-stat-num">99.2%</span><span class="bai-stat-label">Match accuracy</span></div>
         </div>
@@ -196,16 +196,16 @@
         <div class="bai-tag">CUSTOMER SERVICE · SOON</div>
         <h3 class="bai-title">Customer Service Automation</h3>
         <p class="bai-desc">
-          Full-resolution support agents that query order history, loyalty points, and store policies via your POS APIs. Launching soon. Join the waitlist for early access.
+          Full resolution support agents that query order history, loyalty points, and store policies via your POS APIs. Launching soon. Join the waitlist for early access.
         </p>
         <ul class="bai-bullets">
-          <li>Multi-channel support across email, messaging, and tickets</li>
-          <li>Autonomous resolution for tier-1 and tier-2 cases</li>
+          <li>Multi channel support across email, messaging, and tickets</li>
+          <li>Autonomous resolution for tier 1 and tier 2 cases</li>
           <li>Intelligent escalation with full context transfer</li>
           <li>Continuous improvement from resolved interactions</li>
         </ul>
         <div class="bai-stats">
-          <div class="bai-stat"><span class="bai-stat-num">87%</span><span class="bai-stat-label">First-contact resolution</span></div>
+          <div class="bai-stat"><span class="bai-stat-num">87%</span><span class="bai-stat-label">First contact resolution</span></div>
           <div class="bai-stat"><span class="bai-stat-num">60%</span><span class="bai-stat-label">Cost reduction</span></div>
         </div>
       </div>
@@ -227,7 +227,7 @@
               <div class="ticket-dot ticket-dot--teal"></div>
               <div class="ticket-body">
                 <div class="ticket-title">Password reset request</div>
-                <div class="ticket-meta">Resolved in 3s · Self-service flow</div>
+                <div class="ticket-meta">Resolved in 3s · Self service flow</div>
               </div>
             </div>
             <div class="ticket-item">
@@ -259,8 +259,8 @@
         </p>
         <ul class="bai-bullets">
           <li>Natural language product discovery</li>
-          <li>Live inventory-aware recommendations</li>
-          <li>Cross-sell and upsell per interaction</li>
+          <li>Live inventory aware recommendations</li>
+          <li>Cross sell and upsell per interaction</li>
           <li>Deploy on your website or as an embeddable widget</li>
         </ul>
         <div class="bai-stats">
@@ -272,7 +272,7 @@
         <div class="bai-panel">
           <div class="bai-panel-header">
             <span class="bai-panel-title">Shopping Agent</span>
-            <span class="bai-panel-badge">Real-time</span>
+            <span class="bai-panel-badge">Real time</span>
           </div>
           <div class="bai-panel-body">
             <div class="route-item">
@@ -309,15 +309,15 @@
     <div id="compliance-ai" class="bai-service bai-service--reversed">
       <div class="bai-text">
         <div class="bai-tag">COMPLIANCE</div>
-        <h3 class="bai-title">Compliance-Aware Recommendations</h3>
+        <h3 class="bai-title">Compliance Aware Recommendations</h3>
         <p class="bai-desc">
-          Good recommendations are not enough where rules apply. <BrandName variant="onDark" /> enforces age verification, purchase limits, shipping restrictions, product-claim rules and regional regulations before every product suggestion.
+          Good recommendations are not enough where rules apply. <BrandName variant="onDark" /> enforces age verification, purchase limits, shipping restrictions, product claim rules and regional regulations before every product suggestion.
         </p>
         <ul class="bai-bullets">
           <li>Age verification prompts before recommendations</li>
           <li>Purchase limits, age gates and shipping eligibility where they apply</li>
-          <li>Product-claim rules per category: cosmetics, supplements, alcohol, medicines</li>
-          <li>State-specific regulation enforcement</li>
+          <li>Product claim rules per category: cosmetics, supplements, alcohol, medicines</li>
+          <li>State specific regulation enforcement</li>
           <li>Policy agent validates every response</li>
         </ul>
         <div class="bai-stats">
@@ -371,13 +371,13 @@
         <div class="bai-tag">INTEGRATIONS</div>
         <h3 class="bai-title">Built for your stack</h3>
         <p class="bai-desc">
-          <BrandName variant="onDark" /> connects directly to the platform you already run on: Dutchie for dispensaries, Shopify, WooCommerce, Magento or Salesforce Commerce for retail. No rip-and-replace. We deploy alongside your existing site and search, and read from your live catalog.
+          <BrandName variant="onDark" /> connects directly to the platform you already run on: Dutchie for dispensaries, Shopify, WooCommerce, Magento or Salesforce Commerce for retail. No rip and replace. We deploy alongside your existing site and search, and read from your live catalog.
         </p>
         <ul class="bai-bullets">
-          <li>Direct POS, commerce-platform and feed connections</li>
+          <li>Direct POS, commerce platform and feed connections</li>
           <li>Live menu, pricing, and inventory sync</li>
           <li>Compliance metadata pulled from your menu</li>
-          <li>Webhook-driven real-time inventory updates</li>
+          <li>Webhook driven real time inventory updates</li>
         </ul>
       </div>
       <div class="bai-visual">
@@ -415,7 +415,7 @@
       <div class="section-label">TECHNICAL INFRASTRUCTURE</div>
       <h2 class="section-h2">The Stack That Makes It Reliable</h2>
       <p class="section-sub">
-        Production-grade AI infrastructure built for the latency, accuracy, and uptime requirements of real businesses. We design the architecture so your agents perform consistently.
+        Production grade AI infrastructure built for the latency, accuracy, and uptime requirements of real businesses. We design the architecture so your agents perform consistently.
       </p>
     </div>
 
@@ -511,7 +511,7 @@
         </div>
         <div class="tech-card-body">
           <div class="tech-card-title">Agentic AI Systems</div>
-          <div class="tech-card-desc">Autonomous agents with tool use, memory, and multi-step reasoning</div>
+          <div class="tech-card-desc">Autonomous agents with tool use, memory, and multi step reasoning</div>
         </div>
       </div>
       <div class="tech-card">
@@ -521,7 +521,7 @@
           </svg>
         </div>
         <div class="tech-card-body">
-          <div class="tech-card-title">Multi-Agent RAG</div>
+          <div class="tech-card-title">Multi Agent RAG</div>
           <div class="tech-card-desc">Retrieval pipelines where specialized agents retrieve, validate, and synthesize</div>
         </div>
       </div>
@@ -533,7 +533,7 @@
         </div>
         <div class="tech-card-body">
           <div class="tech-card-title">Training Data Pipelines</div>
-          <div class="tech-card-desc">End-to-end data collection, labeling, and curation for domain-specific models</div>
+          <div class="tech-card-desc">End to end data collection, labeling, and curation for domain specific models</div>
         </div>
       </div>
       <div class="tech-card">
@@ -595,7 +595,7 @@
           </svg>
         </div>
         <h3 class="eng-card-title">Custom Development</h3>
-        <p class="eng-card-desc">AI systems built from scratch around your unique workflows, data, and objectives. No templates, no off-the-shelf wrappers.</p>
+        <p class="eng-card-desc">AI systems built from scratch around your unique workflows, data, and objectives. No templates, no off the shelf wrappers.</p>
       </div>
       <div class="eng-card">
         <div class="eng-card-num">02</div>
@@ -604,8 +604,8 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
           </svg>
         </div>
-        <h3 class="eng-card-title">Model Fine-tuning</h3>
-        <p class="eng-card-desc">Domain-adapted models trained on your proprietary data for superior performance on the specific tasks that matter to your business.</p>
+        <h3 class="eng-card-title">Model Fine tuning</h3>
+        <p class="eng-card-desc">Domain adapted models trained on your proprietary data for superior performance on the specific tasks that matter to your business.</p>
       </div>
       <div class="eng-card">
         <div class="eng-card-num">03</div>
@@ -624,7 +624,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
           </svg>
         </div>
-        <h3 class="eng-card-title">AI Evaluation and Red-teaming</h3>
+        <h3 class="eng-card-title">AI Evaluation and Red teaming</h3>
         <p class="eng-card-desc">Rigorous benchmarking, adversarial testing, and evaluation frameworks to verify your system behaves reliably before it goes live.</p>
       </div>
     </div>
@@ -672,7 +672,7 @@
       <div class="process-step">
         <div class="process-step-top">
           <div class="process-badge">3</div>
-          <div class="process-week">Weeks 3-6</div>
+          <div class="process-week">Weeks 3 6</div>
         </div>
         <div class="process-step-body">
           <h3 class="process-step-title">Build and Iterate</h3>
@@ -687,7 +687,7 @@
         </div>
         <div class="process-step-body">
           <h3 class="process-step-title">Deploy and Monitor</h3>
-          <p class="process-step-desc">Launch with full observability, drift detection, and SLA-backed support. We stay on to keep the system performing as your data and usage evolves.</p>
+          <p class="process-step-desc">Launch with full observability, drift detection, and SLA backed support. We stay on to keep the system performing as your data and usage evolves.</p>
         </div>
       </div>
     </div>
@@ -739,7 +739,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
             </svg>
           </div>
-          <h3 class="custom-dev-card-title">End-to-End Builds</h3>
+          <h3 class="custom-dev-card-title">End to End Builds</h3>
           <p class="custom-dev-card-desc">
             Full product when scope requires it. We ship the stack around your AI so it reaches users.
           </p>

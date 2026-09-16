@@ -190,7 +190,7 @@
             </div>
             <div class="expect-step">
               <div class="step-num">2</div>
-              <div class="step-text">30-minute discovery call to align on scope</div>
+              <div class="step-text">30 minute discovery call to align on scope</div>
             </div>
             <div class="expect-step">
               <div class="step-num">3</div>

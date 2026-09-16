@@ -15,7 +15,7 @@
     { id: 'pos', question: 'Which POS and commerce systems do you integrate with?' },
     { id: 'compliance', question: 'How does compliance work in each industry?' },
     { id: 'timeline', question: 'How long until we\'re live on our store?' },
-    { id: 'embed', question: 'Can it work with our existing e-commerce site?' },
+    { id: 'embed', question: 'Can it work with our existing ecommerce site?' },
     { id: 'inventory', question: 'What happens when inventory changes?' },
     { id: 'cs', question: 'Is a customer service agent coming?' }
   ];
@@ -38,15 +38,15 @@
               {#if faq.id === 'pos'}
                 <p class="faq-answer-text"><BrandName variant="onDark" /> connects to the system your catalog already lives in: Dutchie for dispensaries, Shopify, WooCommerce, Magento or Salesforce Commerce for retail, or a plain product feed. We ingest the live catalog, pricing and inventory and keep everything in sync as it changes.</p>
               {:else if faq.id === 'compliance'}
-                <p class="faq-answer-text">Each vertical carries its own rulebook and the agent applies it before a recommendation is shown: purchase limits, age verification and state warnings in cannabis; cosmetics, supplement and infant-formula claim rules in drugstore and beauty; age gating and shipping eligibility in wine and spirits; size availability and returns rules in fashion. In the EU, AI Act Article 50 disclosure, GDPR storage and accessibility come as standard. A forbidden-claim test suite runs on every release.</p>
+                <p class="faq-answer-text">Each vertical carries its own rulebook and the agent applies it before a recommendation is shown: purchase limits, age verification and state warnings in cannabis; cosmetics, supplement and infant formula claim rules in drugstore and beauty; age gating and shipping eligibility in wine and spirits; size availability and returns rules in fashion. In the EU, AI Act Article 50 disclosure, GDPR storage and accessibility come as standard. A forbidden claim test suite runs on every release.</p>
               {:else if faq.id === 'timeline'}
                 <p class="faq-answer-text">Dispensaries on Dutchie are usually live within days of connecting the catalog. Other stores start with a scoped pilot on one catalog and one market, ending in a decision meeting; the timeline follows access to the catalog, the page and analytics. <a href="/contact" class="faq-link">Tell us about your store</a> and we scope it with you.</p>
               {:else if faq.id === 'embed'}
-                <p class="faq-answer-text">Yes. The agent deploys as an embeddable widget, one script tag, or as a standalone page alongside your existing site. It reads from the same POS and catalog APIs your store already uses, and your existing site search stays exactly as it is. No rip-and-replace required.</p>
+                <p class="faq-answer-text">Yes. The agent deploys as an embeddable widget, one script tag, or as a standalone page alongside your existing site. It reads from the same POS and catalog APIs your store already uses, and your existing site search stays exactly as it is. No rip and replace required.</p>
               {:else if faq.id === 'inventory'}
-                <p class="faq-answer-text">The agent syncs with your POS or commerce platform in real time. When stock levels, pricing, sizes or availability change, recommendations update automatically. Out-of-stock items are never suggested.</p>
+                <p class="faq-answer-text">The agent syncs with your POS or commerce platform in real time. When stock levels, pricing, sizes or availability change, recommendations update automatically. Out of stock items are never suggested.</p>
               {:else if faq.id === 'cs'}
-                <p class="faq-answer-text">Yes. Full-resolution customer service agents that query order history, loyalty points, and store policies via your POS APIs are launching soon. Join the waitlist through our contact page to get early access.</p>
+                <p class="faq-answer-text">Yes. Full resolution customer service agents that query order history, loyalty points, and store policies via your POS APIs are launching soon. Join the waitlist through our contact page to get early access.</p>
               {/if}
             </div>
           {/if}
