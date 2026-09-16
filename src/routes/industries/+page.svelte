@@ -369,7 +369,7 @@
           <h2 class="ind-cta-heading">Your Store Deserves AI That Knows Your Catalog.</h2>
           <p class="ind-cta-body">
             Tell us about your store and the system your catalog lives in.
-            Dispensaries start at $499/month plus token usage after a $299 setup. Other verticals begin with a scoped pilot on one catalog and one market.
+            Every engagement starts with a scoped pilot on your catalog and your market, then a platform fee plus usage.
           </p>
           <div class="ind-cta-buttons">
             <ButtonMinimal label="Schedule a demo" variant="primary" href="/contact" arrow={true} />

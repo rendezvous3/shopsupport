@@ -64,7 +64,6 @@
           { label: 'Cannabis dispensaries', href: '/industries#cannabis' }
         ]
       },
-      { label: 'Pricing', href: '/pricing' },
       { label: 'About', href: '/about' },
       { label: 'Contact', href: '/contact' }
     ],

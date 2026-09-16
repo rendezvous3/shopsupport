@@ -224,7 +224,7 @@
 <!-- CTA -->
 <CTASectionVariation2
   headline="Turn browsers into buyers"
-  description="Dispensaries: connect the POS with a $299 setup and launch for $499/month plus token usage. Other verticals: a scoped pilot on one catalog, then a platform fee plus usage."
+  description="Connect your catalog and launch guided selling on your storefront. Scoped per store, from a pilot on one catalog to a platform fee plus usage."
   colorScheme="dark"
   primaryCta={{ label: 'Schedule a demo', href: '/contact' }}
   secondaryCta={{ label: 'Contact us', href: '/contact' }}

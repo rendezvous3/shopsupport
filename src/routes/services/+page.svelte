@@ -760,7 +760,7 @@
       <div class="section-label">GET STARTED</div>
       <h2 class="cta-h2">Ready to connect your POS?</h2>
       <p class="cta-sub">
-        Dispensaries start at $499/month plus token usage after a $299 setup. Other verticals begin with a scoped pilot. Custom work billed hourly.
+        Every engagement starts with a scoped pilot on your catalog, then a platform fee plus usage. Custom work billed hourly.
       </p>
       <div class="cta-buttons">
         <ButtonMinimal label="Schedule a demo" variant="primary" size="lg" href="/contact" arrow={true} />

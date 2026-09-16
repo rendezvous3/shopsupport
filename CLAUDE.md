@@ -46,6 +46,7 @@ This rule was established explicitly by the project owner. Violations are unacce
   `/industries` deep dives. Add or reword a vertical there, nowhere else.
 - Brand is always spelled `shopsupport.ai` (lowercase, with .ai). Use `BrandName`.
 - Never mention cartender.ai, Riffinity or Alpine in public copy.
+- No public pricing anywhere: /pricing was removed on 2026-09-16 and 301s to /contact. Every vertical is "scoped pilot, then platform fee plus usage", no figures.
 
 ## Navigation Anchors
 - Services page sections: `#business-ai`, `#tech`, `#ai-engineering`

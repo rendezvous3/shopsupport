@@ -430,15 +430,15 @@
 <!-- CTA Section -->
 <CTASectionVariation2
   headline="Deploy an expert shopping agent on your storefront"
-  description="Dispensaries start at $499/month plus usage, with a $299 setup that connects the POS. Other verticals are scoped per catalog and integration, from a fixed-fee pilot to a platform fee plus usage."
+  description="Connect your catalog, pick the departments and rules that matter, and launch on your storefront. Scoped per store, from a pilot on one catalog to a platform fee plus usage."
   colorScheme="dark"
   primaryCta={{
     label: 'Schedule a demo',
     href: '/contact'
   }}
   secondaryCta={{
-    label: 'View pricing',
-    href: '/pricing'
+    label: 'See the industries',
+    href: '/industries'
   }}
 />
 
