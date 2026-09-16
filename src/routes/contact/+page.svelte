@@ -10,8 +10,8 @@
 </script>
 
 <svelte:head>
-  <title>Contact | ShopSupport.ai</title>
-  <meta name="description" content="Get in touch with ShopSupport.ai. Tell us about your dispensary and your Dutchie setup." />
+  <title>Contact | shopsupport.ai</title>
+  <meta name="description" content="Get in touch with shopsupport.ai. Tell us about your store and the system your catalog lives in." />
 </svelte:head>
 
 <Navigation />
@@ -24,7 +24,7 @@
       <div class="contact-label">GET IN TOUCH</div>
       <h1 class="contact-heading">Let's connect your store</h1>
       <p class="contact-subheading">
-        Tell us about your dispensary and your Dutchie setup. We'll get back to you within one business day.
+        Tell us about your store, your vertical and the system your catalog lives in. We'll get back to you within one business day.
       </p>
     </div>
   </section>
@@ -104,7 +104,7 @@
                 id="message"
                 name="message"
                 class="form-textarea"
-                placeholder="Your store type, your Dutchie setup, and what you want the AI assistant to do…"
+                placeholder="Your store type, your POS or commerce platform, and what you want the agent to do…"
                 rows="5"
                 bind:value={fields.message}
                 required

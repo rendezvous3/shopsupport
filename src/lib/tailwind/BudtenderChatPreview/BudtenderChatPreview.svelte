@@ -2,6 +2,7 @@
   import BudtenderWidget, { type BudtenderView } from '$lib/tailwind/BudtenderWidget/BudtenderWidget.svelte';
 
   interface Showcase {
+    id: string;
     tag: string;
     title: string;
     desc: string;
@@ -11,53 +12,76 @@
 
   const showcases: Showcase[] = [
     {
+      id: 'conversation',
       tag: 'Feature 1',
+      title: 'Natural AI Budtender conversation',
+      desc: 'Menu questions, follow-ups, and product picks in one thread. Shoppers ask about your catalog, refine intent, and land on POS-synced recommendations without leaving chat.',
+      view: 'conversation'
+    },
+    {
+      id: 'entity',
+      tag: 'Feature 2',
+      title: 'Entity extraction & recommendations',
+      desc: 'Parses “berry flavored indica edibles” into structured intent, then returns POS-synced product cards with potency, format, and price.',
+      view: 'entity'
+    },
+    {
+      id: 'shortcuts',
+      tag: 'Feature 3',
       title: 'Quick shortcuts',
       desc: 'Curated chips for your top intents. No typing required. Compliance panel and Guided entry built into the welcome state.',
       view: 'shortcuts'
     },
     {
-      tag: 'Feature 2a',
-      title: 'Natural budtended conversation',
-      desc: 'Warm, menu-aware replies that feel like your best budtender, not a rigid decision tree.',
-      view: 'conversation'
-    },
-    {
-      tag: 'Feature 2b',
-      title: 'Entity extraction & recommendations',
-      desc: 'Parses “berry flavored indica edibles” into structured intent, then returns POS-synced product cards.',
-      view: 'entity'
-    },
-    {
-      tag: 'Feature 2c',
-      title: 'Guided flow: category, effects, potency',
-      desc: 'Same step engine as AiChatBot: product type, up to 2 effects, adaptive THC tiers from live catalog counts.',
+      id: 'guided-a',
+      tag: 'Feature 3A',
+      title: 'Guided flow: category & effects',
+      desc: 'Shoppers pick a product type, then choose up to two effects. Each step is tappable and built from your live catalog counts.',
       view: 'guided-category',
-      guidedViews: ['guided-category', 'guided-effects', 'guided-thc']
+      guidedViews: ['guided-category', 'guided-effects']
     },
     {
-      tag: 'Feature 3',
+      id: 'guided-b',
+      tag: 'Feature 3B',
+      title: 'Guided flow: potency tiers',
+      desc: 'Adaptive THC ranges pulled from what is actually in stock. Shoppers see how many products match before they commit.',
+      view: 'guided-thc',
+      guidedViews: ['guided-thc']
+    },
+    {
+      id: 'product-detail',
+      tag: 'Feature 4',
       title: 'Individual product deep-dive',
       desc: 'Shoppers ask about a specific SKU: brand story, format, potency, all grounded in your catalog data.',
       view: 'product-detail'
     },
     {
-      tag: 'Compliance',
+      id: 'compliance',
+      tag: 'Trust',
       title: 'Policy alongside every recommendation',
       desc: 'State warnings, medical disclaimers, and AI disclosure rendered in-context, not hidden in a legal footer.',
       view: 'compliance'
     }
   ];
 
-  let guidedIndex = $state(0);
+  let guidedStepByCard = $state<Record<string, number>>({
+    'guided-a': 0,
+    'guided-b': 0
+  });
+
+  function activeView(item: Showcase): BudtenderView {
+    if (!item.guidedViews) return item.view;
+    const index = guidedStepByCard[item.id] ?? 0;
+    return item.guidedViews[index] ?? item.view;
+  }
 </script>
 
 <section class="showcase">
   <div class="showcase__header">
     <div class="showcase__label">PRODUCT WALKTHROUGH</div>
-    <h2 class="showcase__title">Every capability your shoppers actually see</h2>
+    <h2 class="showcase__title">Every path from browse to product pick</h2>
     <p class="showcase__desc">
-      The same widget your dispensary deploys: shortcuts, conversation, guided flow, and compliance, white-labeled to your brand.
+      Talk naturally, search by intent, tap a shortcut, or follow a guided flow. Each mode is a real shopper journey on your live menu.
     </p>
   </div>
 
@@ -69,14 +93,14 @@
           <h3 class="showcase__card-title">{item.title}</h3>
           <p class="showcase__card-desc">{item.desc}</p>
 
-          {#if item.guidedViews}
+          {#if item.guidedViews && item.guidedViews.length > 1}
             <div class="showcase__guided-nav">
               {#each item.guidedViews as step, j}
                 <button
                   type="button"
                   class="showcase__guided-btn"
-                  class:showcase__guided-btn--active={guidedIndex === j && i === 3}
-                  onclick={() => (guidedIndex = j)}
+                  class:showcase__guided-btn--active={(guidedStepByCard[item.id] ?? 0) === j}
+                  onclick={() => (guidedStepByCard[item.id] = j)}
                 >
                   {step === 'guided-category' ? 'Category' : step === 'guided-effects' ? 'Effects' : 'Potency'}
                 </button>
@@ -86,9 +110,7 @@
         </div>
 
         <div class="showcase__widget">
-          <BudtenderWidget
-            view={item.guidedViews ? item.guidedViews[guidedIndex] : item.view}
-          />
+          <BudtenderWidget view={activeView(item)} />
         </div>
       </article>
     {/each}

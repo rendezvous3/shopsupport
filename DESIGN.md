@@ -10,15 +10,21 @@
 ## 0. How to see the current site
 
 - **Run locally:** `npm run dev` → routes below. `npm run storybook` shows components in isolation.
-- **Routes:** `/` (home), `/guided-selling`, `/analytics`, `/industries`, `/services`, `/about`, `/contact`.
+- **Routes:** `/` (home), `/guided-selling`, `/analytics`, `/industries` (one anchored deep dive per vertical: `#retail`, `#beverage`, `#fashion`, `#jewelry`, `#cannabis`), `/services`, `/pricing`, `/about`, `/contact`.
 - **Live:** deployed on Cloudflare Pages (latest preview printed by `npm run deploy`).
 - Take screenshots of each route before redesigning — the look is the spec as much as the code.
 
 ## 1. Hard constraints (do not violate)
 
 - **No em dashes anywhere.** See `CLAUDE.md`. Use periods, commas, colons, or `·` (middot).
-- **Dispensary-only, Dutchie-only positioning.** No wineries, no Treez/Shopify/WooCommerce/Square in
-  public copy. Rationale + roadmap: `docs/INTERNAL-pos-roadmap.md`.
+- **Multi-vertical positioning (since 2026-09-15).** shopsupport.ai builds expert shopping AI agents for
+  retail; the AI Budtender is one vertical among five, listed last. No automotive, no sporting goods. The word "chat" is banned from copy (agents, assistants, Insights). Every vertical lives in ONE place,
+  `src/lib/data/verticals.ts` (hero tab, home card, nav item, /industries deep dive, widget scene),
+  and gets the same depth of copy the dispensary vertical has. Never mention cartender.ai, Riffinity
+  or Alpine in public copy. The dispensary pricing ($299 setup, $499/month) stays as the dispensary
+  offer; other verticals are "scoped pilot, then platform fee plus usage" with no figures.
+- **Brand spelling is always `shopsupport.ai`**, lowercase, with the `.ai` (use `BrandName`). Never
+  "ShopSupport" or "Shopsupport.ai" in rendered copy.
 - **Primary CTA is always "Schedule a demo"** (no free trial). Secondary often "Contact us".
 - **All CTAs use `ButtonMinimal`** (`$lib/custom/ButtonMinimal/ButtonMinimal.svelte`), variants
   `primary | outline | ghost`, sizes `sm | md | lg`.

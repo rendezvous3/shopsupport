@@ -2,11 +2,14 @@
   import Navigation from '$lib/tailwind/Navigation/Navigation.svelte';
   import Footer from '$lib/tailwind/Footer/Footer.svelte';
   import ButtonMinimal from '$lib/custom/ButtonMinimal/ButtonMinimal.svelte';
+  import BrandName from '$lib/custom/BrandName/BrandName.svelte';
+  import AgentWidget from '$lib/tailwind/AgentWidget/AgentWidget.svelte';
+  import { verticals } from '$lib/data/verticals';
 </script>
 
 <svelte:head>
-  <title>Industries | ShopSupport.ai</title>
-  <meta name="description" content="POS-connected AI for dispensaries. Domain-trained shopping assistants that understand compliance, catalog complexity, and regulated retail workflows." />
+  <title>Industries | shopsupport.ai</title>
+  <meta name="description" content="Expert shopping AI agents for retail, wine and beverage, fashion, jewelry and cannabis. Domain-trained, connected to the live catalog, with each industry's rules in the answer." />
 </svelte:head>
 
 <Navigation dropdownTrigger="hover" />
@@ -21,17 +24,18 @@
       <div class="ind-hero-text">
         <div class="ind-label">INDUSTRIES</div>
         <h1 class="ind-hero-heading">
-          AI Built for Regulated<br />
-          Retail Commerce
+          One engine.<br />
+          Every kind of retail.
         </h1>
         <p class="ind-hero-sub">
-          Generic chatbots fail in dispensaries. ShopSupport builds agents trained on your
-          POS catalog, compliance rules, and customer data, so every recommendation is accurate,
-          in-stock, and regulation-aware.
+          Generic chatbots fail wherever the purchase is considered and the category is regulated. <BrandName variant="onDark" /> builds agents
+          trained on your catalog, your decision logic and your rules, so every recommendation is accurate,
+          in stock, and compliant in the vertical it serves.
         </p>
         <div class="ind-hero-pills">
-          <a href="#dispensaries" class="ind-hero-pill">Dispensaries</a>
-          <a href="#customer-service" class="ind-hero-pill">Customer Service (Soon)</a>
+          {#each verticals as v}
+            <a href={`#${v.id}`} class="ind-hero-pill">{v.label}</a>
+          {/each}
         </div>
       </div>
       <div class="ind-hero-visual" aria-hidden="true">
@@ -54,7 +58,7 @@
             <!-- AI CORE center -->
             <rect x="155" y="142" width="90" height="56" rx="8" fill="#111117" stroke="#00d4aa" stroke-width="1.5" />
             <text x="200" y="163" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="9" font-weight="700">AI CORE</text>
-            <text x="200" y="176" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">POS router</text>
+            <text x="200" y="176" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">router + specialists</text>
             <text x="200" y="188" text-anchor="middle" fill="#334155" font-family="ui-monospace,monospace" font-size="6.5">live sync active</text>
             <!-- DISPENSARIES (top-left) -->
             <rect x="20" y="22" width="100" height="36" rx="6" fill="#0d0d14" stroke="rgba(0,212,170,0.22)" stroke-width="1" />
@@ -72,15 +76,15 @@
             <text x="271" y="119" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">100% checks</text>
             <!-- POS APIs (bottom-right) -->
             <rect x="265" y="240" width="100" height="36" rx="6" fill="#0d0d14" stroke="rgba(0,212,170,0.22)" stroke-width="1" />
-            <text x="315" y="254" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">POS APIs</text>
-            <text x="315" y="266" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">Dutchie</text>
+            <text x="315" y="254" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">CATALOG APIs</text>
+            <text x="315" y="266" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">POS · Shopify · feeds</text>
             <line x1="265" y1="253" x2="245" y2="198" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" marker-end="url(#ind-arrow)" />
             <rect x="238" y="218" width="52" height="16" rx="8" fill="rgba(0,212,170,0.08)" stroke="rgba(0,212,170,0.2)" stroke-width="0.75" />
             <text x="264" y="229" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">&lt;200ms</text>
             <!-- E-COMMERCE (bottom-left) -->
             <rect x="15" y="240" width="110" height="36" rx="6" fill="#0d0d14" stroke="rgba(0,212,170,0.22)" stroke-width="1" />
-            <text x="70" y="254" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">E-COMMERCE</text>
-            <text x="70" y="266" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">live catalog</text>
+            <text x="70" y="254" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace,monospace" font-size="8" font-weight="600">RETAIL</text>
+            <text x="70" y="266" text-anchor="middle" fill="#64748b" font-family="ui-monospace,monospace" font-size="7">beauty · wine · fashion</text>
             <line x1="125" y1="252" x2="163" y2="198" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" marker-end="url(#ind-arrow)" />
             <rect x="120" y="220" width="38" height="16" rx="8" fill="rgba(0,212,170,0.08)" stroke="rgba(0,212,170,0.2)" stroke-width="0.75" />
             <text x="139" y="231" text-anchor="middle" fill="#00d4aa" font-family="ui-monospace,monospace" font-size="6.5" font-weight="600">Live</text>
@@ -94,106 +98,98 @@
     </div>
   </section>
 
-  <!-- ─── Dispensaries Section ─────────────────────────────── -->
-  <section id="dispensaries" class="ind-section ind-section--default">
-    <div class="px-6">
-      <div class="max-w-7xl mx-auto">
-        <div class="ind-split ind-split--visual-right">
+  <!-- ─── Vertical deep dives (data: $lib/data/verticals) ─── -->
+  {#each verticals as v, i}
+    <section id={v.id} class="ind-section {i % 2 === 0 ? 'ind-section--default' : 'ind-section--alt'}">
+      <div class="px-6">
+        <div class="max-w-7xl mx-auto">
+          <div class="ind-split {i % 2 === 0 ? 'ind-split--visual-right' : 'ind-split--visual-left'}">
 
-          <!-- Text -->
-          <div class="ind-split-text">
-            <div class="ind-label">DISPENSARIES</div>
-            <h2 class="ind-section-heading">Turn Every Shopper Into a Guided Buyer</h2>
-            <p class="ind-body">
-              Dispensary shoppers don't browse like typical e-commerce customers. They ask about effects, potency, consumption method, and what's actually in stock right now. ShopSupport agents connect to Dutchie and answer with live inventory, never recommending an out-of-stock strain.
-            </p>
-            <p class="ind-body">
-              Compliance is built in. Agents enforce daily purchase limits, age verification prompts, and state-specific regulations before every recommendation. A shopper asking for "something strong" gets matched to products within their remaining daily allowance, not just the highest THC on the menu.
-            </p>
-            <p class="ind-body">
-              Strain discovery goes beyond category filters. Our agents understand indica vs. sativa effects, terpene profiles, and cross-category intent, surfacing edibles, vapes, and flower that match what the customer is actually trying to accomplish.
-            </p>
+            <!-- Text -->
+            <div class="ind-split-text">
+              <div class="ind-label">{v.eyebrow}</div>
+              <h2 class="ind-section-heading">{v.deep.heading}</h2>
+              {#each v.deep.paragraphs as para}
+                <p class="ind-body">{para}</p>
+              {/each}
 
-            <div class="ind-metrics-row">
-              <div class="ind-metric-pill ind-metric-pill--teal">+23% AOV</div>
-              <div class="ind-metric-pill">&lt;200ms POS Sync</div>
-              <div class="ind-metric-pill">99.2% Accuracy</div>
+              <div class="ind-metrics-row">
+                {#each v.deep.pills as pill, j}
+                  <div class="ind-metric-pill" class:ind-metric-pill--teal={j === 0}>{pill}</div>
+                {/each}
+              </div>
+
+              <div class="ind-int-row">
+                <span class="ind-int-label">Connects to</span>
+                {#each v.integrations as name}<span class="ind-int-chip">{name}</span>{/each}
+              </div>
+
+              <div class="ind-cta-row">
+                <ButtonMinimal label="Schedule a demo" variant="outline" href="/contact" arrow={true} />
+              </div>
             </div>
 
-            <div class="ind-cta-row">
-              <ButtonMinimal label="See Dispensary Solutions" variant="outline" href="/services#shopping-assistant" arrow={true} />
+            <!-- Visual -->
+            <div class="ind-split-visual">
+              {#if i % 2 === 0}
+                <div class="mock-panel">
+                  <div class="mock-panel-header">
+                    <div class="mock-panel-title-row">
+                      <span class="mock-panel-title">{v.deep.mock.title}</span>
+                      <span class="mock-live-badge">
+                        <span class="mock-live-dot"></span>
+                        Live
+                      </span>
+                    </div>
+                    <div class="mock-panel-sub">{v.deep.mock.sub}</div>
+                  </div>
+
+                  <div class="mock-query-row">
+                    <div class="mock-query-label">{v.deep.mock.intentLabel}</div>
+                    <div class="mock-query-bubble">{v.deep.mock.intent}</div>
+                  </div>
+
+                  <div class="mock-product-grid">
+                    {#each v.deep.mock.products as prod, k}
+                      <div class="mock-product" class:mock-product--featured={k === 0}>
+                        <div class="mock-product-img" class:mock-product-img--sm={k !== 0}></div>
+                        <div class="mock-product-info">
+                          <div class="mock-product-name">{prod.name}</div>
+                          <div class="mock-product-price">{prod.price}</div>
+                        </div>
+                        {#if k === 0}
+                          <div class="mock-product-badge">{prod.score}</div>
+                        {:else}
+                          <div class="mock-product-score" class:mock-product-score--dim={k === 2}>{prod.score}</div>
+                        {/if}
+                      </div>
+                    {/each}
+                  </div>
+
+                  <div class="mock-cross-sell">
+                    <div class="mock-cross-sell-label">{v.deep.mock.checkLabel}</div>
+                    <div class="mock-cross-sell-chips">
+                      {#each v.deep.mock.chips as chip}<span class="mock-chip">{chip}</span>{/each}
+                    </div>
+                  </div>
+
+                  <div class="mock-footer">
+                    <span class="mock-footer-dot"></span>
+                    <span class="mock-footer-text">{v.deep.mock.footer}</span>
+                  </div>
+                </div>
+              {:else}
+                <div class="ind-widget-wrap">
+                  <AgentWidget scene={v.scene} />
+                </div>
+              {/if}
             </div>
+
           </div>
-
-          <!-- Visual -->
-          <div class="ind-split-visual">
-            <div class="mock-panel">
-              <div class="mock-panel-header">
-                <div class="mock-panel-title-row">
-                  <span class="mock-panel-title">Product Intelligence</span>
-                  <span class="mock-live-badge">
-                    <span class="mock-live-dot"></span>
-                    Live
-                  </span>
-                </div>
-                <div class="mock-panel-sub">Real-time recommendation engine</div>
-              </div>
-
-              <!-- Query -->
-              <div class="mock-query-row">
-                <div class="mock-query-label">Session intent detected</div>
-                <div class="mock-query-bubble">Relaxing · Evening · Under $40 · In stock</div>
-              </div>
-
-              <!-- Product grid -->
-              <div class="mock-product-grid">
-                <div class="mock-product mock-product--featured">
-                  <div class="mock-product-img"></div>
-                  <div class="mock-product-info">
-                    <div class="mock-product-name">Blue Dream 3.5g</div>
-                    <div class="mock-product-price">$32.00</div>
-                  </div>
-                  <div class="mock-product-badge">97%</div>
-                </div>
-                <div class="mock-product">
-                  <div class="mock-product-img mock-product-img--sm"></div>
-                  <div class="mock-product-info">
-                    <div class="mock-product-name">Granddaddy Purp</div>
-                    <div class="mock-product-price">$28.00</div>
-                  </div>
-                  <div class="mock-product-score">89%</div>
-                </div>
-                <div class="mock-product">
-                  <div class="mock-product-img mock-product-img--sm"></div>
-                  <div class="mock-product-info">
-                    <div class="mock-product-name">Calm Gummies 10pk</div>
-                    <div class="mock-product-price">$24.00</div>
-                  </div>
-                  <div class="mock-product-score mock-product-score--dim">81%</div>
-                </div>
-              </div>
-
-              <!-- Also recommended -->
-              <div class="mock-cross-sell">
-                <div class="mock-cross-sell-label">Compliance check passed</div>
-                <div class="mock-cross-sell-chips">
-                  <span class="mock-chip">Within daily limit</span>
-                  <span class="mock-chip">Age verified</span>
-                  <span class="mock-chip">Dutchie synced</span>
-                </div>
-              </div>
-
-              <div class="mock-footer">
-                <span class="mock-footer-dot"></span>
-                <span class="mock-footer-text">Synced 1,247 SKUs · 143ms</span>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  {/each}
 
   <!-- ─── Customer Service Section ─────────────────────────── -->
   <section id="customer-service" class="ind-section ind-section--alt">
@@ -205,7 +201,7 @@
           <h2 class="ind-section-heading ind-section-heading--centered">Support That Scales Without Headcount</h2>
           <p class="ind-body ind-body--centered">
             Full-resolution support agents that query order history, loyalty points, and store policies via your POS APIs.
-            Join the waitlist for early access. Launching soon for dispensaries.
+            Join the waitlist for early access. Launching first for dispensaries, then every vertical above.
           </p>
 
           <!-- Feature pills row -->
@@ -294,7 +290,7 @@
               <svg width="16" height="16" fill="none" stroke="#00d4aa" stroke-width="1.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
-              ShopSupport Agents
+              <BrandName variant="onDark" /> Agents
             </div>
           </div>
 
@@ -372,8 +368,8 @@
           <div class="ind-label" style="margin-bottom: 1rem;">GET STARTED</div>
           <h2 class="ind-cta-heading">Your Store Deserves AI That Knows Your Catalog.</h2>
           <p class="ind-cta-body">
-            Tell us about your dispensary and your Dutchie setup.
-            We'll connect to your APIs, train on your catalog, and deploy a shopping assistant in weeks.
+            Tell us about your store and the system your catalog lives in.
+            Dispensaries start at $499/month plus token usage after a $299 setup. Other verticals begin with a scoped pilot on one catalog and one market.
           </p>
           <div class="ind-cta-buttons">
             <ButtonMinimal label="Schedule a demo" variant="primary" href="/contact" arrow={true} />
@@ -1426,4 +1422,10 @@
     0%, 100% { opacity: 1; }
     50% { opacity: 0.25; }
   }
+
+  .ind-int-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin-top: 1.1rem; }
+  .ind-int-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #475569; margin-right: 0.25rem; }
+  .ind-int-chip { font-family: ui-monospace, monospace; font-size: 11px; color: #94a3b8; border: 1px solid rgba(255,255,255,0.08); border-radius: 999px; padding: 0.2rem 0.6rem; }
+  .ind-widget-wrap { display: flex; justify-content: center; }
+  .ind-widget-wrap :global(.widget) { max-width: 380px; width: 100%; }
 </style>

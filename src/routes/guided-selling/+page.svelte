@@ -5,11 +5,12 @@
   import FeatureCardDark from '$lib/tailwind/FeatureCard/FeatureCardDark.svelte';
   import CardLayoutTimeline from '$lib/tailwind/CardLayouts/CardLayoutTimeline.svelte';
   import CTASectionVariation2 from '$lib/tailwind/CTASection/CTASectionVariation2.svelte';
+  import BrandName from '$lib/custom/BrandName/BrandName.svelte';
 </script>
 
 <svelte:head>
-  <title>ShopSupport.ai | Guided Selling AI for Dispensaries</title>
-  <meta name="description" content="ShopSupport guides every shopper from browsing to checkout with a few taps. Catalog-aware guided selling that recommends only what is in stock and compliant." />
+  <title>shopsupport.ai | Guided Selling AI for Retail</title>
+  <meta name="description" content="shopsupport.ai guides every shopper from browsing to checkout with a few taps. Catalog-aware guided selling that recommends only what is in stock and compliant." />
 </svelte:head>
 
 <Navigation dropdownTrigger="hover" />
@@ -22,7 +23,7 @@
       AI built to sell, not just answer
     </h1>
     <p class="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed mb-8">
-      Most chatbots wait for a question. ShopSupport guides every shopper from "just browsing" to checkout in a few taps. No blank text box, no dead ends, no waiting for a budtender.
+      Most assistants wait for a question. The agent guides every shopper from "just browsing" to checkout in a few taps. No blank text box, no dead ends, no waiting for staff.
     </p>
     <div class="flex items-center justify-center gap-3 flex-wrap">
       <ButtonMinimal label="Schedule a demo" variant="primary" href="/contact" />
@@ -39,7 +40,7 @@
         Why guided beats an open text box
       </h2>
       <p class="text-xl text-slate-400 max-w-2xl mx-auto">
-        An empty chat box asks the shopper to do the work. A guided flow does the work for them.
+        An empty text box asks the shopper to do the work. A guided flow does the work for them.
       </p>
     </div>
 
@@ -91,7 +92,7 @@
           <div class="absolute left-6 top-6 w-4 h-4 bg-[#00d4aa] rounded-full border-4 border-[#0d0d14] shadow-lg"></div>
           <FeatureCardDark
             title="1. Pick a category"
-            description="Flower, pre-rolls, vapes, edibles, concentrates. One tap narrows the whole catalog."
+            description="Flower, pre-rolls and edibles in a dispensary; face, hair and body in a drugstore; red, white and sparkling in a wine shop. One tap narrows the whole catalog."
             variant="default"
             icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 10h16M4 14h10M4 18h10" /></svg>'
           />
@@ -223,7 +224,7 @@
 <!-- CTA -->
 <CTASectionVariation2
   headline="Turn browsers into buyers"
-  description="Connect your POS and we will have a guided shopping assistant live on your catalog in weeks."
+  description="Dispensaries: connect the POS with a $299 setup and launch for $499/month plus token usage. Other verticals: a scoped pilot on one catalog, then a platform fee plus usage."
   colorScheme="dark"
   primaryCta={{ label: 'Schedule a demo', href: '/contact' }}
   secondaryCta={{ label: 'Contact us', href: '/contact' }}

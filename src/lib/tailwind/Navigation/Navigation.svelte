@@ -1,4 +1,5 @@
 <script lang="ts">
+  import BrandLockup from '$lib/custom/BrandLockup/BrandLockup.svelte';
   interface NavLink {
     label: string;
     href: string;
@@ -24,7 +25,7 @@
   }
 
   let {
-    logo = 'ShopSupport.ai',
+    logo = 'shopsupport.ai',
     links = [
       {
         label: 'Platform',
@@ -41,7 +42,7 @@
             icon: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>'
           },
           {
-            label: 'Shopping Assistant',
+            label: 'Shopping Agent',
             href: '/services#shopping-assistant',
             icon: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>'
           },
@@ -53,9 +54,17 @@
         ]
       },
       {
-        label: 'Dispensaries',
-        href: '/industries'
+        label: 'Industries',
+        href: '/industries',
+        children: [
+          { label: 'Retail', href: '/industries#retail' },
+          { label: 'Wine & beverage', href: '/industries#beverage' },
+          { label: 'Fashion & apparel', href: '/industries#fashion' },
+          { label: 'Jewelry & watches', href: '/industries#jewelry' },
+          { label: 'Cannabis dispensaries', href: '/industries#cannabis' }
+        ]
       },
+      { label: 'Pricing', href: '/pricing' },
       { label: 'About', href: '/about' },
       { label: 'Contact', href: '/contact' }
     ],
@@ -127,8 +136,8 @@
     <div class="flex items-center justify-between h-20">
       <!-- Logo -->
       <div class="flex-shrink-0">
-        <a href="/">
-          <img src="/logo/Transparent Logo.svg" alt="Shopsupport.ai" class="h-9 w-auto" />
+        <a href="/" class="nav-brand" aria-label="shopsupport.ai home">
+          <BrandLockup height="2.25rem" offset="0.625rem" />
         </a>
       </div>
 
@@ -374,4 +383,11 @@
   .animate-fade-in {
     animation: fade-in 0.2s ease-out;
   }
+
+  .nav-brand {
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+  }
+
 </style>

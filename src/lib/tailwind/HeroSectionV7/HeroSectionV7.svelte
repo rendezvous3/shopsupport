@@ -1,5 +1,6 @@
 <script lang="ts">
   import ButtonMinimal from '$lib/custom/ButtonMinimal/ButtonMinimal.svelte';
+  import BrandName from '$lib/custom/BrandName/BrandName.svelte';
 
   interface Cta {
     label: string;
@@ -22,9 +23,9 @@
   }
 
   let {
-    badge = 'Dispensaries · Dutchie · POS-Connected AI',
+    badge = 'Retail · Live catalog · Connected AI',
     headline = 'The AI agent for regulated retail commerce',
-    subheadline = 'ShopSupport connects to your POS and e-commerce APIs, then deploys a trained shopping assistant that knows your live inventory, policies, and customers.',
+    subheadline = '',
     primaryCta = { label: 'Schedule a demo', href: '/contact' },
     secondaryCta = { label: 'See the chat', href: '/#chat-preview' },
     trustMetrics = [
@@ -56,7 +57,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
                 </svg>
               </div>
-              <span class="brand-name">ShopSupport</span>
+              <span class="brand-name"><BrandName /></span>
               <svg class="brand-chevron" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
               </svg>
@@ -79,18 +80,17 @@
                   </svg>
                   <span>Dashboard</span>
                 </span>
-                <span class="nav-item nav-item--active">
+                <span class="nav-item">
                   <svg class="nav-icon" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
                   </svg>
                   <span>AI Advisor</span>
-                  <span class="nav-badge">3</span>
                 </span>
-                <span class="nav-item">
+                <span class="nav-item nav-item--active">
                   <svg class="nav-icon" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                   </svg>
-                  <span>Analytics</span>
+                  <span>Insights</span>
                 </span>
               </div>
               <div class="nav-section">
@@ -139,9 +139,9 @@
                 <div class="topbar-breadcrumb">
                   <span class="breadcrumb-dim">Store</span>
                   <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-                  <span class="breadcrumb-active">AI Advisor</span>
+                  <span class="breadcrumb-active">Product Demand</span>
                 </div>
-                <div class="topbar-title">Catalog Advisor</div>
+                <div class="topbar-title">Chat Analytics</div>
               </div>
               <div class="topbar-right">
                 <div class="topbar-indexed">
@@ -388,7 +388,7 @@
           <!-- ═══ RIGHT PANEL: Analytics ═══ -->
           <div class="app-analytics">
             <div class="analytics-header">
-              <span class="analytics-title">AI Performance</span>
+              <span class="analytics-title">Product Demand</span>
               <span class="analytics-live">
                 <span class="analytics-live-dot"></span>
                 Live
@@ -398,44 +398,44 @@
             <div class="analytics-metrics">
               <div class="metric-block">
                 <div class="metric-row">
-                  <span class="metric-label">Accuracy</span>
-                  <span class="metric-val metric-val--teal">94.7%</span>
+                  <span class="metric-label">Demand</span>
+                  <span class="metric-val metric-val--teal">477</span>
                 </div>
                 <div class="metric-bar-bg">
-                  <div class="metric-bar metric-bar--teal" style="width: 94.7%"></div>
+                  <div class="metric-bar metric-bar--teal" style="width: 100%"></div>
                 </div>
               </div>
               <div class="metric-block">
                 <div class="metric-row">
-                  <span class="metric-label">Response</span>
-                  <span class="metric-val">142ms</span>
+                  <span class="metric-label">No results</span>
+                  <span class="metric-val">6.3%</span>
                 </div>
                 <div class="metric-bar-bg">
-                  <div class="metric-bar" style="width: 65%"></div>
+                  <div class="metric-bar" style="width: 6.3%"></div>
                 </div>
               </div>
               <div class="metric-block">
                 <div class="metric-row">
-                  <span class="metric-label">Sessions</span>
-                  <span class="metric-val">1,247</span>
+                  <span class="metric-label">Chat entry</span>
+                  <span class="metric-val">451</span>
                 </div>
                 <div class="metric-bar-bg">
-                  <div class="metric-bar" style="width: 80%"></div>
+                  <div class="metric-bar" style="width: 94.5%"></div>
                 </div>
               </div>
               <div class="metric-block">
                 <div class="metric-row">
-                  <span class="metric-label">Conv. lift</span>
-                  <span class="metric-val metric-val--teal">+23%</span>
+                  <span class="metric-label">Top effect</span>
+                  <span class="metric-val metric-val--teal">89</span>
                 </div>
                 <div class="metric-bar-bg">
-                  <div class="metric-bar metric-bar--teal" style="width: 58%"></div>
+                  <div class="metric-bar metric-bar--teal" style="width: 72%"></div>
                 </div>
               </div>
             </div>
 
             <div class="sparkline-section">
-              <div class="sparkline-label">Sessions today</div>
+              <div class="sparkline-label">Uplifted mentions</div>
               <div class="sparkline">
                 <div class="spark" style="height: 35%"></div>
                 <div class="spark" style="height: 52%"></div>
@@ -452,23 +452,23 @@
               <div class="category-list">
                 <div class="category-row">
                   <div class="category-dot category-dot--1"></div>
-                  <span class="category-name">Headphones</span>
-                  <span class="category-pct">38%</span>
+                  <span class="category-name">Edibles</span>
+                  <span class="category-pct">145</span>
                 </div>
                 <div class="category-row">
                   <div class="category-dot category-dot--2"></div>
-                  <span class="category-name">Speakers</span>
-                  <span class="category-pct">27%</span>
+                  <span class="category-name">Flower</span>
+                  <span class="category-pct">120</span>
                 </div>
                 <div class="category-row">
                   <div class="category-dot category-dot--3"></div>
-                  <span class="category-name">Earbuds</span>
-                  <span class="category-pct">21%</span>
+                  <span class="category-name">Prerolls</span>
+                  <span class="category-pct">93</span>
                 </div>
                 <div class="category-row">
                   <div class="category-dot category-dot--4"></div>
-                  <span class="category-name">Accessories</span>
-                  <span class="category-pct">14%</span>
+                  <span class="category-name">Vaporizers</span>
+                  <span class="category-pct">61</span>
                 </div>
               </div>
             </div>
@@ -477,16 +477,16 @@
               <div class="recent-label">Recent queries</div>
               <div class="recent-list">
                 <div class="recent-row">
-                  <span class="recent-query">wireless under $100</span>
-                  <span class="recent-count">247</span>
+                  <span class="recent-query">uplifting sativa vapes</span>
+                  <span class="recent-count">32</span>
                 </div>
                 <div class="recent-row">
-                  <span class="recent-query">noise cancelling</span>
-                  <span class="recent-count">183</span>
+                  <span class="recent-query">energetic sativa flower</span>
+                  <span class="recent-count">24</span>
                 </div>
                 <div class="recent-row">
-                  <span class="recent-query">gaming headset</span>
-                  <span class="recent-count">91</span>
+                  <span class="recent-query">berry gummies edibles</span>
+                  <span class="recent-count">15</span>
                 </div>
               </div>
             </div>
@@ -503,7 +503,7 @@
 
             <!-- Resolution rate donut -->
             <div class="insights-section">
-              <div class="insights-label">RESOLUTION RATE</div>
+              <div class="insights-label">GUIDED FLOW</div>
               <div class="resolution-wrap">
                 <svg width="68" height="68" viewBox="0 0 68 68" class="resolution-donut">
                   <!-- Background ring: r=28, circumference=175.9 -->
@@ -520,22 +520,22 @@
                     stroke-dashoffset="-111.3"
                     stroke-linecap="round"
                   />
-                  <text x="34" y="31" text-anchor="middle" fill="#00d4aa" font-size="11" font-weight="700" font-family="inherit">88%</text>
-                  <text x="34" y="42" text-anchor="middle" fill="#334155" font-size="7" font-family="inherit">resolved</text>
+                  <text x="34" y="31" text-anchor="middle" fill="#00d4aa" font-size="11" font-weight="700" font-family="inherit">100%</text>
+                  <text x="34" y="42" text-anchor="middle" fill="#334155" font-size="7" font-family="inherit">complete</text>
                 </svg>
                 <div class="resolution-legend">
                   <div class="resolution-item">
                     <span class="resolution-dot resolution-dot--teal"></span>
                     <div class="resolution-stat">
-                      <span class="resolution-num">847</span>
-                      <span class="resolution-lbl">resolved</span>
+                      <span class="resolution-num">26</span>
+                      <span class="resolution-lbl">completed</span>
                     </div>
                   </div>
                   <div class="resolution-item">
                     <span class="resolution-dot resolution-dot--amber"></span>
                     <div class="resolution-stat">
-                      <span class="resolution-num resolution-num--amber">112</span>
-                      <span class="resolution-lbl">open</span>
+                      <span class="resolution-num resolution-num--amber">24</span>
+                      <span class="resolution-lbl">sessions</span>
                     </div>
                   </div>
                 </div>
@@ -544,70 +544,70 @@
 
             <!-- Product gaps -->
             <div class="insights-section">
-              <div class="insights-label">PRODUCT GAPS</div>
-              <div class="gaps-note">Queries with no catalog match</div>
+              <div class="insights-label">UNRESOLVED</div>
+              <div class="gaps-note">No-result and open queries</div>
               <div class="gaps-list">
                 <div class="gap-row">
                   <span class="gap-dot"></span>
-                  <span class="gap-query">bone conduction</span>
-                  <span class="gap-count">32</span>
+                  <span class="gap-query">flower &lt; 18% thc</span>
+                  <span class="gap-count">no_results</span>
                 </div>
                 <div class="gap-row">
                   <span class="gap-dot"></span>
-                  <span class="gap-query">solar charging case</span>
-                  <span class="gap-count">18</span>
+                  <span class="gap-query">berry edibles under $25</span>
+                  <span class="gap-count">no_results</span>
                 </div>
                 <div class="gap-row">
                   <span class="gap-dot"></span>
-                  <span class="gap-query">spatial audio earbuds</span>
-                  <span class="gap-count">14</span>
+                  <span class="gap-query">vape for focus</span>
+                  <span class="gap-count">unresolved</span>
                 </div>
                 <div class="gap-row">
                   <span class="gap-dot"></span>
-                  <span class="gap-query">retractable cable</span>
-                  <span class="gap-count">9</span>
+                  <span class="gap-query">cbd oil products</span>
+                  <span class="gap-count">9.1%</span>
                 </div>
               </div>
             </div>
 
             <!-- Trending searches -->
             <div class="insights-section insights-section--last">
-              <div class="insights-label">TRENDING SEARCHES</div>
+              <div class="insights-label">EFFECT DEMAND</div>
               <div class="trending-list">
                 <div class="trend-row">
                   <div class="trend-bar-wrap">
-                    <div class="trend-bar" style="width: 88%"></div>
+                    <div class="trend-bar" style="width: 100%"></div>
                   </div>
                   <div class="trend-info">
-                    <span class="trend-term">bone conduction</span>
-                    <span class="trend-pct trend-pct--up">+34%</span>
+                    <span class="trend-term">uplifted</span>
+                    <span class="trend-pct trend-pct--up">89</span>
                   </div>
                 </div>
                 <div class="trend-row">
                   <div class="trend-bar-wrap">
-                    <div class="trend-bar" style="width: 66%"></div>
+                    <div class="trend-bar" style="width: 99%"></div>
                   </div>
                   <div class="trend-info">
-                    <span class="trend-term">spatial audio</span>
-                    <span class="trend-pct trend-pct--up">+22%</span>
+                    <span class="trend-term">energetic</span>
+                    <span class="trend-pct trend-pct--up">88</span>
                   </div>
                 </div>
                 <div class="trend-row">
                   <div class="trend-bar-wrap">
-                    <div class="trend-bar trend-bar--dim" style="width: 44%"></div>
+                    <div class="trend-bar trend-bar--dim" style="width: 54%"></div>
                   </div>
                   <div class="trend-info">
-                    <span class="trend-term">retractable cable</span>
-                    <span class="trend-pct trend-pct--up">+18%</span>
+                    <span class="trend-term">relaxed</span>
+                    <span class="trend-pct trend-pct--up">48</span>
                   </div>
                 </div>
                 <div class="trend-row">
                   <div class="trend-bar-wrap">
-                    <div class="trend-bar trend-bar--dim" style="width: 30%"></div>
+                    <div class="trend-bar trend-bar--dim" style="width: 50%"></div>
                   </div>
                   <div class="trend-info">
-                    <span class="trend-term">open-ear design</span>
-                    <span class="trend-pct trend-pct--up">+11%</span>
+                    <span class="trend-term">calm</span>
+                    <span class="trend-pct trend-pct--up">44</span>
                   </div>
                 </div>
               </div>
@@ -626,7 +626,13 @@
       </div>
 
       <h1 class="hero__h1">{headline}</h1>
-      <p class="hero__sub">{subheadline}</p>
+      {#if subheadline}
+        <p class="hero__sub">{subheadline}</p>
+      {:else}
+        <p class="hero__sub">
+          <BrandName variant="onDark" /> connects to your POS and e-commerce APIs, then deploys an expert shopping agent with your live inventory, policies, and catalog.
+        </p>
+      {/if}
 
       <div class="hero__ctas">
         <ButtonMinimal label={primaryCta.label} variant="primary" size="md" href={primaryCta.href} arrow={true} />

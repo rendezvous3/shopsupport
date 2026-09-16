@@ -58,7 +58,29 @@
       tags: ['EDIBLES', 'INDICA'],
       price: '$22.00',
       spec: '100mg thc',
-      specLabel: 'TOTAL'
+      specLabel: 'TOTAL',
+      imgClass: 'widget__product-img--berry'
+    }
+  ];
+
+  const conversationProducts = [
+    {
+      brand: 'HEPWORTH',
+      name: 'Green Crack Kush',
+      tags: ['PREROLLS', 'SATIVA', '5 PACK'],
+      price: '$20.00',
+      spec: '23%',
+      specLabel: 'THC',
+      imgClass: 'widget__product-img--preroll-a'
+    },
+    {
+      brand: 'BACK HOME CANNABIS',
+      name: 'Super Lemon Haze',
+      tags: ['PREROLLS', 'SATIVA', '6 PACK'],
+      price: '$32.00',
+      spec: '27%',
+      specLabel: 'THC',
+      imgClass: 'widget__product-img--preroll-b'
     }
   ];
 </script>
@@ -78,7 +100,11 @@
       <span class="widget__close">×</span>
     </div>
 
-    <div class="widget__body" class:widget__body--guided={view.startsWith('guided-')}>
+    <div
+      class="widget__body budtender-widget-scroll"
+      class:widget__body--guided={view.startsWith('guided-')}
+      class:widget__body--conversation={view === 'conversation'}
+    >
       {#if view === 'shortcuts'}
         <p class="widget__greeting">
           Hi! Ask me anything about our menu, or tap Guided below for a quick product finder.
@@ -110,13 +136,36 @@
         </div>
 
       {:else if view === 'conversation'}
-        <div class="widget__user-msg">Hi there! Tell me about your menu please?</div>
+        <div class="widget__user-msg">Tell me about your menu?</div>
         <p class="widget__ai-msg widget__ai-msg--block">
-          We carry flower, pre-rolls, edibles, vaporizers, concentrates, tinctures, and topicals.
-          Popular picks include gummies, chocolates, live-resin carts, and sativa-dominant flower.
-          Let me know if you'd like details on any specific category or product type.
+          We carry a wide selection across several categories, including flower, pre-rolls, edibles,
+          vaporizers, concentrates, tinctures, CBD products, topicals, and accessories.
+          Let me know if you'd like details on any specific category or product type?
         </p>
-        <button type="button" class="widget__guided-btn widget__guided-btn--inline">Guided</button>
+        <div class="widget__user-msg">How about some uplifting pre rolls?</div>
+        <p class="widget__ai-msg widget__ai-msg--block">
+          I completely understand what you're looking for:
+          <strong class="widget__entity">uplifting pre-rolls</strong>.
+          Let me check what we have that matches your preferences.
+        </p>
+        <div class="widget__rec-label">AI Budtender recommendations</div>
+        {#each conversationProducts as product}
+          <div class="widget__product">
+            <div class="widget__product-img {product.imgClass}"></div>
+            <div class="widget__product-body">
+              <div class="widget__product-brand">{product.brand}</div>
+              <div class="widget__product-name">{product.name}</div>
+              <div class="widget__product-tags">
+                {#each product.tags as tag}<span>{tag}</span>{/each}
+              </div>
+              <div class="widget__product-row">
+                <span class="widget__product-price">{product.price}</span>
+                <span class="widget__product-spec">{product.specLabel} {product.spec}</span>
+              </div>
+            </div>
+            <button type="button" class="widget__product-link" aria-label="View product">↗</button>
+          </div>
+        {/each}
 
       {:else if view === 'entity'}
         <div class="widget__user-msg">I am interested in berry flavored indica edibles.</div>
@@ -125,10 +174,10 @@
           <strong class="widget__entity">indica edibles, berry flavor</strong>.
           Let me check what we have that matches your preferences.
         </p>
-        <div class="widget__rec-label">Budtender recommendations</div>
+        <div class="widget__rec-label">AI Budtender recommendations</div>
         {#each entityProducts as product}
           <div class="widget__product">
-            <div class="widget__product-img widget__product-img--berry"></div>
+            <div class="widget__product-img {product.imgClass}"></div>
             <div class="widget__product-body">
               <div class="widget__product-brand">{product.brand}</div>
               <div class="widget__product-name">{product.name}</div>
@@ -284,6 +333,7 @@
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    color-scheme: dark;
   }
 
   .widget__header {
@@ -304,9 +354,42 @@
     max-height: 440px;
     overflow-y: auto;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.14) transparent;
+    color-scheme: dark;
+  }
+
+  /* Safari ignores scoped pseudo-elements; keep scrollbar rules global */
+  :global(.budtender-widget-scroll::-webkit-scrollbar) {
+    width: 4px;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  :global(.budtender-widget-scroll::-webkit-scrollbar-track) {
+    background: transparent;
+    margin: 6px 0;
+  }
+
+  :global(.budtender-widget-scroll::-webkit-scrollbar-thumb) {
+    background-color: rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  :global(.budtender-widget-scroll::-webkit-scrollbar-thumb:hover) {
+    background-color: rgba(255, 255, 255, 0.24);
+  }
+
+  :global(.budtender-widget-scroll::-webkit-scrollbar-corner) {
+    background: transparent;
   }
 
   .widget__body--guided { padding-bottom: 0.5rem; }
+  .widget__body--conversation { max-height: 480px; }
 
   .widget__greeting { font-size: 0.78rem; color: #cbd5e1; line-height: 1.55; margin: 0 0 1rem; }
   .widget__section-label { font-size: 0.62rem; letter-spacing: 0.12em; color: #64748b; margin-bottom: 0.25rem; }
@@ -355,9 +438,17 @@
     background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 0.65rem; padding: 0.55rem; margin-bottom: 0.5rem;
   }
-  .widget__product-img { width: 52px; height: 52px; border-radius: 0.4rem; background: linear-gradient(135deg, #3d2810, #6b4423); }
-  .widget__product-img--berry { background: linear-gradient(135deg, #4a2040, #8b3a6b); }
-  .widget__product-img--vape { background: linear-gradient(135deg, #2a3540, #4a6070); }
+  .widget__product-img {
+    width: 52px;
+    height: 52px;
+    border-radius: 0.4rem;
+    background: linear-gradient(145deg, #0c0c10, #14141a);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .widget__product-img--berry { background: linear-gradient(145deg, #0b0b0f, #131318); }
+  .widget__product-img--vape { background: linear-gradient(145deg, #0a0a0e, #121217); }
+  .widget__product-img--preroll-a { background: linear-gradient(145deg, #0c0c10, #15151b); }
+  .widget__product-img--preroll-b { background: linear-gradient(145deg, #0b0b0f, #141419); }
   .widget__product-brand { font-size: 0.52rem; letter-spacing: 0.06em; color: #64748b; margin-bottom: 0.1rem; }
   .widget__product-name { font-size: 0.68rem; font-weight: 600; color: #f1f5f9; line-height: 1.3; margin-bottom: 0.25rem; }
   .widget__product-tags { display: flex; gap: 0.25rem; margin-bottom: 0.35rem; flex-wrap: wrap; }

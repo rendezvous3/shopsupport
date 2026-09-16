@@ -2,11 +2,12 @@
   import Navigation from '$lib/tailwind/Navigation/Navigation.svelte';
   import Footer from '$lib/tailwind/Footer/Footer.svelte';
   import ButtonMinimal from '$lib/custom/ButtonMinimal/ButtonMinimal.svelte';
+  import BrandName from '$lib/custom/BrandName/BrandName.svelte';
 </script>
 
 <svelte:head>
-  <title>About | ShopSupport.ai</title>
-  <meta name="description" content="ShopSupport builds POS-connected AI shopping assistants for dispensaries. Agentic systems trained on your catalog and compliance policies." />
+  <title>About | shopsupport.ai</title>
+  <meta name="description" content="shopsupport.ai builds expert shopping AI agents for retail. Agentic systems trained on your catalog, your decision logic and your compliance policies." />
 </svelte:head>
 
 <Navigation />
@@ -22,8 +23,8 @@
         <span class="heading-teal">regulated retail</span>
       </h1>
       <p class="about-subheading">
-        ShopSupport connects to your Dutchie catalog, trains agentic systems on your products
-        and compliance policies, and deploys shopping assistants for dispensaries.
+        <BrandName variant="onDark" /> connects to your live catalog, trains agentic systems on your products
+        and compliance policies, and deploys expert shopping agents for retail: drugstore and beauty, wine and beverage, fashion, jewelry and cannabis.
       </p>
     </div>
   </section>
@@ -37,12 +38,12 @@
           <div class="section-label">PHILOSOPHY</div>
           <h2 class="section-heading">Integration-first, production-always</h2>
           <p class="section-body">
-            Dispensaries run on specialized POS systems like Dutchie, with catalogs
+            Considered retail runs on specialized systems, Dutchie in dispensaries, Shopify or Magento in fashion, WooCommerce in a drugstore, with catalogs
             that change hourly and compliance rules that vary by state.
-            Generic chatbots can't handle that complexity.
+            Generic assistants can't handle that complexity.
           </p>
           <p class="section-body">
-            ShopSupport starts with your live data. We connect to your POS, ingest your catalog,
+            <BrandName variant="onDark" /> starts with your live data. We connect to your POS, ingest your catalog,
             embed your policies, and deploy agents that know what's in stock right now, not what
             was in stock when someone last updated a spreadsheet.
           </p>
@@ -109,7 +110,7 @@
         <div class="section-label">VISION</div>
         <h2 class="section-heading">Towards intelligent commerce at scale</h2>
         <p class="section-body section-body--centered">
-          Every dispensary shopper deserves expert guidance: strain recommendations,
+          Every shopper deserves expert guidance: the recommendation a specialist would give,
           effect-based matches, and compliance-aware suggestions, without waiting for staff. That's what
           we're building.
         </p>
@@ -123,10 +124,10 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
             </svg>
           </div>
-          <h3 class="vision-card-title">Dispensary Commerce</h3>
+          <h3 class="vision-card-title">Vertical Commerce</h3>
           <p class="vision-card-body">
-            Compliance-aware product discovery for cannabis retail. Strain recommendations with
-            potency filters, purchase limit tracking, and live Dutchie inventory sync.
+            Compliance-aware product discovery for each vertical. Strains and purchase limits in cannabis, claims and skin types in beauty,
+            pairing and age gates in wine, fit and size in fashion, all on live inventory.
             Every suggestion is in stock and within regulations.
           </p>
         </div>
@@ -139,7 +140,7 @@
           </div>
           <h3 class="vision-card-title">Demand Intelligence</h3>
           <p class="vision-card-body">
-            Every conversation is a demand signal. ShopSupport surfaces the products, effects, and
+            Every conversation is a demand signal. <BrandName variant="onDark" /> surfaces the products, effects, and
             price points shoppers search for, including demand you cannot see on a sales report.
           </p>
         </div>
@@ -152,9 +153,9 @@
           </div>
           <h3 class="vision-card-title">POS-Native Intelligence</h3>
           <p class="vision-card-body">
-            General-purpose LLMs don't know your inventory. ShopSupport agents query your POS in
-            real time, enforce compliance policies, and reason over your specific catalog of strains,
-            products, and SKUs, like your best budtender.
+            General-purpose LLMs don't know your inventory. <BrandName variant="onDark" /> agents query your POS in
+            real time, enforce compliance policies, and reason over your specific catalog of products,
+            products, and SKUs, with budtender-level expertise.
           </p>
         </div>
 
@@ -399,11 +400,11 @@
   <section class="about-section about-cta-section">
     <div class="about-inner">
       <div class="about-cta-card">
-        <div class="about-cta-label">SHOPSUPPORT.AI</div>
-        <h2 class="about-cta-heading">Built for dispensaries.</h2>
+        <div class="about-cta-label">shopsupport.ai</div>
+        <h2 class="about-cta-heading">Built for retail that takes expertise to sell.</h2>
         <p class="about-cta-body">
           We work with a focused set of regulated retail stores, connecting to your POS,
-          training on your catalog, and deploying shopping assistants that drive measurable
+          training on your catalog, and deploying an expert shopping agent that drives measurable
           conversion lift. Tell us about your store.
         </p>
         <div class="about-cta-buttons">
