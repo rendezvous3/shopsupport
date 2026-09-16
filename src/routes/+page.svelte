@@ -34,7 +34,7 @@
         Trained on the decision logic of each industry
       </h2>
       <p class="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-        Not five bots. One guided-selling engine, connected to the catalog, tuned to how people actually buy in each vertical, with that vertical's rules in every answer.
+        One guided-selling engine, connected to the catalog, tuned to how people actually buy in each industry, with that industry's rules in every answer.
       </p>
     </div>
     <div class="vert-grid">

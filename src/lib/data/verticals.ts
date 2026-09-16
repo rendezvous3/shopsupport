@@ -74,39 +74,39 @@ export const verticals: Vertical[] = [
     scene: {
       agentName: 'AI Shopping Agent',
       turns: [
-        { role: 'user', text: 'I have dry, sensitive skin. What do you recommend for winter?' },
-        { role: 'ai', text: 'For dry, sensitive skin in winter, a richer cream that supports the skin barrier, with SPF by day:' }
+        { role: 'user', text: 'What do I need for a newborn\'s first bath?' },
+        { role: 'ai', text: 'A very mild baby wash, a soft hooded towel, and wipes for quick clean-ups. All in stock:' }
       ],
-      recLabel: 'Face care specialist recommends',
+      recLabel: 'Baby care specialist recommends',
       products: [
-        { brand: 'BALEA', name: 'Intensive Day Cream, Urea + SPF 15, 50 ml', tags: ['FACE', 'SENSITIVE'], price: '€2.95', spec: 'SPF 15', tint: 'b' },
-        { brand: 'NIVEA', name: 'Daily Essentials Night Cream, Dry & Sensitive, 50 ml', tags: ['FACE', 'NIGHT'], price: '€7.15', spec: '50 ml', tint: 'a' },
-        { brand: 'SKINTEGRA', name: 'Una Nourishing Protective Cream, 50 ml', tags: ['FACE', 'BARRIER'], price: '€24.50', spec: '50 ml', tint: 'd' }
+        { brand: 'BABYLOVE', name: 'Bath & Shampoo 2-in-1 Ultra Sensitive, 250 ml', tags: ['BABY', 'WASH'], price: '€1.90', spec: '250 ml', tint: 'b' },
+        { brand: 'FREEON', name: 'Hooded Towel, Teddy', tags: ['BABY', 'TOWEL'], price: '€26.95', spec: '1 pc', tint: 'a' },
+        { brand: 'PAMPERS', name: 'Sensitive Wipes, 80 pcs', tags: ['BABY', 'WIPES'], price: '€2.50', spec: '80 pcs', tint: 'd' }
       ],
-      compliance: 'Product information from the label. For a described symptom, ask a pharmacist.',
-      placeholder: 'Describe your skin, hair or what you need',
+      compliance: 'Product information from the label. Baby care answered neutrally, as the rules for that category require.',
+      placeholder: 'Describe what you need, for whom, and for what',
       disclaimer: 'AI advisor. Disclosed under EU AI Act Article 50.'
     },
     deep: {
       heading: 'One agent for a wide, regulated catalog',
       paragraphs: [
-        'A drugstore catalog is wide and regulated at the same time: 15,000 products across skin, hair, baby, household, health and nutrition, each category with its own claim rules. Shoppers describe a situation ("dry, sensitive skin in winter", "something for my baby\'s cradle cap") and site search wants the product\'s name. The agent routes the need to a specialist for that part of the catalog and answers from what is actually in stock, with the reason each product fits.',
+        'A drugstore catalog is wide and regulated at the same time: 15,000 products across skin, hair, baby, household, health and nutrition, each category with its own claim rules. Shoppers describe a situation ("everything for a newborn\'s first bath", "a detergent for wool and delicates") and site search wants the product\'s name. The agent routes the need to a specialist for that part of the catalog and answers from what is actually in stock, with the reason each product fits.',
         'Claims are governed per category. Cosmetics stay inside Regulation 1223/2009 and the common-criteria claims rules, supplements use authorised health-claim wording only, infant formula is presented neutrally with no promotion or comparatives, biocides carry their mandatory safety sentence, and non-prescription medicines are described from the label and referred to a pharmacist for anything beyond it. A forbidden-claim test suite runs on every release.',
         'Built for the EU rulebook from the first line: AI Act Article 50 disclosure and marking, EU-jurisdiction storage, no identity data, WCAG 2.1 AA. Four languages on one catalog, with product names exactly as the shop lists them, so a Croatian, Serbian, German or English shopper gets the same products and the same prices.'
       ],
       pills: ['14,555 SKUs live', '4 languages', 'AI Act Art. 50 ready'],
       mock: {
         title: 'Product Intelligence',
-        sub: 'Specialist: face care · live demo',
+        sub: 'Specialist: baby care · live demo',
         intentLabel: 'Session intent detected',
-        intent: 'Dry skin · Sensitive · Winter · Under €10',
+        intent: 'Newborn · First bath · Ultra sensitive · Basket',
         products: [
-          { name: 'Balea Day Cream Urea + SPF 15', price: '€2.95', score: '97%' },
-          { name: 'Balea Night Cream 5% Urea', price: '€2.95', score: '91%' },
-          { name: 'NIVEA Daily Essentials Night', price: '€7.15', score: '84%' }
+          { name: 'babylove Bath & Shampoo 2-in-1', price: '€1.90', score: '97%' },
+          { name: 'HiPP Bath, high tolerance', price: '€4.45', score: '92%' },
+          { name: 'FreeON Hooded Towel, Teddy', price: '€26.95', score: '88%' }
         ],
         checkLabel: 'Claims check passed',
-        chips: ['Cosmetics 1223/2009', 'Label wording only', 'AI disclosure shown'],
+        chips: ['Baby care: neutral wording', 'Label wording only', 'AI disclosure shown'],
         footer: 'Indexed 14,555 SKUs · 200 categories'
       }
     },
