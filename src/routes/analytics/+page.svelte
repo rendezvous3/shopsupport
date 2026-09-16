@@ -20,7 +20,7 @@
     { label: 'Demand', value: '477', sub: 'Product-seeking searches' },
     { label: 'Top category', value: 'edibles', sub: '145 searches' },
     { label: 'No results', value: '6.3%', sub: '30 no-result searches', alert: true },
-    { label: 'Entry mode', value: 'Chat', sub: '451 searches' }
+    { label: 'Entry mode', value: 'Free-form', sub: '451 searches' }
   ];
 
   const demandKpisRow2 = [
@@ -84,8 +84,8 @@
       description: 'Track every step from category to checkout. See where shoppers leave: effects, budget, shortlist, or pick.'
     },
     {
-      title: 'Chat vs. guided entry mode',
-      description: 'Compare how free conversation and guided flows convert. 451 of 477 demand searches started in chat. Guided flow: 100% completion across 24 sessions. Double down on what moves product.'
+      title: 'Free-form vs. guided entry mode',
+      description: 'Compare how free conversation and guided flows convert. 451 of 477 demand searches started as a free-form question. Guided flow: 100% completion across 24 sessions. Double down on what moves product.'
     }
   ];
 </script>
@@ -105,7 +105,7 @@
       See what your shoppers actually want
     </h1>
     <p class="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed mb-8">
-      Every conversation is a survey you never had to send. In one live dispensary deployment, <BrandName variant="onDark" /> logged 477 product-seeking searches: edibles (145), uplifted (89 mentions), and 30 no-result gaps. The same dashboard reads skin types in a drugstore, grapes and occasions in a wine shop, sizes in fashion and body styles on a car lot. Every session is monitored and stored for compliance.
+      Every conversation is a survey you never had to send. In one live dispensary deployment, <BrandName variant="onDark" /> logged 477 product-seeking searches: edibles (145), uplifted (89 mentions), and 30 no-result gaps. The same dashboard reads skin types in a drugstore, grapes and occasions in a wine shop, sizes in fashion. Every session is monitored and stored for compliance.
     </p>
     <div class="flex items-center justify-center gap-3 flex-wrap">
       <ButtonMinimal label="Schedule a demo" variant="primary" href="/contact" />

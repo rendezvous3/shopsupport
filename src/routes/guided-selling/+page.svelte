@@ -23,7 +23,7 @@
       AI built to sell, not just answer
     </h1>
     <p class="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed mb-8">
-      Most chatbots wait for a question. The agent guides every shopper from "just browsing" to checkout in a few taps. No blank text box, no dead ends, no waiting for staff.
+      Most assistants wait for a question. The agent guides every shopper from "just browsing" to checkout in a few taps. No blank text box, no dead ends, no waiting for staff.
     </p>
     <div class="flex items-center justify-center gap-3 flex-wrap">
       <ButtonMinimal label="Schedule a demo" variant="primary" href="/contact" />
@@ -40,7 +40,7 @@
         Why guided beats an open text box
       </h2>
       <p class="text-xl text-slate-400 max-w-2xl mx-auto">
-        An empty chat box asks the shopper to do the work. A guided flow does the work for them.
+        An empty text box asks the shopper to do the work. A guided flow does the work for them.
       </p>
     </div>
 

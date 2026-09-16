@@ -41,11 +41,11 @@
       {
         title: 'Industries',
         links: [
-          { label: 'Cannabis dispensaries', href: '/industries#cannabis' },
-          { label: 'Drugstore & beauty', href: '/industries#drugstore' },
+          { label: 'Retail', href: '/industries#retail' },
           { label: 'Wine & beverage', href: '/industries#beverage' },
           { label: 'Fashion & apparel', href: '/industries#fashion' },
-          { label: 'Automotive', href: '/industries#automotive' },
+          { label: 'Jewelry & watches', href: '/industries#jewelry' },
+          { label: 'Cannabis dispensaries', href: '/industries#cannabis' },
           { label: 'Customer Service (Soon)', href: '/industries#customer-service' }
         ]
       },

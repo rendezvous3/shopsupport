@@ -140,7 +140,7 @@
         <div class="bai-tag">INTEGRATION</div>
         <h3 class="bai-title">POS &amp; Catalog Integration</h3>
         <p class="bai-desc">
-          Direct connectors to Dutchie, Shopify, WooCommerce, Magento, Salesforce Commerce and dealership inventory feeds. <BrandName variant="onDark" /> ingests your live catalog, pricing, attributes and inventory, then keeps everything in sync as it changes in real time.
+          Direct connectors to Dutchie, Shopify, WooCommerce, Magento, Salesforce Commerce and product feeds. <BrandName variant="onDark" /> ingests your live catalog, pricing, attributes and inventory, then keeps everything in sync as it changes in real time.
         </p>
         <ul class="bai-bullets">
           <li>Real-time inventory sync from your POS</li>
@@ -199,7 +199,7 @@
           Full-resolution support agents that query order history, loyalty points, and store policies via your POS APIs. Launching soon. Join the waitlist for early access.
         </p>
         <ul class="bai-bullets">
-          <li>Multi-channel support across email, chat, and tickets</li>
+          <li>Multi-channel support across email, messaging, and tickets</li>
           <li>Autonomous resolution for tier-1 and tier-2 cases</li>
           <li>Intelligent escalation with full context transfer</li>
           <li>Continuous improvement from resolved interactions</li>
@@ -371,7 +371,7 @@
         <div class="bai-tag">INTEGRATIONS</div>
         <h3 class="bai-title">Built for your stack</h3>
         <p class="bai-desc">
-          <BrandName variant="onDark" /> connects directly to the platform you already run on: Dutchie for dispensaries, Shopify, WooCommerce, Magento or Salesforce Commerce for retail, a DMS for dealerships. No rip-and-replace. We deploy alongside your existing site and search, and read from your live catalog.
+          <BrandName variant="onDark" /> connects directly to the platform you already run on: Dutchie for dispensaries, Shopify, WooCommerce, Magento or Salesforce Commerce for retail. No rip-and-replace. We deploy alongside your existing site and search, and read from your live catalog.
         </p>
         <ul class="bai-bullets">
           <li>Direct POS, commerce-platform and feed connections</li>
@@ -729,7 +729,7 @@
           </div>
           <h3 class="custom-dev-card-title">UI and Frontend</h3>
           <p class="custom-dev-card-desc">
-            Dashboards, chat interfaces, and workflows. React, Svelte, Vue when the project calls for it.
+            Dashboards, agent interfaces, and workflows. React, Svelte, Vue when the project calls for it.
           </p>
         </div>
 

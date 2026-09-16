@@ -9,7 +9,7 @@
 
 <svelte:head>
   <title>Industries | shopsupport.ai</title>
-  <meta name="description" content="Expert shopping AI agents for cannabis, drugstore and beauty, wine and beverage, fashion, sporting goods, jewelry and automotive. Domain-trained, connected to the live catalog, with each industry's rules in the answer." />
+  <meta name="description" content="Expert shopping AI agents for retail, wine and beverage, fashion, jewelry and cannabis. Domain-trained, connected to the live catalog, with each industry's rules in the answer." />
 </svelte:head>
 
 <Navigation dropdownTrigger="hover" />

@@ -26,7 +26,7 @@
 
   const metrics = [
     { label: 'Routine menu Q&A offloaded', value: 'Up to 47%', bar: 0.47 },
-    { label: 'Conversion with AI chat', value: '4×', bar: 0.85 },
+    { label: 'Conversion with an AI agent', value: '4×', bar: 0.85 },
     { label: 'AOV (engaged shoppers)', value: '+25%', bar: 0.75 },
     { label: 'Demand signals tracked', value: '477', bar: 1.0 }
   ];

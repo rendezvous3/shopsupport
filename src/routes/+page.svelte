@@ -18,7 +18,7 @@
 
 <svelte:head>
   <title>shopsupport.ai | Expert shopping AI agents for retail</title>
-  <meta name="description" content="shopsupport.ai builds expert shopping AI agents for retail: guided selling on your live catalog with compliance in the answer. Cannabis, drugstore and beauty, wine, fashion, sporting goods, jewelry, automotive." />
+  <meta name="description" content="shopsupport.ai builds expert shopping AI agents for retail: guided selling on your live catalog with compliance in the answer. Retail, wine and beverage, fashion, jewelry, cannabis." />
 </svelte:head>
 
 <Navigation dropdownTrigger="hover" />
@@ -34,7 +34,7 @@
         Trained on the decision logic of each industry
       </h2>
       <p class="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-        Not seven chatbots. One guided-selling engine, connected to the catalog, tuned to how people actually buy in each vertical, with that vertical's rules in every answer.
+        Not five bots. One guided-selling engine, connected to the catalog, tuned to how people actually buy in each vertical, with that vertical's rules in every answer.
       </p>
     </div>
     <div class="vert-grid">
@@ -60,11 +60,11 @@
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10">
     <div class="inline-block text-[11px] font-medium tracking-[0.14em] uppercase text-[#00d4aa] mb-4">BEHIND THE WIDGET</div>
     <h2 class="text-2xl sm:text-3xl text-white font-semibold tracking-tight mb-4">
-      Chat analytics your sales report cannot show
+      Insights your sales report cannot show
     </h2>
     <p class="text-slate-400 leading-relaxed mb-3">
       From one live dispensary deployment: 477 product-seeking searches logged with session IDs, timestamps, and full query history.
-      451 started in chat. Top category: edibles (145). Top effect: uplifted (89 mentions). The same dashboard reads skin types, grape varieties or body styles in the other verticals.
+      451 started as a free-form question. Top category: edibles (145). Top effect: uplifted (89 mentions). The same dashboard reads skin types, grape varieties or body styles in the other verticals.
     </p>
     <p class="text-slate-400 leading-relaxed">
       30 searches returned no catalog match (6.3%). Every session is monitored and stored for compliance review.
@@ -93,7 +93,7 @@
       <div>
         <div class="inline-block text-[11px] font-medium tracking-[0.14em] uppercase text-[var(--accent)] mb-4">ANALYTICS</div>
         <h2 class="text-2xl sm:text-3xl text-white font-semibold tracking-tight mb-4">
-          Every chat leaves a demand trail
+          Every conversation leaves a demand trail
         </h2>
         <p class="text-slate-400 leading-relaxed mb-6 max-w-lg">
           The agent tracks every product-seeking search with category, subcategory, attribute and need breakdowns.
@@ -121,7 +121,7 @@
         </div>
         <div class="home-analytics-stat">
           <div class="home-analytics-label">Entry mode</div>
-          <div class="home-analytics-value home-analytics-value--sm">Chat</div>
+          <div class="home-analytics-value home-analytics-value--sm">Free-form</div>
           <div class="home-analytics-sub">451 of 477 searches</div>
         </div>
       </div>
@@ -326,7 +326,7 @@
 
       <FeatureCardDark
         title="POS and Commerce Connectors"
-        description="Direct connectors to Dutchie, Shopify, WooCommerce, Magento, Salesforce Commerce and dealership DMS feeds, with real-time catalog, pricing and inventory sync."
+        description="Direct connectors to Dutchie, Shopify, WooCommerce, Magento, Salesforce Commerce and product feeds, with real-time catalog, pricing and inventory sync."
         horizontal={true}
         icon='<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>'
       />
@@ -930,7 +930,7 @@
   }
   @media (min-width: 640px) { .vert-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (min-width: 1024px) { .vert-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-  @media (min-width: 1280px) { .vert-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  @media (min-width: 1280px) { .vert-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
   .vert-card {
     display: flex;
     flex-direction: column;

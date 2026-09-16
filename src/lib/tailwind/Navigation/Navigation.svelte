@@ -57,13 +57,11 @@
         label: 'Industries',
         href: '/industries',
         children: [
-          { label: 'Cannabis dispensaries', href: '/industries#cannabis' },
-          { label: 'Drugstore & beauty', href: '/industries#drugstore' },
+          { label: 'Retail', href: '/industries#retail' },
           { label: 'Wine & beverage', href: '/industries#beverage' },
           { label: 'Fashion & apparel', href: '/industries#fashion' },
-          { label: 'Sporting goods & outdoor', href: '/industries#sporting' },
           { label: 'Jewelry & watches', href: '/industries#jewelry' },
-          { label: 'Automotive dealerships', href: '/industries#automotive' }
+          { label: 'Cannabis dispensaries', href: '/industries#cannabis' }
         ]
       },
       { label: 'Pricing', href: '/pricing' },

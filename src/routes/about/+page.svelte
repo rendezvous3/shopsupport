@@ -24,7 +24,7 @@
       </h1>
       <p class="about-subheading">
         <BrandName variant="onDark" /> connects to your live catalog, trains agentic systems on your products
-        and compliance policies, and deploys expert shopping agents for retail: cannabis, drugstore and beauty, wine, fashion, sporting goods, jewelry and automotive.
+        and compliance policies, and deploys expert shopping agents for retail: drugstore and beauty, wine and beverage, fashion, jewelry and cannabis.
       </p>
     </div>
   </section>
@@ -38,9 +38,9 @@
           <div class="section-label">PHILOSOPHY</div>
           <h2 class="section-heading">Integration-first, production-always</h2>
           <p class="section-body">
-            Considered retail runs on specialized systems, Dutchie in dispensaries, Shopify or Magento in fashion, a DMS in a dealership, with catalogs
+            Considered retail runs on specialized systems, Dutchie in dispensaries, Shopify or Magento in fashion, WooCommerce in a drugstore, with catalogs
             that change hourly and compliance rules that vary by state.
-            Generic chatbots can't handle that complexity.
+            Generic assistants can't handle that complexity.
           </p>
           <p class="section-body">
             <BrandName variant="onDark" /> starts with your live data. We connect to your POS, ingest your catalog,

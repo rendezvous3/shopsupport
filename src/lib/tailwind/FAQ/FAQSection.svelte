@@ -17,7 +17,7 @@
     { id: 'timeline', question: 'How long until we\'re live on our store?' },
     { id: 'embed', question: 'Can it work with our existing e-commerce site?' },
     { id: 'inventory', question: 'What happens when inventory changes?' },
-    { id: 'cs', question: 'Is customer service chat coming?' }
+    { id: 'cs', question: 'Is a customer service agent coming?' }
   ];
 </script>
 
@@ -36,9 +36,9 @@
           {#if isOpen}
             <div class="faq-answer">
               {#if faq.id === 'pos'}
-                <p class="faq-answer-text"><BrandName variant="onDark" /> connects to the system your catalog already lives in: Dutchie for dispensaries, Shopify, WooCommerce, Magento or Salesforce Commerce for retail, a dealership DMS or inventory feed for automotive, or a plain product feed. We ingest the live catalog, pricing and inventory and keep everything in sync as it changes.</p>
+                <p class="faq-answer-text"><BrandName variant="onDark" /> connects to the system your catalog already lives in: Dutchie for dispensaries, Shopify, WooCommerce, Magento or Salesforce Commerce for retail, or a plain product feed. We ingest the live catalog, pricing and inventory and keep everything in sync as it changes.</p>
               {:else if faq.id === 'compliance'}
-                <p class="faq-answer-text">Each vertical carries its own rulebook and the agent applies it before a recommendation is shown: purchase limits, age verification and state warnings in cannabis; cosmetics, supplement and infant-formula claim rules in drugstore and beauty; age gating and shipping eligibility in wine and spirits; approved pricing and availability in automotive. In the EU, AI Act Article 50 disclosure, GDPR storage and accessibility come as standard. A forbidden-claim test suite runs on every release.</p>
+                <p class="faq-answer-text">Each vertical carries its own rulebook and the agent applies it before a recommendation is shown: purchase limits, age verification and state warnings in cannabis; cosmetics, supplement and infant-formula claim rules in drugstore and beauty; age gating and shipping eligibility in wine and spirits; size availability and returns rules in fashion. In the EU, AI Act Article 50 disclosure, GDPR storage and accessibility come as standard. A forbidden-claim test suite runs on every release.</p>
               {:else if faq.id === 'timeline'}
                 <p class="faq-answer-text">Dispensaries run as SaaS: after the $299 setup, most stores are live within days once the Dutchie catalog is connected, at $499/month plus token usage. Other verticals start with a scoped pilot on one catalog and one market, typically eight to ten weeks from kick-off, ending in a decision meeting. See our <a href="/pricing" class="faq-link">pricing page</a> for details.</p>
               {:else if faq.id === 'embed'}

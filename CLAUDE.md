@@ -40,7 +40,8 @@ This rule was established explicitly by the project owner. Violations are unacce
 > visual patterns, the component inventory (active vs dead), a page-by-page map, and current visual debt.
 
 ## Positioning (since 2026-09-15)
-- shopsupport.ai builds **expert shopping AI agents for retail**. The AI Budtender is ONE vertical of seven.
+- shopsupport.ai builds **expert shopping AI agents for retail**. The AI Budtender is ONE vertical of five, and it is listed LAST (order: Retail, Wine & beverage, Fashion, Jewelry, Cannabis).
+- The word "chat" never appears in rendered copy: these are AI agents / shopping AI assistants, and the analytics are "Insights". No automotive, no sporting goods verticals (removed on request 2026-09-15).
 - Verticals are data: `src/lib/data/verticals.ts` drives the hero tabs, home grid, nav dropdown and the
   `/industries` deep dives. Add or reword a vertical there, nowhere else.
 - Brand is always spelled `shopsupport.ai` (lowercase, with .ai). Use `BrandName`.
@@ -48,7 +49,7 @@ This rule was established explicitly by the project owner. Violations are unacce
 
 ## Navigation Anchors
 - Services page sections: `#business-ai`, `#tech`, `#ai-engineering`
-- Industries page sections: `#cannabis`, `#drugstore`, `#beverage`, `#fashion`, `#sporting`, `#jewelry`, `#automotive`, `#customer-service`
+- Industries page sections: `#retail`, `#beverage`, `#fashion`, `#jewelry`, `#cannabis`, `#customer-service`
 - All anchored sections must have `scroll-margin-top: 100px` to account for the fixed nav
 
 ## Components

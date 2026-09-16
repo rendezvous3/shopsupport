@@ -23,7 +23,7 @@
       <h1 class="hero__h1">Expert shopping AI agents for retail</h1>
       <p class="hero__sub">
         <BrandName variant="onDark" /> builds branded AI agents that reason over your live catalog, sell the way your
-        best person sells, and stay inside the rules of your industry. Pick a vertical to see the agent at work.
+        best person sells, and stay inside the rules of your industry. Pick an industry to see the agent at work.
       </p>
 
       <div class="hero__tabs" role="tablist" aria-label="Industries">
