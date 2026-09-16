@@ -130,7 +130,7 @@
       <div class="section-label">BUSINESS AI</div>
       <h2 class="section-h2">AI Trained on Your Catalog</h2>
       <p class="section-sub">
-        Purpose-built agents for considered, regulated retail. Each system connects to your catalog, trains on your products and policies, and deploys where your customers shop.
+        Purpose-built agents for stores where expertise sells. Each system connects to your catalog, trains on your products and policies, and deploys where your customers shop.
       </p>
     </div>
 
@@ -311,7 +311,7 @@
         <div class="bai-tag">COMPLIANCE</div>
         <h3 class="bai-title">Compliance-Aware Recommendations</h3>
         <p class="bai-desc">
-          Regulated retail requires more than good recommendations. <BrandName variant="onDark" /> enforces age verification, daily purchase limits, shipping zone restrictions, and state-specific rules before every product suggestion.
+          Good recommendations are not enough where rules apply. <BrandName variant="onDark" /> enforces age verification, purchase limits, shipping restrictions, product-claim rules and regional regulations before every product suggestion.
         </p>
         <ul class="bai-bullets">
           <li>Age verification prompts before recommendations</li>

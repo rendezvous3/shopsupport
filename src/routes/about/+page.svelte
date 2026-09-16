@@ -19,8 +19,8 @@
     <div class="about-hero-inner">
       <div class="about-label">OUR MISSION</div>
       <h1 class="about-heading">
-        AI commerce for<br />
-        <span class="heading-teal">regulated retail</span>
+        Store expert AI agents<br />
+        <span class="heading-teal">for every store</span>
       </h1>
       <p class="about-subheading">
         <BrandName variant="onDark" /> connects to your live catalog, trains agentic systems on your products
@@ -403,8 +403,8 @@
         <div class="about-cta-label">shopsupport.ai</div>
         <h2 class="about-cta-heading">Built for retail that takes expertise to sell.</h2>
         <p class="about-cta-body">
-          We work with a focused set of regulated retail stores, connecting to your POS,
-          training on your catalog, and deploying an expert shopping agent that drives measurable
+          We work with a focused set of stores where expertise sells: drugstores, wine merchants, fashion, jewelry, dispensaries.
+          We connect to your catalog, train on your products and policies, and deploy a store expert agent that drives measurable
           conversion lift. Tell us about your store.
         </p>
         <div class="about-cta-buttons">

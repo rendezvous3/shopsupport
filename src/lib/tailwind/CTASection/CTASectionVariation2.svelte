@@ -82,7 +82,7 @@
           </div>
 
           <p class="metrics-footnote">
-            Routine Q&A benchmark from Ingka Group (IKEA) AI deployments. Conversion and AOV figures from Rep AI 2025 ecommerce shopper report (12.3% vs 3.1% purchase rate; +25% AOV with AI chat). Demand signals from live dispensary analytics.
+            Routine Q&A benchmark from Ingka Group (IKEA) AI deployments. Conversion and AOV figures from Rep AI 2025 ecommerce shopper report (12.3% vs 3.1% purchase rate; +25% AOV with an AI shopping agent). Demand signals from live dispensary analytics.
           </p>
         </div>
       </div>

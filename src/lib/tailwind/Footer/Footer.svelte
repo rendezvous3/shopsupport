@@ -79,7 +79,7 @@
           <BrandLockup height="2.5rem" offset="0.625rem" />
         </div>
         <p class="text-gray-400 mb-2">
-          Agentic AI for regulated retail commerce
+          Store expert AI agents for retail
         </p>
         <p class="text-sm text-gray-500 mb-4 max-w-xs">
           Expert shopping AI agents for retail. Connected to the live catalog, compliance in the answer.

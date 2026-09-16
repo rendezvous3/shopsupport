@@ -24,7 +24,7 @@
 
   let {
     badge = 'Retail · Live catalog · Connected AI',
-    headline = 'The AI agent for regulated retail commerce',
+    headline = 'Store expert AI agents',
     subheadline = '',
     primaryCta = { label: 'Schedule a demo', href: '/contact' },
     secondaryCta = { label: 'See the chat', href: '/#chat-preview' },

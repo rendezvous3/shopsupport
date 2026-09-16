@@ -28,7 +28,7 @@
           Every kind of retail.
         </h1>
         <p class="ind-hero-sub">
-          Generic chatbots fail wherever the purchase is considered and the category is regulated. <BrandName variant="onDark" /> builds agents
+          Generic assistants fall short wherever the purchase takes expertise and the category has rules. <BrandName variant="onDark" /> builds agents
           trained on your catalog, your decision logic and your rules, so every recommendation is accurate,
           in stock, and compliant in the vertical it serves.
         </p>
