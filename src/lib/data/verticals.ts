@@ -59,18 +59,18 @@ export const verticals: Vertical[] = [
     id: 'retail',
     label: 'Retail',
     agent: 'AI Shopping Agent',
-    eyebrow: 'RETAIL · DRUGSTORE, BEAUTY & PERSONAL CARE',
+    eyebrow: 'RETAIL',
     status: 'pilot',
     hero: {
-      title: 'A shopping agent for a 15,000-SKU catalog',
-      desc: 'The shopper describes a need; the agent sells from the live catalog with the reason each product fits. Skin type, budget and language become filters, and product claims stay inside the rules of each category.',
+      title: 'A shopping agent for the whole store',
+      desc: 'The shopper describes what they need and for whom; the agent sells from the live catalog, across departments, with the reason each product fits. Any language, with the rules of each category applied in the answer.',
       bullets: [
-        'Nine specialists: skin, hair, body, baby, household, health and nutrition',
-        'Claims policy per category: cosmetics, supplements, infant formula, biocides',
+        'One expert per department: baby, household, personal care, health, beauty and more',
+        'A single need becomes a basket across departments',
         'Any language: the reply moves, product names stay as the shop lists them'
       ]
     },
-    card: 'Nine specialists over a 15,000-SKU drugstore and beauty catalog. Sells from live stock, in any language, with claims inside the rules of each category.',
+    card: 'One expert per department over the whole catalog. A single need becomes a basket across departments, sold from live stock in any language.',
     scene: {
       agentName: 'AI Shopping Agent',
       turns: [
@@ -88,16 +88,16 @@ export const verticals: Vertical[] = [
       disclaimer: 'AI advisor. Disclosed under EU AI Act Article 50.'
     },
     deep: {
-      heading: 'One agent for a wide, regulated catalog',
+      heading: 'One agent for the whole store',
       paragraphs: [
-        'A drugstore catalog is wide and regulated at the same time: 15,000 products across skin, hair, baby, household, health and nutrition, each category with its own claim rules. Shoppers describe a situation ("everything for a newborn\'s first bath", "a detergent for wool and delicates") and site search wants the product\'s name. The agent routes the need to a specialist for that part of the catalog and answers from what is actually in stock, with the reason each product fits.',
-        'Claims are governed per category. Cosmetics stay inside Regulation 1223/2009 and the common-criteria claims rules, supplements use authorised health-claim wording only, infant formula is presented neutrally with no promotion or comparatives, biocides carry their mandatory safety sentence, and non-prescription medicines are described from the label and referred to a pharmacist for anything beyond it. A forbidden-claim test suite runs on every release.',
-        'Built for the EU rulebook from the first line: AI Act Article 50 disclosure and marking, EU-jurisdiction storage, no identity data, WCAG 2.1 AA. Four languages on one catalog, with product names exactly as the shop lists them, so a Croatian, Serbian, German or English shopper gets the same products and the same prices.'
+        'A retail catalog is wide: thousands of products across departments, each with its own vocabulary and its own rules. Shoppers describe a situation ("everything for a newborn\'s first bath", "a detergent for wool and delicates") and site search wants the product\'s name. The agent routes the need to an expert for that department, answers from what is actually in stock with the reason each product fits, and builds the basket across departments when the need spans them.',
+        'Claims are governed per category. Cosmetics stay inside cosmetics claims rules, supplements use authorised health-claim wording only, baby food is presented neutrally, biocides carry their mandatory safety sentence, and non-prescription health products are described from the label and referred to a pharmacist for anything beyond it. A forbidden-claim test suite runs on every release.',
+        'Built for the EU rulebook where the store sells in the EU: AI Act Article 50 disclosure and marking, EU-jurisdiction storage, no identity data, WCAG 2.1 AA. Several languages on one catalog, with product names exactly as the shop lists them, so every shopper gets the same products and the same prices.'
       ],
-      pills: ['14,555 SKUs live', '4 languages', 'AI Act Art. 50 ready'],
+      pills: ['Whole-catalog experts', 'Cross-department baskets', 'Any language'],
       mock: {
         title: 'Product Intelligence',
-        sub: 'Specialist: baby care · live demo',
+        sub: 'Expert: baby care · live catalog',
         intentLabel: 'Session intent detected',
         intent: 'Newborn · First bath · Ultra sensitive · Basket',
         products: [
@@ -107,7 +107,7 @@ export const verticals: Vertical[] = [
         ],
         checkLabel: 'Claims check passed',
         chips: ['Baby care: neutral wording', 'Label wording only', 'AI disclosure shown'],
-        footer: 'Indexed 14,555 SKUs · 200 categories'
+        footer: 'Synced 14,500 SKUs · 200 categories'
       }
     },
     integrations: ['WooCommerce', 'Shopify', 'Magento', 'Product feeds']
