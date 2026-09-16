@@ -14,17 +14,20 @@
   <div class="dot-grid"></div>
 
   <div class="hero__inner">
-    <div class="hero__text">
+    <div class="hero__head">
       <div class="hero__badge">
         <span class="badge-dot"></span>
         Guided selling · Live catalog · Compliance in the answer
       </div>
 
-      <h1 class="hero__h1">Expert shopping AI agents for retail</h1>
+      <h1 class="hero__h1">Expert shopping AI agents for every store</h1>
       <p class="hero__sub">
         <BrandName variant="onDark" /> builds branded AI agents that reason over your live catalog, sell the way your
         best person sells, and stay inside the rules of your industry. Pick an industry to see the agent at work.
       </p>
+    </div>
+
+    <div class="hero__text">
 
       <div class="hero__tabs" role="tablist" aria-label="Industries">
         {#each verticals as v}
@@ -116,9 +119,17 @@
   @media (min-width: 1024px) {
     .hero__inner {
       grid-template-columns: 1fr 380px;
-      gap: 4rem;
+      gap: 1.25rem 4rem;
+      align-items: start;
+    }
+    .hero__head {
+      grid-column: 1 / -1;
+    }
+    .hero__h1 {
+      white-space: nowrap;
     }
   }
+  .hero__head { max-width: 60rem; }
 
   .hero__badge {
     display: inline-flex;
@@ -141,7 +152,7 @@
   }
 
   .hero__h1 {
-    font-size: clamp(2.25rem, 5vw, 3.25rem);
+    font-size: clamp(2.1rem, 4.1vw, 3.25rem);
     font-weight: 600;
     color: #fff;
     letter-spacing: -0.03em;

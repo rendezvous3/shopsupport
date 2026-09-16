@@ -58,26 +58,26 @@ export const verticals: Vertical[] = [
   {
     id: 'retail',
     label: 'Retail',
-    agent: 'AI Shopping Agent',
+    agent: 'AI Personal Shopper',
     eyebrow: 'RETAIL',
     status: 'pilot',
     hero: {
-      title: 'A shopping agent for the whole store',
-      desc: 'The shopper describes what they need and for whom; the agent sells from the live catalog, across departments, with the reason each product fits. Any language, with the rules of each category applied in the answer.',
+      title: 'A personal shopper for the whole store',
+      desc: 'Tell it what you need and who it is for. It shops the whole store for you, department by department, and explains why each pick fits. In the shopper\'s language, inside the rules of every category.',
       bullets: [
         'One expert per department: baby, household, personal care, health, beauty and more',
         'A single need becomes a basket across departments',
-        'Any language: the reply moves, product names stay as the shop lists them'
+        'Speaks the shopper\'s language, keeps the store\'s product names'
       ]
     },
-    card: 'One expert per department over the whole catalog. A single need becomes a basket across departments, sold from live stock in any language.',
+    card: 'A personal shopper over the whole catalog: one expert per department, a single need turned into a basket, sold from live stock in any language.',
     scene: {
-      agentName: 'AI Shopping Agent',
+      agentName: 'AI Personal Shopper',
       turns: [
         { role: 'user', text: 'What do I need for a newborn\'s first bath?' },
         { role: 'ai', text: 'A very mild baby wash, a soft hooded towel, and wipes for quick clean-ups. All in stock:' }
       ],
-      recLabel: 'Baby care specialist recommends',
+      recLabel: 'Your personal shopper suggests',
       products: [
         { brand: 'BABYLOVE', name: 'Bath & Shampoo 2-in-1 Ultra Sensitive, 250 ml', tags: ['BABY', 'WASH'], price: '€1.90', spec: '250 ml', tint: 'b' },
         { brand: 'FREEON', name: 'Hooded Towel, Teddy', tags: ['BABY', 'TOWEL'], price: '€26.95', spec: '1 pc', tint: 'a' },
@@ -85,19 +85,19 @@ export const verticals: Vertical[] = [
       ],
       compliance: 'Product information from the label. Baby care answered neutrally, as the rules for that category require.',
       placeholder: 'Describe what you need, for whom, and for what',
-      disclaimer: 'AI advisor. Disclosed under EU AI Act Article 50.'
+      disclaimer: 'AI personal shopper. Disclosed as AI under EU rules.'
     },
     deep: {
-      heading: 'One agent for the whole store',
+      heading: 'A personal shopper for every department',
       paragraphs: [
-        'A retail catalog is wide: thousands of products across departments, each with its own vocabulary and its own rules. Shoppers describe a situation ("everything for a newborn\'s first bath", "a detergent for wool and delicates") and site search wants the product\'s name. The agent routes the need to an expert for that department, answers from what is actually in stock with the reason each product fits, and builds the basket across departments when the need spans them.',
-        'Claims are governed per category. Cosmetics stay inside cosmetics claims rules, supplements use authorised health-claim wording only, baby food is presented neutrally, biocides carry their mandatory safety sentence, and non-prescription health products are described from the label and referred to a pharmacist for anything beyond it. A forbidden-claim test suite runs on every release.',
-        'Built for the EU rulebook where the store sells in the EU: AI Act Article 50 disclosure and marking, EU-jurisdiction storage, no identity data, WCAG 2.1 AA. Several languages on one catalog, with product names exactly as the shop lists them, so every shopper gets the same products and the same prices.'
+        'A retail catalog is wide: thousands of products across departments, each with its own vocabulary and its own rules. Shoppers describe a situation ("everything for a newborn\'s first bath", "a detergent for wool and delicates") and site search wants the product\'s name. The personal shopper hands the need to the right department expert, answers from what is actually in stock with the reason each pick fits, and builds the basket across departments when the need spans them.',
+        'Claims are governed per category. Cosmetics stay inside cosmetics claims rules, supplements use authorised health-claim wording only, baby food is presented neutrally, biocides carry their mandatory safety sentence, and non-prescription health products are described from the label, with anything beyond it referred to a pharmacist. Every release passes a claims test suite before it ships.',
+        'Ready for European stores: AI disclosure under the AI Act, data kept in the EU, no identity data collected, accessible to WCAG 2.1 AA. Several languages on one catalog, with the store\'s own product names, so every shopper sees the same products at the same prices.'
       ],
-      pills: ['Whole-catalog experts', 'Cross-department baskets', 'Any language'],
+      pills: ['Every department', 'Baskets from one need', 'Any language'],
       mock: {
-        title: 'Product Intelligence',
-        sub: 'Expert: baby care · live catalog',
+        title: 'Personal Shopper',
+        sub: 'Department expert: baby care · live catalog',
         intentLabel: 'Session intent detected',
         intent: 'Newborn · First bath · Ultra sensitive · Basket',
         products: [
