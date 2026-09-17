@@ -99,7 +99,7 @@ export const verticals: Vertical[] = [
         title: 'Personal Shopper',
         sub: 'Department expert: baby care · live catalog',
         intentLabel: 'Session intent detected',
-        intent: 'Newborn · First bath · Ultra sensitive · Basket',
+        intent: 'Newborn · First bath · Ultra sensitive · Cart',
         products: [
           { name: 'babylove Bath & Shampoo 2 in 1', price: '€1.90', score: '97%' },
           { name: 'HiPP Bath, high tolerance', price: '€4.45', score: '92%' },
@@ -184,7 +184,7 @@ export const verticals: Vertical[] = [
         'Occasion and climate as filters: "rainy city weekend, smart casual"'
       ]
     },
-    card: 'Occasion, fit and climate become a complete look, size checked per item. Fewer returns, bigger baskets.',
+    card: 'Occasion, fit and climate become a complete look, size checked per item. Fewer returns, bigger carts.',
     scene: {
       agentName: 'AI Stylist',
       turns: [
