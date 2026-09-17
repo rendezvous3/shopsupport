@@ -66,11 +66,11 @@ export const verticals: Vertical[] = [
       desc: 'Tell it what you need and who it is for. It shops the whole store for you, department by department, and explains why each pick fits. In the shopper\'s language, inside the rules of every category.',
       bullets: [
         'One expert per department: baby, household, personal care, health, beauty and more',
-        'A single need becomes a basket across departments',
+        'A single need becomes a cart across departments',
         'Speaks the shopper\'s language, keeps the store\'s product names'
       ]
     },
-    card: 'A personal shopper over the whole catalog: one expert per department, a single need turned into a basket, sold from live stock in any language.',
+    card: 'A personal shopper over the whole catalog: one expert per department, a single need turned into a cart, sold from live stock in any language.',
     scene: {
       agentName: 'AI Personal Shopper',
       turns: [
@@ -90,11 +90,11 @@ export const verticals: Vertical[] = [
     deep: {
       heading: 'A personal shopper for every department',
       paragraphs: [
-        'A retail catalog is wide: thousands of products across departments, each with its own vocabulary and its own rules. Shoppers describe a situation ("everything for a newborn\'s first bath", "a detergent for wool and delicates") and site search wants the product\'s name. The personal shopper hands the need to the right department expert, answers from what is actually in stock with the reason each pick fits, and builds the basket across departments when the need spans them.',
+        'A retail catalog is wide: thousands of products across departments, each with its own vocabulary and its own rules. Shoppers describe a situation ("everything for a newborn\'s first bath", "a detergent for wool and delicates") and site search wants the product\'s name. The personal shopper hands the need to the right department expert, answers from what is actually in stock with the reason each pick fits, and builds the cart across departments when the need spans them.',
         'Claims are governed per category. Cosmetics stay inside cosmetics claims rules, supplements use authorised health claim wording only, baby food is presented neutrally, biocides carry their mandatory safety sentence, and non prescription health products are described from the label, with anything beyond it referred to a pharmacist. Every release passes a claims test suite before it ships.',
         'Ready for European stores: AI disclosure under the AI Act, data kept in the EU, no identity data collected, accessible to WCAG 2.1 AA. Several languages on one catalog, with the store\'s own product names, so every shopper sees the same products at the same prices.'
       ],
-      pills: ['Every department', 'Baskets from one need', 'Any language'],
+      pills: ['Every department', 'Carts from one need', 'Any language'],
       mock: {
         title: 'Personal Shopper',
         sub: 'Department expert: baby care · live catalog',
